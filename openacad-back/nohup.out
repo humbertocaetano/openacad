@@ -1,0 +1,658 @@
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-17T10:55:47.437Z
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-17T12:22:32.039Z
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"110-CNgfk/muibbfnKIAjqlTSYovUSg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 2
+[0mGET /api/users [36m304[0m 9.745 ms - -[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-17T12:32:09.126Z
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"110-CNgfk/muibbfnKIAjqlTSYovUSg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 2
+[0mGET /api/users [36m304[0m 18.663 ms - -[0m
+Cliente removido do pool
+POST /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '158',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Humberto Caetano',
+  email: 'humberto.ccs@gmail.com',
+  username: 'humbertoccs',
+  phone: '8132222222',
+  user_level: 'Administrador(a)',
+  password: 'abcdef'
+}
+Token recebido: Presente
+Requisição POST /users recebida
+Nova conexão estabelecida com o banco de dados
+Cliente removido do pool
+Erro ao criar usuário: error: bind message supplies 2 parameters, but prepared statement "" requires 1
+    at /home/humberto/back/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/back/src/routes/users.routes.js:54:24 {
+  length: 137,
+  severity: 'ERROR',
+  code: '08P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'postgres.c',
+  line: '1697',
+  routine: 'exec_bind_message'
+}
+[0mPOST /api/users [31m500[0m 39.531 ms - 36[0m
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-17T12:37:35.961Z
+POST /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '158',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Humberto Caetano',
+  email: 'humberto.ccs@gmail.com',
+  username: 'humbertoccs',
+  phone: '8132222222',
+  user_level: 'Administrador(a)',
+  password: 'abcdef'
+}
+Token recebido: Presente
+Requisição POST /users recebida
+Dados recebidos: {
+  name: 'Humberto Caetano',
+  email: 'humberto.ccs@gmail.com',
+  username: 'humbertoccs',
+  phone: '8132222222',
+  user_level: 'Administrador(a)',
+  password: 'abcdef'
+}
+Usuário criado com sucesso: {
+  id: 5,
+  name: 'Humberto Caetano',
+  email: 'humberto.ccs@gmail.com',
+  username: 'humbertoccs',
+  phone: '8132222222',
+  user_level: 'Administrador(a)'
+}
+[0mPOST /api/users [32m201[0m 84.964 ms - 145[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [32m200[0m 5.343 ms - 418[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1a2-nUTfMIRp8n5XqFhdxSWQBcuwt+8"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 16.607 ms - -[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1a2-nUTfMIRp8n5XqFhdxSWQBcuwt+8"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 14.428 ms - -[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1a2-nUTfMIRp8n5XqFhdxSWQBcuwt+8"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 15.068 ms - -[0m
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 67.240 ms - 295[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDg2NjgsImV4cCI6MTczMTkzNTA2OH0.4_PhFkRf-kJbl_fJcU_LM99kKeuLcV9S_oCAkEiWGsE',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1a2-nUTfMIRp8n5XqFhdxSWQBcuwt+8"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 2.971 ms - -[0m
+PUT /api/users/4
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '132',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDg2NjgsImV4cCI6MTczMTkzNTA2OH0.4_PhFkRf-kJbl_fJcU_LM99kKeuLcV9S_oCAkEiWGsE',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+[0mPUT /api/users/4 [33m404[0m 8.517 ms - 150[0m
+Cliente removido do pool
+PUT /api/users/4
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '132',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDg2NjgsImV4cCI6MTczMTkzNTA2OH0.4_PhFkRf-kJbl_fJcU_LM99kKeuLcV9S_oCAkEiWGsE',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+[0mPUT /api/users/4 [33m404[0m 7.204 ms - 150[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDg2NjgsImV4cCI6MTczMTkzNTA2OH0.4_PhFkRf-kJbl_fJcU_LM99kKeuLcV9S_oCAkEiWGsE',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1a2-nUTfMIRp8n5XqFhdxSWQBcuwt+8"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 20.771 ms - -[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDg2NjgsImV4cCI6MTczMTkzNTA2OH0.4_PhFkRf-kJbl_fJcU_LM99kKeuLcV9S_oCAkEiWGsE',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1a2-nUTfMIRp8n5XqFhdxSWQBcuwt+8"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 15.702 ms - -[0m
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-17T13:11:45.239Z
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 88.428 ms - 295[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDkxMjAsImV4cCI6MTczMTkzNTUyMH0.xsK0myYBORTv1k3LHzOpRJNo7-sXlolUbDv4qulbs40',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1a2-nUTfMIRp8n5XqFhdxSWQBcuwt+8"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 5.005 ms - -[0m
+PUT /api/users/4
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '132',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDkxMjAsImV4cCI6MTczMTkzNTUyMH0.xsK0myYBORTv1k3LHzOpRJNo7-sXlolUbDv4qulbs40',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+[0mPUT /api/users/4 [32m200[0m 17.772 ms - 132[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDkxMjAsImV4cCI6MTczMTkzNTUyMH0.xsK0myYBORTv1k3LHzOpRJNo7-sXlolUbDv4qulbs40',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1a2-nUTfMIRp8n5XqFhdxSWQBcuwt+8"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [32m200[0m 3.666 ms - 414[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDkxMjAsImV4cCI6MTczMTkzNTUyMH0.xsK0myYBORTv1k3LHzOpRJNo7-sXlolUbDv4qulbs40',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"19e-KeE+mnjijhMpvUgaDveHXmkYPCg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 3.733 ms - -[0m
+PUT /api/users/4
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '205',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDkxMjAsImV4cCI6MTczMTkzNTUyMH0.xsK0myYBORTv1k3LHzOpRJNo7-sXlolUbDv4qulbs40',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+[0mPUT /api/users/4 [32m200[0m 66.582 ms - 132[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDkxMjAsImV4cCI6MTczMTkzNTUyMH0.xsK0myYBORTv1k3LHzOpRJNo7-sXlolUbDv4qulbs40',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"19e-KeE+mnjijhMpvUgaDveHXmkYPCg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 4.254 ms - -[0m
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '78',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin2@openacad.com',
+  password: 'abcdefgh',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin2@openacad.com
+Found user: {
+  id: 4,
+  email: 'admin2@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 8
+Stored hash: $2b$10$.upvASBaPsxiuwpV98TeJevmrbuskp.cQrEe/EaJTYPtx5sLjKQL6
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 63.950 ms - 285[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"19e-KeE+mnjijhMpvUgaDveHXmkYPCg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 3.883 ms - -[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"19e-KeE+mnjijhMpvUgaDveHXmkYPCg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 15.027 ms - -[0m
+DELETE /api/users/4
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+[0mDELETE /api/users/4 [32m200[0m 7.069 ms - 44[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"19e-KeE+mnjijhMpvUgaDveHXmkYPCg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 2
+[0mGET /api/users [32m200[0m 3.088 ms - 281[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"119-GwMzDZnmja4+0N1beZDZkBnJdfA"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 2
+[0mGET /api/users [36m304[0m 4.013 ms - -[0m
+PUT /api/users/5
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '141',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+[0mPUT /api/users/5 [32m200[0m 10.575 ms - 141[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"119-GwMzDZnmja4+0N1beZDZkBnJdfA"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 2
+[0mGET /api/users [32m200[0m 3.404 ms - 277[0m
+Cliente removido do pool

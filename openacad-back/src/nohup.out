@@ -1,0 +1,569 @@
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-17T11:14:01.488Z
+Login attempt for: admin@openacad.com
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 78.408 ms - 295[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-17T11:24:27.803Z
+Cliente removido do pool
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  'user-agent': 'curl/7.88.1',
+  accept: '*/*',
+  'content-type': 'application/json',
+  'content-length': '96'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Nova conexão estabelecida com o banco de dados
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 104.711 ms - 295[0m
+Cliente removido do pool
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '73',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  accept: 'application/json, text/plain, */*',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL1'
+}
+Login attempt for: admin@openacad.com
+Nova conexão estabelecida com o banco de dados
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Invalid school code
+[0mPOST /api/auth/login [33m401[0m 74.043 ms - 41[0m
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '73',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  accept: 'application/json, text/plain, */*',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL1'
+}
+Login attempt for: admin@openacad.com
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Invalid school code
+[0mPOST /api/auth/login [33m401[0m 61.137 ms - 41[0m
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  accept: 'application/json, text/plain, */*',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 66.154 ms - 295[0m
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  accept: 'application/json, text/plain, */*',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 61.862 ms - 295[0m
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  accept: 'application/json, text/plain, */*',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 64.354 ms - 295[0m
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  accept: 'application/json, text/plain, */*',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 60.917 ms - 295[0m
+Cliente removido do pool
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Nova conexão estabelecida com o banco de dados
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 78.185 ms - 295[0m
+Cliente removido do pool
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Nova conexão estabelecida com o banco de dados
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 72.072 ms - 295[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/users [33m401[0m 3.003 ms - 34[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDQwNzEsImV4cCI6MTczMTkzMDQ3MX0.I1iMExY1EFdWjUXsESS8mKiqgtcjpl5bHVG5RgHhnVs',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/users [33m401[0m 3.238 ms - 29[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDQwNzEsImV4cCI6MTczMTkzMDQ3MX0.I1iMExY1EFdWjUXsESS8mKiqgtcjpl5bHVG5RgHhnVs',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/users [33m401[0m 2.795 ms - 29[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDQwNzEsImV4cCI6MTczMTkzMDQ3MX0.I1iMExY1EFdWjUXsESS8mKiqgtcjpl5bHVG5RgHhnVs',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/users [33m401[0m 4.525 ms - 29[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDQwNzEsImV4cCI6MTczMTkzMDQ3MX0.I1iMExY1EFdWjUXsESS8mKiqgtcjpl5bHVG5RgHhnVs',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/users [33m401[0m 2.060 ms - 29[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDQwNzEsImV4cCI6MTczMTkzMDQ3MX0.I1iMExY1EFdWjUXsESS8mKiqgtcjpl5bHVG5RgHhnVs',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/users [33m401[0m 4.144 ms - 29[0m
+POST /api/auth/login
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '75',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  email: 'admin@openacad.com',
+  password: '123456',
+  schoolCode: 'SCHOOL001'
+}
+Login attempt for: admin@openacad.com
+Nova conexão estabelecida com o banco de dados
+Found user: {
+  id: 1,
+  email: 'admin@openacad.com',
+  passwordHashLength: 60,
+  schoolCode: 'SCHOOL001'
+}
+Attempting password validation...
+Received password length: 6
+Stored hash: $2b$10$YxlY3fLmY/bFP1xMsOqv3.WmhoMdSoNsXKLcOz1adRxGDUcK.sChq
+Password validation result: true
+Login successful
+[0mPOST /api/auth/login [32m200[0m 73.015 ms - 295[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/users [33m401[0m 1.193 ms - 29[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-17T12:12:49.620Z
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Executando query: 
+      SELECT 
+        id, 
+        name, 
+        username, 
+        email, 
+        phone, 
+        user_level 
+      FROM users 
+      ORDER BY name
+    
+Resultado da query: {
+  rowCount: 2,
+  firstRow: {
+    id: 1,
+    name: 'Administrador',
+    username: 'admin',
+    email: 'admin@openacad.com',
+    phone: '00000000000',
+    user_level: 'Administrador(a)'
+  }
+}
+[0mGET /api/users [32m200[0m 11.486 ms - 272[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"110-CNgfk/muibbfnKIAjqlTSYovUSg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Executando query: 
+      SELECT 
+        id, 
+        name, 
+        username, 
+        email, 
+        phone, 
+        user_level 
+      FROM users 
+      ORDER BY name
+    
+Resultado da query: {
+  rowCount: 2,
+  firstRow: {
+    id: 1,
+    name: 'Administrador',
+    username: 'admin',
+    email: 'admin@openacad.com',
+    phone: '00000000000',
+    user_level: 'Administrador(a)'
+  }
+}
+[0mGET /api/users [36m304[0m 4.423 ms - -[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJMZXZlbCI6IkFkbWluaXN0cmFkb3IoYSkiLCJpYXQiOjE3MzE4NDUzMDQsImV4cCI6MTczMTkzMTcwNH0.qQ9CUtcu3NfUYhq68YWRLKx9kYKcptN0hd3WQ9Maskc',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"110-CNgfk/muibbfnKIAjqlTSYovUSg"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Executando query: 
+      SELECT 
+        id, 
+        name, 
+        username, 
+        email, 
+        phone, 
+        user_level 
+      FROM users 
+      ORDER BY name
+    
+Nova conexão estabelecida com o banco de dados
+Resultado da query: {
+  rowCount: 2,
+  firstRow: {
+    id: 1,
+    name: 'Administrador',
+    username: 'admin',
+    email: 'admin@openacad.com',
+    phone: '00000000000',
+    user_level: 'Administrador(a)'
+  }
+}
+[0mGET /api/users [36m304[0m 15.084 ms - -[0m
+Cliente removido do pool
