@@ -1,0 +1,323 @@
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  11.72 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 102.02 kB
+
+Application bundle generation complete. [3.838 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 12.28 kB | 
+
+Application bundle generation complete. [0.554 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 13.90 kB | 
+
+Application bundle generation complete. [0.610 seconds]
+
+Page reload sent to client(s).
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  13.90 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 104.20 kB
+
+Application bundle generation complete. [3.693 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 13.90 kB | 
+
+Application bundle generation complete. [0.469 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 19.40 kB | 
+
+Application bundle generation complete. [0.524 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 19.21 kB | 
+
+Application bundle generation complete. [0.445 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 18.90 kB | 
+
+Application bundle generation complete. [0.506 seconds]
+
+Page reload sent to client(s).
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  18.90 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 109.20 kB
+
+Application bundle generation complete. [3.767 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 30.31 kB | 
+
+Application bundle generation complete. [1.069 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 31.28 kB | 
+
+Application bundle generation complete. [0.655 seconds]
+
+Page reload sent to client(s).
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  31.28 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 121.58 kB
+
+Application bundle generation complete. [4.372 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.592 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992001: component is missing a template[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-list/user-list.component.ts:6:0:
+[37m      6 │ [32m@Component({[37m
+        ╵ [32m~~~~~~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [3.949 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992001: component is missing a template[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-list/user-list.component.ts:6:0:
+[37m      6 │ [32m@Component({[37m
+        ╵ [32m~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  33.91 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 124.20 kB
+
+Application bundle generation complete. [0.949 seconds]
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.114 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'createUser' does not exist on type 'UserService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:297:23:
+[37m      297 │       this.userService.[32mcreateUser[37m(userData).subscribe({
+          ╵                        [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:301:16:
+[37m      301 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  50.40 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 140.69 kB
+
+Application bundle generation complete. [0.584 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.717 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: '}' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:325:0:
+[37m      325 │ [32m[37m
+          ╵ [32m^[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.737 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: '}' expected.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:325:0:
+[37m      325 │ [32m[37m
+          ╵ [32m^[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  52.63 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 142.93 kB
+
+Application bundle generation complete. [0.683 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 53.13 kB | 
+
+Application bundle generation complete. [0.350 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.075 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mexpected "{".
+    ╷
+151 │     ></app-edit-user-modal>
+    │                            ^
+    ╵
+  src/app/features/users/user-list/user-list.component.ts 151:28  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  71.61 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 161.91 kB
+
+Application bundle generation complete. [1.094 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.64 kB | 
+
+Application bundle generation complete. [0.677 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 75.75 kB | 
+
+Application bundle generation complete. [0.314 seconds]
+
+Page reload sent to client(s).
