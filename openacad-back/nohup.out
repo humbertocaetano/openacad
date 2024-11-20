@@ -981,3 +981,384 @@ Requisição GET /users recebida
 Usuários encontrados: 3
 [0mGET /api/users [32m200[0m 4.761 ms - 447[0m
 Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-20T14:36:16.105Z
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bf-KS7PceThpN6wIxGv2xHYmzszjsI"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 9.066 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/classes [33m404[0m 3.669 ms - 150[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/classes [33m404[0m 1.953 ms - 150[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-20T14:41:25.708Z
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Cliente removido do pool
+Erro ao buscar turmas: error: column c.year_id does not exist
+    at /home/humberto/openacad/openacad-back/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/classes.routes.js:8:20 {
+  length: 108,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '204',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3665',
+  routine: 'errorMissingColumn'
+}
+[0mGET /api/classes [31m500[0m 14.113 ms - 35[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Nova conexão estabelecida com o banco de dados
+Cliente removido do pool
+Erro ao buscar turmas: error: column c.division_id does not exist
+    at /home/humberto/openacad/openacad-back/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/classes.routes.js:8:20 {
+  length: 112,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '255',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3665',
+  routine: 'errorMissingColumn'
+}
+[0mGET /api/classes [31m500[0m 21.378 ms - 35[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Nova conexão estabelecida com o banco de dados
+Cliente removido do pool
+Erro ao buscar turmas: error: column c.active does not exist
+    at /home/humberto/openacad/openacad-back/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/classes.routes.js:8:20 {
+  length: 106,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '80',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3665',
+  routine: 'errorMissingColumn'
+}
+[0mGET /api/classes [31m500[0m 18.650 ms - 35[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [32m200[0m 13.922 ms - 2[0m
+GET /api/classes/divisions
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+GET /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/classes/divisions [32m200[0m 8.855 ms - 301[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes/years [32m200[0m 19.453 ms - 595[0m
+POST /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '43',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: { year_id: 1, division_id: 1, active: true }
+Cliente removido do pool
+Erro ao criar turma: error: null value in column "name" of relation "classes" violates not-null constraint
+    at /home/humberto/openacad/openacad-back/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/classes.routes.js:65:20 {
+  length: 240,
+  severity: 'ERROR',
+  code: '23502',
+  detail: 'Failing row contains (1, null, null, 2024-11-20 11:46:10.078825, 1, 1, t).',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'classes',
+  column: 'name',
+  dataType: undefined,
+  constraint: undefined,
+  file: 'execMain.c',
+  line: '1968',
+  routine: 'ExecConstraints'
+}
+[0mPOST /api/classes [31m500[0m 26.862 ms - 33[0m
+Cliente removido do pool
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [36m304[0m 16.208 ms - -[0m
+GET /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"253-DZEZSDa3Mcd5oQJ928DjIr7N5iE"'
+}
+GET /api/classes/divisions
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"12d-fxobtDbhMDWbbbv6QahW5+JV9WM"'
+}
+[0mGET /api/classes/years [32m200[0m 4.567 ms - 595[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes/divisions [32m200[0m 15.699 ms - 301[0m
+POST /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '43',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: { year_id: 1, division_id: 1, active: true }
+[0mPOST /api/classes [32m201[0m 8.381 ms - 90[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/classes [32m200[0m 3.977 ms - 94[0m
+GET /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"253-KlJfl/kBmKpsS6FWymC07vpmnxw"'
+}
+GET /api/classes/divisions
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"12d-nz07bGr992t0F0rdID7w3xRJUnQ"'
+}
+[0mGET /api/classes/years [36m304[0m 4.107 ms - -[0m
+[0mGET /api/classes/divisions [36m304[0m 2.747 ms - -[0m
+POST /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '43',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: { year_id: 1, division_id: 2, active: true }
+[0mPOST /api/classes [32m201[0m 7.837 ms - 90[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/classes [32m200[0m 3.102 ms - 187[0m

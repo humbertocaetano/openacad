@@ -11,6 +11,8 @@ const errorHandler = require('./middleware/errorHandler');
 const { setupDatabase } = require('./config/database');
 
 const userLevelsRouter = require('./routes/user-levels.routes');
+const classesRouter = require('./routes/classes.routes');
+
 
 // Load environment variables
 config();
@@ -50,6 +52,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/users', userRouter);
 
 app.use('/api/user-levels', userLevelsRouter);
+app.use('/api/classes', classesRouter);
 
 // Rota de teste
 app.get('/api/test', (req, res) => {

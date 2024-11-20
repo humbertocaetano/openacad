@@ -842,3 +842,18 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Local:   http://localhost:4200/
   ➜  Network: http://192.168.15.104:4200/
   ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 104.29 kB | 
+
+Application bundle generation complete. [2.311 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [1.111 seconds]
+
