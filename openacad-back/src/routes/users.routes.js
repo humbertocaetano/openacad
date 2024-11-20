@@ -30,10 +30,19 @@ router.get('/', async (req, res) => {
   console.log('Requisição GET /users recebida');
   
   try {
-    const result = await pool.query(
-      `SELECT id, name, username, email, phone, user_level 
-       FROM users 
-       ORDER BY name`
+    const result = await pool.query(`
+	SELECT 
+        u.id,
+        u.name,
+        u.username,
+        u.email,
+        u.phone,
+        u.level_id,
+        ul.name as level_name
+      FROM users u
+      LEFT JOIN user_levels ul ON u.level_id = ul.id
+      ORDER BY u.name
+	    `
     );
     
     console.log('Usuários encontrados:', result.rowCount);
@@ -48,7 +57,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
   console.log('Requisição POST /users recebida');
   console.log('Dados recebidos:', req.body);
-  const { name, email, username, phone, user_level, password } = req.body;
+  const { name, email, username, phone, level_id, password } = req.body;
 
   try {
     // Verificar se usuário já existe
@@ -70,10 +79,10 @@ router.post('/', async (req, res) => {
 
     // Inserir novo usuário
     const result = await pool.query(
-      `INSERT INTO users (name, email, username, phone, user_level, password_hash)
+      `INSERT INTO users (name, email, username, phone, level_id, password_hash)
        VALUES ($1, $2, $3, $4, $5, $6)
-       RETURNING id, name, email, username, phone, user_level`,
-      [name, email, username, phone, user_level, hashedPassword]
+       RETURNING id, name, email, username, phone, level_id`,
+      [name, email, username, phone, level_id, hashedPassword]
     );
 
     console.log('Usuário criado com sucesso:', result.rows[0]);
@@ -136,7 +145,7 @@ router.patch('/:id/password', async (req, res) => {
 
 router.put('/:id', async (req, res) => {
   const { id } = req.params;
-  const { name, email, username, phone, user_level, password } = req.body;
+  const { name, email, username, phone, level_id, password } = req.body;
 
   try {
     // Início da transação
@@ -165,9 +174,9 @@ router.put('/:id', async (req, res) => {
             email = $2, 
             username = $3, 
             phone = $4, 
-            user_level = $5
+            level_id = $5
       `;
-      let values = [name, email, username, phone, user_level];
+      let values = [name, email, username, phone, level_id];
 
       // Se uma nova senha foi fornecida, adiciona à atualização
       if (password) {
@@ -177,7 +186,7 @@ router.put('/:id', async (req, res) => {
       }
 
       // Adiciona a condição WHERE e RETURNING
-      query += ` WHERE id = $${values.length + 1} RETURNING id, name, email, username, phone, user_level`;
+      query += ` WHERE id = $${values.length + 1} RETURNING id, name, email, username, phone, level_id`;
       values.push(id);
 
       // Executa a atualização

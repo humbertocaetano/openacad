@@ -321,3 +321,524 @@ main.js             | main  | 75.75 kB |
 Application bundle generation complete. [0.314 seconds]
 
 Page reload sent to client(s).
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  75.75 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 166.05 kB
+
+Application bundle generation complete. [5.429 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+Re-optimizing dependencies because vite config has changed
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.819 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:351:34:
+[37m      351 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:48:4:
+[37m      48 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.631 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:351:34:
+[37m      351 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:48:4:
+[37m      48 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.169 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:351:34:
+[37m      351 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:48:4:
+[37m      48 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.652 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:334:34:
+[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:48:4:
+[37m      48 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.157 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS1435: Unknown keyword or identifier. Did you mean 'import'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:0:0:
+[37m      0 │ [32m[37m
+        ╵ [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'mport'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:0:0:
+[37m      0 │ [32m[37m
+        ╵ [32m^[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Component'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
+[37m      1 │ mport { [32mComponent[37m, Input, Output, EventEmitter, OnInit } from '@ang...
+        ╵         [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
+[37m      1 │ mport { [32mComponent[37m, Input, Output, EventEmitter, OnInit } from '@ang...
+        ╵         [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
+[37m      1 │ mport { [32mComponent, Input[37m, Output, EventEmitter, OnInit } from '@ang...
+        ╵         [32m~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
+[37m      1 │ mport { [32mComponent, Input, Output[37m, EventEmitter, OnInit } from '@ang...
+        ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
+[37m      1 │ mport { [32mComponent, Input, Output, EventEmitter[37m, OnInit } from '@ang...
+        ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2552: Cannot find name 'Input'. Did you mean 'oninput'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:19:
+[37m      1 │ mport { Component, [32mInput[37m, Output, EventEmitter, OnInit } from '@ang...
+        ╵                    [32m~~~~~[0m
+
+  'oninput' is declared here.
+
+    node_modules/typescript/lib/lib.dom.d.ts:27980:12:
+[37m      27980 │ declare var [32moninput[37m: ((this: Window, ev: Event) => any) | null;
+            ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Output'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:26:
+[37m      1 │ mport { Component, Input, [32mOutput[37m, EventEmitter, OnInit } from '@ang...
+        ╵                           [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'EventEmitter'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:34:
+[37m      1 │ ...Component, Input, Output, [32mEventEmitter[37m, OnInit } from '@angular/...
+        ╵                              [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'OnInit'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:48:
+[37m      1 │ ...ponent, Input, Output, EventEmitter, [32mOnInit[37m } from '@angular/core';
+        ╵                                         [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:57:
+[37m      1 │ ...ponent, Input, Output, EventEmitter, OnInit } [32mfrom[37m '@angular/core';
+        ╵                                                  [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'from'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:57:
+[37m      1 │ ...ponent, Input, Output, EventEmitter, OnInit } [32mfrom[37m '@angular/core';
+        ╵                                                  [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Component'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:8:1:
+[37m      8 │ @[32mComponent[37m({
+        ╵  [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'OnInit'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:261:47:
+[37m      261 │ export class EditUserModalComponent implements [32mOnInit[37m {
+          ╵                                                [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Input'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:262:3:
+[37m      262 │   @[32mInput[37m() user!: User;
+          ╵    [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Output'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:263:3:
+[37m      263 │   @[32mOutput[37m() close = new EventEmitter<void>();
+          ╵    [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'EventEmitter'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:263:24:
+[37m      263 │   @Output() close = new [32mEventEmitter[37m<void>();
+          ╵                         [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Output'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:264:3:
+[37m      264 │   @[32mOutput[37m() save = new EventEmitter<any>();
+          ╵    [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'EventEmitter'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:264:23:
+[37m      264 │   @Output() save = new [32mEventEmitter[37m<any>();
+          ╵                        [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'level_id' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:311:28:
+[37m      311 │         level_id: this.user.[32mlevel_id[37m
+          ╵                             [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:334:34:
+[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:48:4:
+[37m      48 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.085 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'level_id' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:311:28:
+[37m      311 │         level_id: this.user.[32mlevel_id[37m
+          ╵                             [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:334:34:
+[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:48:4:
+[37m      48 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [4.952 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'level_id' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:311:28:
+[37m      311 │         level_id: this.user.[32mlevel_id[37m
+          ╵                             [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:334:34:
+[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:48:4:
+[37m      48 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.115 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:334:34:
+[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:49:4:
+[37m      49 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-list/user-list.component.ts:57:27:
+[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
+         ╵                            [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.116 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:334:34:
+[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:49:4:
+[37m      49 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-list/user-list.component.ts:57:27:
+[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
+         ╵                            [32m~~~~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [5.059 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:334:34:
+[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:49:4:
+[37m      49 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-list/user-list.component.ts:57:27:
+[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
+         ╵                            [32m~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [5.021 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
+  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-form/user-form.component.ts:334:34:
+[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
+          ╵                                   [32m~~~~~~~~[0m
+
+  'user_level' is declared here.
+
+    src/app/core/services/user.service.ts:49:4:
+[37m      49 │     [32muser_level[37m: string;
+         ╵     [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-list/user-list.component.ts:57:27:
+[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
+         ╵                            [32m~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.130 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-list/user-list.component.ts:57:27:
+[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
+         ╵                            [32m~~~~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [5.067 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/users/user-list/user-list.component.ts:57:27:
+[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
+         ╵                            [32m~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  76.01 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 166.30 kB
+
+Application bundle generation complete. [1.581 seconds]
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  76.01 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 166.30 kB
+
+Application bundle generation complete. [5.029 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/

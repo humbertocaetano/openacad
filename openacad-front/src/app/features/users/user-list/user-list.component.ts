@@ -54,7 +54,7 @@ import { EditUserModalComponent } from '../components/edit-user-modal/edit-user-
                 <td>{{user.username}}</td>
                 <td>{{user.email}}</td>
                 <td>{{user.phone}}</td>
-                <td>{{user.user_level}}</td>
+                <td>{{user.level_name}}</td>
                 <td>
                   <button class="edit-button" (click)="openEditModal(user)">
                     <span class="icon">✎</span>

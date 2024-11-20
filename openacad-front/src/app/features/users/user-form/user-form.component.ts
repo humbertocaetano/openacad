@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { UserService } from '../../../core/services/user.service';
+import { UserLevelService } from '../../../core/services/user-level.service';
+import { UserLevel } from '../../../core/models/user-level.interface';
 
 @Component({
   selector: 'app-user-form',
@@ -77,18 +79,18 @@ import { UserService } from '../../../core/services/user.service';
             </div>
 
             <div class="form-group">
-              <label for="level">Nível:</label>
+              <label for="level_id">Nível:</label>
               <select 
-                id="level" 
-                formControlName="level"
-                [class.invalid]="userForm.get('level')?.invalid && userForm.get('level')?.touched"
+                id="level_id" 
+                formControlName="level_id"
+                [class.invalid]="userForm.get('level_id')?.invalid && userForm.get('level_id')?.touched"
               >
                 <option value="">Selecione um nível</option>
-                <option value="Administrador(a)">Administrador(a)</option>
-                <option value="Professor(a)">Professor(a)</option>
-                <option value="Secretário(a)">Secretário(a)</option>
+                <option *ngFor="let level of levels" [value]="level.id">
+                  {{level.name}}
+                </option>
               </select>
-              <div class="error-message" *ngIf="userForm.get('level')?.invalid && userForm.get('level')?.touched">
+              <div class="error-message" *ngIf="userForm.get('level_id')?.invalid && userForm.get('level_id')?.touched">
                 Nível é obrigatório
               </div>
             </div>
@@ -262,14 +264,16 @@ import { UserService } from '../../../core/services/user.service';
     }
   `]
 })
-export class UserFormComponent {
+export class UserFormComponent implements OnInit {
   userForm: FormGroup;
   isSubmitting = false;
   errorMessage = '';
+  levels: UserLevel[] = [];
 
   constructor(
     private fb: FormBuilder,
     private userService: UserService,
+    private userLevelService: UserLevelService,
     private router: Router
   ) {
     this.userForm = this.fb.group({
@@ -277,11 +281,28 @@ export class UserFormComponent {
       email: ['', [Validators.required, Validators.email]],
       username: ['', [Validators.required]],
       phone: [''],
-      level: ['', [Validators.required]],
+      level_id: ['', [Validators.required]],
       password: ['', [Validators.required, Validators.minLength(6)]],
       confirmPassword: ['', [Validators.required]]
     }, {
       validators: this.passwordMatchValidator
+    });
+  }
+
+  ngOnInit() {
+    this.loadLevels();
+  }
+
+  loadLevels() {
+    this.userLevelService.getLevels().subscribe({
+      next: (levels) => {
+        this.levels = levels;
+        console.log('Níveis carregados:', levels);
+      },
+      error: (error) => {
+        console.error('Erro ao carregar níveis:', error);
+        this.errorMessage = 'Erro ao carregar níveis. Por favor, recarregue a página.';
+      }
     });
   }
 
@@ -306,7 +327,7 @@ export class UserFormComponent {
         email: this.userForm.value.email,
         username: this.userForm.value.username,
         phone: this.userForm.value.phone,
-        user_level: this.userForm.value.level,
+        level_id: Number(this.userForm.value.level_id),
         password: this.userForm.value.password
       };
 

@@ -656,3 +656,328 @@ Requisição GET /users recebida
 Usuários encontrados: 2
 [0mGET /api/users [32m200[0m 3.404 ms - 277[0m
 Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-20T13:22:28.195Z
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"115-+SOaJYsxErDv83szLZsPdtQ+atk"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 2
+[0mGET /api/users [36m304[0m 25.976 ms - -[0m
+Cliente removido do pool
+POST /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '141',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Camilla',
+  email: 'camilla@gmail.com',
+  username: 'camilladmcds',
+  phone: '8132222222',
+  user_level: 'Professor(a)',
+  password: '123456'
+}
+Token recebido: Presente
+Requisição POST /users recebida
+Dados recebidos: {
+  name: 'Camilla',
+  email: 'camilla@gmail.com',
+  username: 'camilladmcds',
+  phone: '8132222222',
+  user_level: 'Professor(a)',
+  password: '123456'
+}
+Nova conexão estabelecida com o banco de dados
+Usuário criado com sucesso: {
+  id: 6,
+  name: 'Camilla',
+  email: 'camilla@gmail.com',
+  username: 'camilladmcds',
+  phone: '8132222222',
+  user_level: 'Professor(a)'
+}
+[0mPOST /api/users [32m201[0m 102.053 ms - 128[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [32m200[0m 1.862 ms - 406[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+/home/humberto/openacad/openacad-back/src/index.js:14
+app.use('/api/user-levels', userLevelsRouter);
+^
+
+ReferenceError: Cannot access 'app' before initialization
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/index.js:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v18.19.0
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-20T13:52:16.134Z
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-20T14:09:40.571Z
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"196-bgXm1DceGZHhSsJcYe96WwaotuE"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Cliente removido do pool
+Erro ao buscar usuários: error: permission denied for table user_levels
+    at /home/humberto/openacad/openacad-back/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/users.routes.js:33:20 {
+  length: 99,
+  severity: 'ERROR',
+  code: '42501',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'aclchk.c',
+  line: '3650',
+  routine: 'aclcheck_error'
+}
+[0mGET /api/users [31m500[0m 17.073 ms - 38[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Cliente removido do pool
+Erro ao buscar usuários: error: permission denied for table user_levels
+    at /home/humberto/openacad/openacad-back/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/users.routes.js:33:20 {
+  length: 99,
+  severity: 'ERROR',
+  code: '42501',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'aclchk.c',
+  line: '3650',
+  routine: 'aclcheck_error'
+}
+[0mGET /api/users [31m500[0m 27.872 ms - 38[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 3
+[0mGET /api/users [32m200[0m 28.115 ms - 445[0m
+GET /api/user-levels
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+[0mGET /api/user-levels [32m200[0m 3.143 ms - 264[0m
+PUT /api/users/5
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '119',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+Erro ao atualizar usuário: error: column "user_level" does not exist
+    at /home/humberto/openacad/openacad-back/node_modules/pg/lib/client.js:535:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/users.routes.js:193:22 {
+  length: 111,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '217',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3665',
+  routine: 'errorMissingColumn'
+}
+[0mPUT /api/users/5 [31m500[0m 21.912 ms - 40[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-20T14:16:01.298Z
+GET /api/user-levels
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"108-ttmrCjtCPfh1bZa5J0vkqx18rQs"'
+}
+[0mGET /api/user-levels [36m304[0m 6.140 ms - -[0m
+PUT /api/users/5
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '119',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Token recebido: Presente
+[0mPUT /api/users/5 [32m200[0m 22.047 ms - 126[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJMZXZlbCI6IlByb2Zlc3NvcihhKSIsImlhdCI6MTczMTg0OTE3OSwiZXhwIjoxNzMxOTM1NTc5fQ.5YBkqzvucWbySt7nYdsL0j8tpTVlxjBop2gOATDzLQM',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bd-UxvIX9HXZYUkur/yutHhE+VOPRw"'
+}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [32m200[0m 4.761 ms - 447[0m
+Cliente removido do pool

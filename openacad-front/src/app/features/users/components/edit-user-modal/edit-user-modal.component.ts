@@ -2,6 +2,8 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { User } from '../../../../core/services/user.service';
+import { UserLevel } from '../../../../core/models/user-level.interface';
+import { UserLevelService } from '../../../../core/services/user-level.service';
 
 @Component({
   selector: 'app-edit-user-modal',
@@ -66,18 +68,18 @@ import { User } from '../../../../core/services/user.service';
           </div>
 
           <div class="form-group">
-            <label for="user_level">Nível:</label>
+            <label for="level_id">Nível:</label>
             <select 
-              id="user_level" 
-              formControlName="user_level"
-              [class.invalid]="editForm.get('user_level')?.invalid && editForm.get('user_level')?.touched"
+              id="level_id" 
+              formControlName="level_id"
+              [class.invalid]="editForm.get('level_id')?.invalid && editForm.get('level_id')?.touched"
             >
               <option value="">Selecione um nível</option>
-              <option value="Administrador(a)">Administrador(a)</option>
-              <option value="Professor(a)">Professor(a)</option>
-              <option value="Secretário(a)">Secretário(a)</option>
+              <option *ngFor="let level of levels" [value]="level.id">
+                {{level.name}}
+              </option>
             </select>
-            <div class="error-message" *ngIf="editForm.get('user_level')?.invalid && editForm.get('user_level')?.touched">
+            <div class="error-message" *ngIf="editForm.get('level_id')?.invalid && editForm.get('level_id')?.touched">
               Nível é obrigatório
             </div>
           </div>
@@ -264,20 +266,23 @@ export class EditUserModalComponent implements OnInit {
   editForm: FormGroup;
   isSubmitting = false;
   errorMessage = '';
+  levels: UserLevel[] = [];
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private userLevelService: UserLevelService
+  ) {
     this.editForm = this.fb.group({
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       username: ['', [Validators.required]],
       phone: [''],
-      user_level: ['', [Validators.required]],
+      level_id: ['', [Validators.required]],
       changePassword: [false],
       password: [''],
       confirmPassword: ['']
     });
 
-    // Adicionar validadores condicionais para senha
     this.editForm.get('changePassword')?.valueChanges.subscribe(changePassword => {
       const passwordControl = this.editForm.get('password');
       const confirmPasswordControl = this.editForm.get('confirmPassword');
@@ -296,15 +301,29 @@ export class EditUserModalComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.loadLevels();
     if (this.user) {
       this.editForm.patchValue({
         name: this.user.name,
         email: this.user.email,
         username: this.user.username,
         phone: this.user.phone,
-        user_level: this.user.user_level
+        level_id: this.user.level_id
       });
     }
+  }
+
+  loadLevels() {
+    this.userLevelService.getLevels().subscribe({
+      next: (levels) => {
+        this.levels = levels;
+        console.log('Níveis carregados:', levels);
+      },
+      error: (error) => {
+        console.error('Erro ao carregar níveis:', error);
+        this.errorMessage = 'Erro ao carregar níveis. Por favor, feche e abra o modal novamente.';
+      }
+    });
   }
 
   onSubmit() {
@@ -313,16 +332,13 @@ export class EditUserModalComponent implements OnInit {
       this.errorMessage = '';
 
       const userData = {
-        ...this.editForm.value,
-        id: this.user.id
+        name: this.editForm.value.name,
+        email: this.editForm.value.email,
+        username: this.editForm.value.username,
+        phone: this.editForm.value.phone,
+        level_id: Number(this.editForm.value.level_id),
+        password: this.editForm.value.changePassword ? this.editForm.value.password : undefined
       };
-
-      // Se não estiver alterando a senha, remove os campos relacionados
-      if (!userData.changePassword) {
-        delete userData.password;
-        delete userData.confirmPassword;
-        delete userData.changePassword;
-      }
 
       this.save.emit(userData);
     }
