@@ -857,3 +857,237 @@ No output file changes.
 
 Application bundle generation complete. [1.111 seconds]
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.327 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'subjectForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:385:2:
+[37m      385 │   [32msubjectForm[37m: FormGroup;
+          ╵   [32m~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:528:6:
+[37m      528 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
+          ╵       [32m~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.943 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'subjectForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:385:2:
+[37m      385 │   [32msubjectForm[37m: FormGroup;
+          ╵   [32m~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:528:6:
+[37m      528 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
+          ╵       [32m~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [6.617 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'subjectForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:385:2:
+[37m      385 │   [32msubjectForm[37m: FormGroup;
+          ╵   [32m~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:528:6:
+[37m      528 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
+          ╵       [32m~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [2.495 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2729: Property 'fb' is used before its initialization.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:385:32:
+[37m      385 │   subjectForm: FormGroup = this.[32mfb[37m.group({
+          ╵                                 [32m~~[0m
+
+  'fb' is declared here.
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:405:4:
+[37m      405 │     [32mprivate fb: FormBuilder[37m,
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:522:6:
+[37m      522 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
+          ╵       [32m~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [6.187 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2729: Property 'fb' is used before its initialization.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:385:32:
+[37m      385 │   subjectForm: FormGroup = this.[32mfb[37m.group({
+          ╵                                 [32m~~[0m
+
+  'fb' is declared here.
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:405:4:
+[37m      405 │     [32mprivate fb: FormBuilder[37m,
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:522:6:
+[37m      522 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
+          ╵       [32m~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [2.480 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:529:6:
+[37m      529 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
+          ╵       [32m~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [5.921 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
+  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:529:6:
+[37m      529 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
+          ╵       [32m~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 144.01 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 234.31 kB
+
+Application bundle generation complete. [2.660 seconds]
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 144.01 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 234.31 kB
+
+Application bundle generation complete. [6.168 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 193.84 kB | 
+
+Application bundle generation complete. [3.416 seconds]
+
+Page reload sent to client(s).
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 193.84 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 284.13 kB
+
+Application bundle generation complete. [6.952 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/

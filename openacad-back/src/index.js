@@ -12,7 +12,8 @@ const { setupDatabase } = require('./config/database');
 
 const userLevelsRouter = require('./routes/user-levels.routes');
 const classesRouter = require('./routes/classes.routes');
-
+const subjectsRouter = require('./routes/subjects.routes');
+const studentsRouter = require('./routes/students.routes');
 
 // Load environment variables
 config();
@@ -44,6 +45,13 @@ app.use((req, res, next) => {
   if (req.method === 'POST') {
     console.log('Body:', req.body);
   }
+  console.log('\n--- Nova Requisição ---');
+  console.log(`Data/Hora: ${new Date().toISOString()}`);
+  console.log(`Método: ${req.method}`);
+  console.log(`URL: ${req.url}`);
+  console.log('Headers:', req.headers);
+  console.log('Query Params:', req.query);
+  console.log('Body:', req.body);  
   next();
 });
 
@@ -53,6 +61,14 @@ app.use('/api/users', userRouter);
 
 app.use('/api/user-levels', userLevelsRouter);
 app.use('/api/classes', classesRouter);
+app.use('/api/subjects', subjectsRouter);
+app.use('/api/students', subjectsRouter);
+
+console.log('\n=== Rotas Registradas ===');
+app.use('*', (req, res, next) => {
+  console.log('Rota não encontrada: AQUI', req.originalUrl);
+  next();
+});
 
 // Rota de teste
 app.get('/api/test', (req, res) => {
