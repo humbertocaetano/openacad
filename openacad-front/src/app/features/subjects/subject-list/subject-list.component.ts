@@ -42,6 +42,7 @@ import { Subject } from '../../../core/models/subject.interface';
                 <th>Nome</th>
                 <th>Ano</th>
                 <th>Área de Conhecimento</th>
+                <th>Carga Horária</th>
                 <th>Status</th>
                 <th>Editar</th>
                 <th>Excluir</th>
@@ -52,6 +53,7 @@ import { Subject } from '../../../core/models/subject.interface';
                 <td>{{subject.name}}</td>
                 <td>{{subject.year_name}}</td>
                 <td>{{subject.knowledge_area_name || 'Não definida'}}</td>
+                <td>{{subject.hours_per_year}}</td>
                 <td>
                   <span class="status-badge" [class.active]="subject.active">
                     {{subject.active ? 'Ativa' : 'Inativa'}}

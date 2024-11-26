@@ -5,6 +5,7 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
 import { StudentService } from '../../../core/services/student.service';
 import { ClassService } from '../../../core/services/class.service';
 import { Class } from '../../../core/models/class.interface';
+import { CreateStudentDTO } from '../../../core/models/student.interface';
 
 @Component({
   selector: 'app-student-form',
@@ -80,19 +81,6 @@ import { Class } from '../../../core/models/class.interface';
                 <div class="error-message" *ngIf="studentForm.get('email')?.invalid && studentForm.get('email')?.touched">
                   <span *ngIf="studentForm.get('email')?.errors?.['required']">E-mail é obrigatório</span>
                   <span *ngIf="studentForm.get('email')?.errors?.['email']">E-mail inválido</span>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="registration">Matrícula:</label>
-                <input 
-                  id="registration" 
-                  type="text" 
-                  formControlName="registration"
-                  [class.invalid]="studentForm.get('registration')?.invalid && studentForm.get('registration')?.touched"
-                >
-                <div class="error-message" *ngIf="studentForm.get('registration')?.invalid && studentForm.get('registration')?.touched">
-                  Matrícula é obrigatória
                 </div>
               </div>
 
@@ -436,6 +424,7 @@ import { Class } from '../../../core/models/class.interface';
 })
 
 export class StudentFormComponent implements OnInit {
+
   studentForm!: FormGroup;
   isSubmitting = false;
   loading = false;
@@ -459,7 +448,6 @@ export class StudentFormComponent implements OnInit {
       // Dados básicos
       name: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      registration: ['', [Validators.required]],
       phone: [''],
       class_id: ['', [Validators.required]],
       birth_date: [''],
@@ -562,44 +550,42 @@ export class StudentFormComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.studentForm.valid && !this.isSubmitting) {
-      this.isSubmitting = true;
-      this.errorMessage = '';
 
-      // Verifica primeiro se a matrícula já existe
-      this.studentService.checkRegistration(this.studentForm.value.registration)
-        .subscribe({
-          next: (response) => {
-            if (response.exists && !this.isEditMode) {
-              this.errorMessage = 'Esta matrícula já está em uso';
-              this.isSubmitting = false;
-              this.activeTab = 'basic'; // Volta para a primeira aba
-              return;
-            }
-            this.saveStudent();
-          },
-          error: (error) => {
-            console.error('Erro ao verificar matrícula:', error);
-            this.errorMessage = 'Erro ao verificar matrícula';
-            this.isSubmitting = false;
-          }
-        });
-    } else {
-      // Marca todos os campos como touched para mostrar os erros
-      Object.keys(this.studentForm.controls).forEach(key => {
-        const control = this.studentForm.get(key);
-        control?.markAsTouched();
-      });
+  if (this.studentForm.valid && !this.isSubmitting) {
+    this.isSubmitting = true;
+    this.errorMessage = '';
 
-      // Se houver erros de validação, mostra mensagem e move para a primeira aba
-      if (this.studentForm.get('name')?.invalid ||
-          this.studentForm.get('email')?.invalid ||
-          this.studentForm.get('registration')?.invalid ||
-          this.studentForm.get('class_id')?.invalid) {
-        this.activeTab = 'basic';
-        this.errorMessage = 'Por favor, preencha todos os campos obrigatórios';
+    const studentData: CreateStudentDTO = {
+      name: this.studentForm.value.name,
+      email: this.studentForm.value.email,
+      phone: this.studentForm.value.phone,
+      class_id: this.studentForm.value.class_id,
+      birth_date: this.studentForm.value.birth_date,
+      guardian_name: this.studentForm.value.guardian_name,
+      guardian_phone: this.studentForm.value.guardian_phone,
+      guardian_email: this.studentForm.value.guardian_email,
+      address: this.studentForm.value.address,
+      health_info: this.studentForm.value.health_info,
+      notes: this.studentForm.value.notes,
+      active: this.studentForm.value.active
+    };
+
+    const request = this.isEditMode ?
+      this.studentService.updateStudent(this.route.snapshot.params['id'], studentData) :
+      this.studentService.createStudent(studentData);
+
+    request.subscribe({
+      next: () => {
+        this.router.navigate(['/alunos']);
+      },
+      error: (error) => {
+        console.error('Erro ao salvar aluno:', error);
+        this.errorMessage = error.message || `Erro ao ${this.isEditMode ? 'atualizar' : 'criar'} aluno. Por favor, tente novamente.`;
+        this.isSubmitting = false;
       }
-    }
+    });
+  }	  
+
   }
 
   private saveStudent() {

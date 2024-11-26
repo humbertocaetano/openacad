@@ -9,6 +9,8 @@ import { SubjectListComponent } from './features/subjects/subject-list/subject-l
 import { SubjectFormComponent } from './features/subjects/subject-form/subject-form.component';
 import { StudentListComponent } from './features/students/student-list/student-list.component';
 import { StudentFormComponent } from './features/students/student-form/student-form.component';
+import { TeacherAllocationListComponent } from './features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component';
+import { TeacherAllocationFormComponent } from './features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -24,5 +26,8 @@ export const routes: Routes = [
   { path: 'alunos', component: StudentListComponent },
   { path: 'alunos/novo', component: StudentFormComponent },
   { path: 'alunos/editar/:id', component: StudentFormComponent },
+  { path: 'alocacoes', component: TeacherAllocationListComponent },
+  { path: 'alocacoes/novo', component: TeacherAllocationFormComponent },
+  { path: 'alocacoes/editar/:id', component: TeacherAllocationFormComponent },
   { path: '**', redirectTo: 'dashboard' }
 ];

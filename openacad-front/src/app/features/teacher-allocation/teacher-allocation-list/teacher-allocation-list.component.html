@@ -1,0 +1,60 @@
+<div class="container-fluid">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Alocação de Professores</h2>
+    <div class="d-flex gap-3">
+      <select class="form-select" [(ngModel)]="selectedYear" (change)="onYearChange($event)">
+        <option [value]="currentYear" *ngFor="let currentYear of [2024, 2025, 2026]">
+          {{ currentYear }}
+        </option>
+      </select>
+      <button class="btn btn-primary" (click)="createNewAllocation()">
+        Nova Alocação
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Professor</th>
+          <th>Disciplina</th>
+          <th>Turma</th>
+          <th>Horários</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="loading">
+          <td colspan="5" class="text-center">Carregando...</td>
+        </tr>
+        <tr *ngIf="!loading && allocations.length === 0">
+          <td colspan="5" class="text-center">Nenhuma alocação encontrada</td>
+        </tr>
+        <tr *ngFor="let allocation of allocations">
+          <td>{{ allocation.teacher.name }}</td>
+          <td>{{ allocation.subject.name }}</td>
+          <td>{{ allocation.class.name }}</td>
+          <td>
+            <div *ngFor="let schedule of allocation.schedules">
+              {{ schedule.weekday }} - {{ schedule.startTime }} às {{ schedule.endTime }}
+            </div>
+          </td>
+          <td>
+            <button class="btn btn-sm btn-primary me-2" (click)="editAllocation(allocation.id)">
+              Editar
+            </button>
+            <button class="btn btn-sm btn-danger" (click)="deleteAllocation(allocation.id)">
+              Excluir
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

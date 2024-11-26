@@ -2,32 +2,144 @@ const express = require('express');
 const router = express.Router();
 const { pool } = require('../config/database');
 
-// Verificação de matrícula - DEVE SER A PRIMEIRA ROTA
-router.get('/check-registration/:registration', (req, res) => {
-    console.log('Rota de verificação de matrícula acessada');
-    console.log('Parâmetros:', req.params);
+// Funções auxiliares para geração da matrícula
+async function generateRegistrationNumber(client, yearId) {
+  try {
+    // Primeiro, buscar informações do ano escolar
+    const yearResult = await client.query(
+      'SELECT name FROM school_years WHERE id = $1',
+      [yearId]
+    );
+
+    if (yearResult.rows.length === 0) {
+      throw new Error('Ano escolar não encontrado');
+    }
+
+    // Obter o ano atual
+    const currentYear = new Date().getFullYear();
     
-    const { registration } = req.params;
+    // Determinar o nível e série baseado no nome do ano escolar
+    const yearName = yearResult.rows[0].name;
+    let levelCode, gradeNumber;
     
-    pool.query(
-        'SELECT EXISTS(SELECT 1 FROM students WHERE registration = $1) as exists',
-        [registration]
-    )
-    .then(result => {
-        console.log('Resultado da query:', result.rows[0]);
-        res.json({ exists: result.rows[0].exists });
-    })
-    .catch(error => {
-        console.error('Erro ao verificar matrícula:', error);
-        res.status(500).json({ message: 'Erro ao verificar matrícula' });
+    // Extrair o número do ano escolar (assumindo formato "1º Ano", "2º Ano", etc.)
+    const grade = parseInt(yearName.match(/\d+/)[0]);
+    
+    if (yearName.toLowerCase().includes('pré')) {
+      levelCode = '00';
+      gradeNumber = grade.toString().padStart(2, '0');
+    } else if (grade <= 9) {
+      levelCode = '01'; // Fundamental
+      gradeNumber = grade.toString().padStart(2, '0');
+    } else {
+      levelCode = '02'; // Médio
+      gradeNumber = (grade - 9).toString().padStart(2, '0'); // 10º ano = 01, 11º = 02, 12º = 03
+    }
+
+    // Gerar sequência aleatória de 4 dígitos
+    async function generateUniqueSequence() {
+      let isUnique = false;
+      let sequence;
+      let attempts = 0;
+      const maxAttempts = 100;
+
+      while (!isUnique && attempts < maxAttempts) {
+        sequence = Math.floor(1000 + Math.random() * 9000).toString();
+        
+        // Verificar se a matrícula já existe
+        const registrationNumber = `${currentYear}${levelCode}${gradeNumber}${sequence}`;
+        const exists = await checkRegistrationExists(client, registrationNumber);
+        
+        if (!exists) {
+          isUnique = true;
+          return sequence;
+        }
+        
+        attempts++;
+      }
+      
+      throw new Error('Não foi possível gerar um número de matrícula único');
+    }
+
+    const sequence = await generateUniqueSequence();
+    
+    // Formato final: AAAANNSSXXXX
+    // AAAA = Ano atual
+    // NN = Código do nível (00=Pré, 01=Fund, 02=Médio)
+    // SS = Série com dois dígitos
+    // XXXX = Sequência aleatória
+    const registrationNumber = `${currentYear}${levelCode}${gradeNumber}${sequence}`;
+    
+    console.log('Matrícula gerada:', {
+      ano: currentYear,
+      nivel: levelCode,
+      serie: gradeNumber,
+      sequencia: sequence,
+      matriculaCompleta: registrationNumber
     });
-});
 
-router.get('/test', (req, res) => {
-    res.json({ message: 'Rota de teste funcionando' });
-});
+    return registrationNumber;
+  } catch (error) {
+    console.error('Erro ao gerar matrícula:', error);
+    throw error;
+  }
+}
 
-// Listar todos os alunos
+
+// Função auxiliar para verificar se a matrícula já existe
+async function checkRegistrationExists(client, registration) {
+  const result = await client.query(
+    'SELECT EXISTS(SELECT 1 FROM students WHERE registration = $1)',
+    [registration]
+  );
+  return result.rows[0].exists;
+}
+
+
+// Função auxiliar para gerar username
+function generateUsername(fullName) {
+  // Pega o primeiro e último nome
+  const names = fullName.toLowerCase().trim().split(' ');
+  const firstName = names[0];
+  const lastName = names[names.length - 1];
+  
+  // Gera número aleatório de 4 dígitos
+  const randomNum = Math.floor(1000 + Math.random() * 9000);
+  
+  // Retorna o username no formato especificado
+  return `${firstName}.${lastName}.${randomNum}`;
+}
+
+// Função para verificar se o username já existe
+async function checkUsername(client, username) {
+  const result = await client.query(
+    'SELECT EXISTS(SELECT 1 FROM users WHERE username = $1)',
+    [username]
+  );
+  return result.rows[0].exists;
+}
+
+// Função para gerar username único
+async function generateUniqueUsername(client, fullName) {
+  let username;
+  let exists = true;
+  let attempts = 0;
+  const maxAttempts = 10;
+
+  while (exists && attempts < maxAttempts) {
+    username = generateUsername(fullName);
+    exists = await checkUsername(client, username);
+    attempts++;
+  }
+
+  if (attempts === maxAttempts) {
+    throw new Error('Não foi possível gerar um username único');
+  }
+
+  return username;
+}
+
+// Rota de listagem (PRIMEIRO)
 router.get('/', async (req, res) => {
   try {
     const result = await pool.query(`
@@ -51,7 +163,29 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Buscar aluno por ID
+// Rota de teste (SEGUNDO)
+router.get('/test', (req, res) => {
+    res.json({ message: 'Rota de teste funcionando' });
+});
+
+// Rota de verificação de matrícula (TERCEIRO)
+router.get('/check-registration/:registration([0-9]+)', async (req, res) => {
+  const { registration } = req.params;
+  console.log('Verificando matrícula:', registration);
+
+  try {
+    const result = await pool.query(
+      'SELECT EXISTS(SELECT 1 FROM students WHERE registration = $1) as exists',
+      [registration]
+    );
+    res.json({ exists: result.rows[0].exists });
+  } catch (error) {
+    console.error('Erro ao verificar matrícula:', error);
+    res.status(500).json({ message: 'Erro ao verificar matrícula' });
+  }
+});
+
+// Rota para obter um aluno específico (ÚLTIMO)
 router.get('/:id([0-9]+)', async (req, res) => {
   const { id } = req.params;
   try {
@@ -76,13 +210,11 @@ router.get('/:id([0-9]+)', async (req, res) => {
   }
 });
 
-
 // Criar aluno
 router.post('/', async (req, res) => {
   const {
     name,
     email,
-    registration,
     phone,
     class_id,
     birth_date,
@@ -100,12 +232,41 @@ router.post('/', async (req, res) => {
   try {
     await client.query('BEGIN');
 
+    // Primeiro, precisamos pegar o year_id da classe
+    const classResult = await client.query(
+      'SELECT year_id FROM classes WHERE id = $1',
+      [class_id]
+    );
+
+    if (classResult.rows.length === 0) {
+      throw new Error('Turma não encontrada');
+    }
+
+    // Gerar matrícula
+    const registration = await generateRegistrationNumber(client, classResult.rows[0].year_id);
+
+    // Gerar username único
+    const username = await generateUniqueUsername(client, name);
+    console.log('Username gerado:', username);
+
+    const levelResult = await client.query(
+      'SELECT id FROM user_levels WHERE name = $1',
+      ['Aluno']
+    );
+
+    if (levelResult.rows.length === 0) {
+      throw new Error('Nível "Aluno" não encontrado');
+    }
+
+    const levelId = levelResult.rows[0].id;
+
+
     // Criar usuário primeiro
     const userResult = await client.query(`
-      INSERT INTO users (name, email, phone, password_hash, user_level)
-      VALUES ($1, $2, $3, $4, 'Aluno')
+      INSERT INTO users (name, username, email, phone, password_hash, level_id)
+      VALUES ($1, $2, $3, $4, $5, $6)
       RETURNING id
-    `, [name, email, phone || null, registration]); // Usando a matrícula como senha inicial
+    `, [name, username, email, phone || null, registration, levelId]); // Usando a matrícula como senha inicial
 
     // Criar registro do aluno
     const studentResult = await client.query(`
@@ -136,10 +297,19 @@ router.post('/', async (req, res) => {
     await client.query('ROLLBACK');
     console.error('Erro ao criar aluno:', error);
     
-    if (error.code === '23505') {
-      res.status(400).json({ message: 'Matrícula já existe' });
+    if (error.message === 'Nível "Aluno" não encontrado') {
+      res.status(400).json({ message: 'Nível "Aluno" não está cadastrado no sistema' });
+    } else if (error.code === '23505') {
+      if (error.constraint === 'students_registration_key') {
+        res.status(400).json({ message: 'Matrícula já existe' });
+      } else {
+        res.status(400).json({ message: 'Dados duplicados encontrados' });
+      }
     } else {
-      res.status(500).json({ message: 'Erro ao criar aluno' });
+      res.status(500).json({ 
+        message: 'Erro ao criar aluno',
+        detail: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
     }
   } finally {
     client.release();

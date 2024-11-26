@@ -9,610 +9,559 @@ case.
     
 ❯ Building...
 ✔ Building...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  11.72 kB | 
-styles.css          | styles        |  96 bytes | 
+Application bundle generation failed. [8.057 seconds]
 
-                    | Initial total | 102.02 kB
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2440: Import declaration conflicts with local declaration of 'Teacher'.[0m [1m[35m[plugin angular-compiler][0m
 
-Application bundle generation complete. [3.838 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 12.28 kB | 
-
-Application bundle generation complete. [0.554 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 13.90 kB | 
-
-Application bundle generation complete. [0.610 seconds]
-
-Page reload sent to client(s).
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  13.90 kB | 
-styles.css          | styles        |  96 bytes | 
-
-                    | Initial total | 104.20 kB
-
-Application bundle generation complete. [3.693 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 13.90 kB | 
-
-Application bundle generation complete. [0.469 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 19.40 kB | 
-
-Application bundle generation complete. [0.524 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 19.21 kB | 
-
-Application bundle generation complete. [0.445 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 18.90 kB | 
-
-Application bundle generation complete. [0.506 seconds]
-
-Page reload sent to client(s).
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  18.90 kB | 
-styles.css          | styles        |  96 bytes | 
-
-                    | Initial total | 109.20 kB
-
-Application bundle generation complete. [3.767 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 30.31 kB | 
-
-Application bundle generation complete. [1.069 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 31.28 kB | 
-
-Application bundle generation complete. [0.655 seconds]
-
-Page reload sent to client(s).
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  31.28 kB | 
-styles.css          | styles        |  96 bytes | 
-
-                    | Initial total | 121.58 kB
-
-Application bundle generation complete. [4.372 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.592 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992001: component is missing a template[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-list/user-list.component.ts:6:0:
-[37m      6 │ [32m@Component({[37m
-        ╵ [32m~~~~~~~~~~~~[0m
+    src/app/core/services/teacher.service.ts:4:9:
+[37m      4 │ import { [32mTeacher[37m } from '../models/teacher.interface';
+        ╵          [32m~~~~~~~[0m
 
 
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'formGroup' since it isn't a known property of 'form'.[0m [1m[35m[plugin angular-compiler][0m
 
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.html:8:8:
+[37m      8 │   <form [32m[formGroup]="allocationForm"[37m (ngSubmit)="onSubmit()">
+        ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Application bundle generation failed. [3.949 seconds]
+  Error occurs in the template of component TeacherAllocationFormComponent.
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992001: component is missing a template[0m [1m[35m[plugin angular-compiler][0m
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./teacher-allocation-form.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-    src/app/features/users/user-list/user-list.component.ts:6:0:
-[37m      6 │ [32m@Component({[37m
-        ╵ [32m~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'formGroupName' since it isn't a known property of 'div'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.html:42:68:
+[37m      42 │ ...dules.controls; let i=index" [32m[formGroupName]="i"[37m class="row mb-3">
+         ╵                                 [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component TeacherAllocationFormComponent.
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./teacher-allocation-form.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992008: Could not find stylesheet file './teacher-allocation-form.component.scss'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:13:14:
+[37m      13 │   styleUrls: [[32m'./teacher-allocation-form.component.scss'[37m]
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.html:5:34:
+[37m      5 │ ...lass="form-select" [32m[(ngModel)]="selectedYear"[37m (change)="onYearCh...
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component TeacherAllocationListComponent.
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./teacher-allocation-list.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992008: Could not find stylesheet file './teacher-allocation-list.component.scss'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:10:14:
+[37m      10 │   styleUrls: [[32m'./teacher-allocation-list.component.scss'[37m]
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherAllocation[]' is not assignable to type 'TeacherSubject[]'.
+  Type 'TeacherAllocation' is missing the following properties from type 'TeacherSubject': teacher_id, subject_id, active[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:32:10:
+[37m      32 │           [32mthis.allocations[37m = data;
+         ╵           [32m~~~~~~~~~~~~~~~~[0m
 
 
 Watch mode enabled. Watching for file changes...
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  33.91 kB | 
-styles.css          | styles        |  96 bytes | 
+Application bundle generation failed. [3.215 seconds]
 
-                    | Initial total | 124.20 kB
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'formGroup' since it isn't a known property of 'form'.[0m [1m[35m[plugin angular-compiler][0m
 
-Application bundle generation complete. [0.949 seconds]
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.html:8:8:
+[37m      8 │   <form [32m[formGroup]="allocationForm"[37m (ngSubmit)="onSubmit()">
+        ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.114 seconds]
+  Error occurs in the template of component TeacherAllocationFormComponent.
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'createUser' does not exist on type 'UserService'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:297:23:
-[37m      297 │       this.userService.[32mcreateUser[37m(userData).subscribe({
-          ╵                        [32m~~~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./teacher-allocation-form.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'formGroupName' since it isn't a known property of 'div'.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/features/users/user-form/user-form.component.ts:301:16:
-[37m      301 │         error: ([32merror[37m) => {
-          ╵                 [32m~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.html:42:68:
+[37m      42 │ ...dules.controls; let i=index" [32m[formGroupName]="i"[37m class="row mb-3">
+         ╵                                 [32m~~~~~~~~~~~~~~~~~~~[0m
 
+  Error occurs in the template of component TeacherAllocationFormComponent.
 
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  50.40 kB | 
-styles.css          | styles        |  96 bytes | 
-
-                    | Initial total | 140.69 kB
-
-Application bundle generation complete. [0.584 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.717 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: '}' expected.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:325:0:
-[37m      325 │ [32m[37m
-          ╵ [32m^[0m
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./teacher-allocation-form.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.737 seconds]
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992008: Could not find stylesheet file './teacher-allocation-form.component.scss'.[0m [1m[35m[plugin angular-compiler][0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS1005: '}' expected.[0m [1m[35m[plugin angular-compiler][0m
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:13:14:
+[37m      13 │   styleUrls: [[32m'./teacher-allocation-form.component.scss'[37m]
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-    src/app/features/users/user-form/user-form.component.ts:325:0:
-[37m      325 │ [32m[37m
-          ╵ [32m^[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.html:5:34:
+[37m      5 │ ...lass="form-select" [32m[(ngModel)]="selectedYear"[37m (change)="onYearCh...
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component TeacherAllocationListComponent.
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./teacher-allocation-list.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992008: Could not find stylesheet file './teacher-allocation-list.component.scss'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:10:14:
+[37m      10 │   styleUrls: [[32m'./teacher-allocation-list.component.scss'[37m]
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherAllocation[]' is not assignable to type 'TeacherSubject[]'.
+  Type 'TeacherAllocation' is missing the following properties from type 'TeacherSubject': teacher_id, subject_id, active[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:32:10:
+[37m      32 │           [32mthis.allocations[37m = data;
+         ╵           [32m~~~~~~~~~~~~~~~~[0m
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  52.63 kB | 
-styles.css          | styles        |  96 bytes | 
+Application bundle generation failed. [0.976 seconds]
 
-                    | Initial total | 142.93 kB
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992008: Could not find stylesheet file './teacher-allocation-form.component.scss'.[0m [1m[35m[plugin angular-compiler][0m
 
-Application bundle generation complete. [0.683 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 53.13 kB | 
-
-Application bundle generation complete. [0.350 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.075 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mexpected "{".
-    ╷
-151 │     ></app-edit-user-modal>
-    │                            ^
-    ╵
-  src/app/features/users/user-list/user-list.component.ts 151:28  root stylesheet[0m [1m[35m[plugin angular-sass][0m
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:21:14:
+[37m      21 │   styleUrls: [[32m'./teacher-allocation-form.component.scss'[37m]
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  71.61 kB | 
-styles.css          | styles        |  96 bytes | 
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
 
-                    | Initial total | 161.91 kB
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.html:5:34:
+[37m      5 │ ...lass="form-select" [32m[(ngModel)]="selectedYear"[37m (change)="onYearCh...
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-Application bundle generation complete. [1.094 seconds]
+  Error occurs in the template of component TeacherAllocationListComponent.
 
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 75.64 kB | 
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./teacher-allocation-list.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-Application bundle generation complete. [0.677 seconds]
 
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 75.75 kB | 
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992008: Could not find stylesheet file './teacher-allocation-list.component.scss'.[0m [1m[35m[plugin angular-compiler][0m
 
-Application bundle generation complete. [0.314 seconds]
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:10:14:
+[37m      10 │   styleUrls: [[32m'./teacher-allocation-list.component.scss'[37m]
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-Page reload sent to client(s).
 
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherAllocation[]' is not assignable to type 'TeacherSubject[]'.
+  Type 'TeacherAllocation' is missing the following properties from type 'TeacherSubject': teacher_id, subject_id, active[0m [1m[35m[plugin angular-compiler][0m
 
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  75.75 kB | 
-styles.css          | styles        |  96 bytes | 
-
-                    | Initial total | 166.05 kB
-
-Application bundle generation complete. [5.429 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-Re-optimizing dependencies because vite config has changed
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.819 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:351:34:
-[37m      351 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
-
-  'user_level' is declared here.
-
-    src/app/core/services/user.service.ts:48:4:
-[37m      48 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:32:10:
+[37m      32 │           [32mthis.allocations[37m = data;
+         ╵           [32m~~~~~~~~~~~~~~~~[0m
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.631 seconds]
+Application bundle generation failed. [1.495 seconds]
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/features/users/user-form/user-form.component.ts:351:34:
-[37m      351 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.html:5:34:
+[37m      5 │ ...lass="form-select" [32m[(ngModel)]="selectedYear"[37m (change)="onYearCh...
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-  'user_level' is declared here.
+  Error occurs in the template of component TeacherAllocationListComponent.
 
-    src/app/core/services/user.service.ts:48:4:
-[37m      48 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./teacher-allocation-list.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.169 seconds]
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992008: Could not find stylesheet file './teacher-allocation-list.component.scss'.[0m [1m[35m[plugin angular-compiler][0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:10:14:
+[37m      10 │   styleUrls: [[32m'./teacher-allocation-list.component.scss'[37m]
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-    src/app/features/users/user-form/user-form.component.ts:351:34:
-[37m      351 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
 
-  'user_level' is declared here.
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherAllocation[]' is not assignable to type 'TeacherSubject[]'.
+  Type 'TeacherAllocation' is missing the following properties from type 'TeacherSubject': teacher_id, subject_id, active[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/core/services/user.service.ts:48:4:
-[37m      48 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:32:10:
+[37m      32 │           [32mthis.allocations[37m = data;
+         ╵           [32m~~~~~~~~~~~~~~~~[0m
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.652 seconds]
+Application bundle generation failed. [1.827 seconds]
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'teacher' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/features/users/user-form/user-form.component.ts:334:34:
-[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:61:34:
+[37m      61 │                 <td>{{ allocation.[32mteacher[37m?.name }}</td>
+         ╵                                   [32m~~~~~~~[0m
 
-  'user_level' is declared here.
 
-    src/app/core/services/user.service.ts:48:4:
-[37m      48 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'subject' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:62:34:
+[37m      62 │                 <td>{{ allocation.[32msubject[37m?.name }}</td>
+         ╵                                   [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'class' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:34:
+[37m      63 │                 <td>{{ allocation.[32mclass[37m?.name }}</td>
+         ╵                                   [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'schedules' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:65:58:
+[37m      65 │                   <div *ngFor="let schedule of allocation.[32mschedules[37m">
+         ╵                                                           [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherAllocation[]' is not assignable to type 'TeacherSubject[]'.
+  Type 'TeacherAllocation' is missing the following properties from type 'TeacherSubject': teacher_id, subject_id, active[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:248:10:
+[37m      248 │           [32mthis.allocations[37m = data;
+          ╵           [32m~~~~~~~~~~~~~~~~[0m
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.157 seconds]
+Application bundle generation failed. [0.523 seconds]
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS1435: Unknown keyword or identifier. Did you mean 'import'?[0m [1m[35m[plugin angular-compiler][0m
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:0:0:
-[37m      0 │ [32m[37m
-        ╵ [32m^[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:61:43:
+[37m      61 │                 <td>{{ allocation.teacher?.[32mname[37m }}</td>
+         ╵                                            [32m~~~~[0m
 
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'mport'.[0m [1m[35m[plugin angular-compiler][0m
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:0:0:
-[37m      0 │ [32m[37m
-        ╵ [32m^[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:62:43:
+[37m      62 │                 <td>{{ allocation.subject?.[32mname[37m }}</td>
+         ╵                                            [32m~~~~[0m
 
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Component'.[0m [1m[35m[plugin angular-compiler][0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherAllocation[]' is not assignable to type 'TeacherSubject[]'.
+  Type 'TeacherAllocation' is not assignable to type 'TeacherSubject'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
-[37m      1 │ mport { [32mComponent[37m, Input, Output, EventEmitter, OnInit } from '@ang...
-        ╵         [32m~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
-[37m      1 │ mport { [32mComponent[37m, Input, Output, EventEmitter, OnInit } from '@ang...
-        ╵         [32m~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
-[37m      1 │ mport { [32mComponent, Input[37m, Output, EventEmitter, OnInit } from '@ang...
-        ╵         [32m~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
-[37m      1 │ mport { [32mComponent, Input, Output[37m, EventEmitter, OnInit } from '@ang...
-        ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2695: Left side of comma operator is unused and has no side effects.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:8:
-[37m      1 │ mport { [32mComponent, Input, Output, EventEmitter[37m, OnInit } from '@ang...
-        ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2552: Cannot find name 'Input'. Did you mean 'oninput'?[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:19:
-[37m      1 │ mport { Component, [32mInput[37m, Output, EventEmitter, OnInit } from '@ang...
-        ╵                    [32m~~~~~[0m
-
-  'oninput' is declared here.
-
-    node_modules/typescript/lib/lib.dom.d.ts:27980:12:
-[37m      27980 │ declare var [32moninput[37m: ((this: Window, ev: Event) => any) | null;
-            ╵             [32m~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Output'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:26:
-[37m      1 │ mport { Component, Input, [32mOutput[37m, EventEmitter, OnInit } from '@ang...
-        ╵                           [32m~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'EventEmitter'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:34:
-[37m      1 │ ...Component, Input, Output, [32mEventEmitter[37m, OnInit } from '@angular/...
-        ╵                              [32m~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'OnInit'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:48:
-[37m      1 │ ...ponent, Input, Output, EventEmitter, [32mOnInit[37m } from '@angular/core';
-        ╵                                         [32m~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS1434: Unexpected keyword or identifier.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:57:
-[37m      1 │ ...ponent, Input, Output, EventEmitter, OnInit } [32mfrom[37m '@angular/core';
-        ╵                                                  [32m~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'from'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:1:57:
-[37m      1 │ ...ponent, Input, Output, EventEmitter, OnInit } [32mfrom[37m '@angular/core';
-        ╵                                                  [32m~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Component'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:8:1:
-[37m      8 │ @[32mComponent[37m({
-        ╵  [32m~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'OnInit'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:261:47:
-[37m      261 │ export class EditUserModalComponent implements [32mOnInit[37m {
-          ╵                                                [32m~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Input'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:262:3:
-[37m      262 │   @[32mInput[37m() user!: User;
-          ╵    [32m~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Output'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:263:3:
-[37m      263 │   @[32mOutput[37m() close = new EventEmitter<void>();
-          ╵    [32m~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'EventEmitter'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:263:24:
-[37m      263 │   @Output() close = new [32mEventEmitter[37m<void>();
-          ╵                         [32m~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Output'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:264:3:
-[37m      264 │   @[32mOutput[37m() save = new EventEmitter<any>();
-          ╵    [32m~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'EventEmitter'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:264:23:
-[37m      264 │   @Output() save = new [32mEventEmitter[37m<any>();
-          ╵                        [32m~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'level_id' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:311:28:
-[37m      311 │         level_id: this.user.[32mlevel_id[37m
-          ╵                             [32m~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:334:34:
-[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
-
-  'user_level' is declared here.
-
-    src/app/core/services/user.service.ts:48:4:
-[37m      48 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:248:10:
+[37m      248 │           [32mthis.allocations[37m = data;
+          ╵           [32m~~~~~~~~~~~~~~~~[0m
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.085 seconds]
+Application bundle generation failed. [0.397 seconds]
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'level_id' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:311:28:
-[37m      311 │         level_id: this.user.[32mlevel_id[37m
-          ╵                             [32m~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:61:43:
+[37m      61 │                 <td>{{ allocation.teacher?.[32mname[37m }}</td>
+         ╵                                            [32m~~~~[0m
 
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/features/users/user-form/user-form.component.ts:334:34:
-[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:62:43:
+[37m      62 │                 <td>{{ allocation.subject?.[32mname[37m }}</td>
+         ╵                                            [32m~~~~[0m
 
-  'user_level' is declared here.
 
-    src/app/core/services/user.service.ts:48:4:
-[37m      48 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherAllocation[]' is not assignable to type 'TeacherSubject[]'.
+  Type 'TeacherAllocation' is not assignable to type 'TeacherSubject'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:248:10:
+[37m      248 │           [32mthis.allocations[37m = data;
+          ╵           [32m~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.537 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:61:43:
+[37m      61 │                 <td>{{ allocation.teacher?.[32mname[37m }}</td>
+         ╵                                            [32m~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:62:43:
+[37m      62 │                 <td>{{ allocation.subject?.[32mname[37m }}</td>
+         ╵                                            [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherAllocation[]' is not assignable to type 'TeacherSubject[]'.
+  Type 'TeacherAllocation' is not assignable to type 'TeacherSubject'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:248:10:
+[37m      248 │           [32mthis.allocations[37m = data;
+          ╵           [32m~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.653 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:229:15:
+[37m      229 │   allocations: [32mTeacherSubject[37m[] = [];
+          ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.040 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'class' does not exist on type 'TeacherAllocation'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:34:
+[37m      63 │                 <td>{{ allocation.[32mclass[37m?.name }}</td>
+         ╵                                   [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:70:81:
+[37m      70 │ ...utton class="edit-button" (click)="editAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:73:85:
+[37m      73 │ ...n class="delete-button" (click)="deleteAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.342 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'class' does not exist on type 'TeacherAllocation'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:34:
+[37m      63 │                 <td>{{ allocation.[32mclass[37m?.name }}</td>
+         ╵                                   [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:70:81:
+[37m      70 │ ...utton class="edit-button" (click)="editAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:73:85:
+[37m      73 │ ...n class="delete-button" (click)="deleteAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.613 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'year_name' does not exist on type 'Class'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-list/class-list.component.ts:273:68:
+[37m      273 │ ...xcluir a turma ${classData.[32myear_name[37m} ${classData.division_nam...
+          ╵                               [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'division_name' does not exist on type 'Class'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-list/class-list.component.ts:273:91:
+[37m      273 │ ...r a turma ${classData.year_name} ${classData.[32mdivision_name[37m}?`)) {
+          ╵                                                 [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'class' does not exist on type 'TeacherAllocation'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:34:
+[37m      63 │                 <td>{{ allocation.[32mclass[37m?.name }}</td>
+         ╵                                   [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:70:81:
+[37m      70 │ ...utton class="edit-button" (click)="editAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:73:85:
+[37m      73 │ ...n class="delete-button" (click)="deleteAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.356 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'division_name' does not exist on type 'Class'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-list/class-list.component.ts:273:91:
+[37m      273 │ ...r a turma ${classData.year_name} ${classData.[32mdivision_name[37m}?`)) {
+          ╵                                                 [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'class' does not exist on type 'TeacherAllocation'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:34:
+[37m      63 │                 <td>{{ allocation.[32mclass[37m?.name }}</td>
+         ╵                                   [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:70:81:
+[37m      70 │ ...utton class="edit-button" (click)="editAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:73:85:
+[37m      73 │ ...n class="delete-button" (click)="deleteAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.657 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'class' does not exist on type 'TeacherAllocation'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:34:
+[37m      63 │                 <td>{{ allocation.[32mclass[37m?.name }}</td>
+         ╵                                   [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:70:81:
+[37m      70 │ ...utton class="edit-button" (click)="editAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:73:85:
+[37m      73 │ ...n class="delete-button" (click)="deleteAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.344 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'class' does not exist on type 'TeacherAllocation'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:34:
+[37m      63 │                 <td>{{ allocation.[32mclass[37m?.name }}</td>
+         ╵                                   [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:70:81:
+[37m      70 │ ...utton class="edit-button" (click)="editAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:73:85:
+[37m      73 │ ...n class="delete-button" (click)="deleteAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.358 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'class' does not exist on type 'TeacherAllocation'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:34:
+[37m      63 │                 <td>{{ allocation.[32mclass[37m?.name }}</td>
+         ╵                                   [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:70:81:
+[37m      70 │ ...utton class="edit-button" (click)="editAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:73:85:
+[37m      73 │ ...n class="delete-button" (click)="deleteAllocation(allocation.[32mid[37m)">
+         ╵                                                                 [32m~~[0m
 
 
 
@@ -626,216 +575,14 @@ case.
     
 ❯ Building...
 ✔ Building...
-Application bundle generation failed. [4.952 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'level_id' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/components/edit-user-modal/edit-user-modal.component.ts:311:28:
-[37m      311 │         level_id: this.user.[32mlevel_id[37m
-          ╵                             [32m~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:334:34:
-[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
-
-  'user_level' is declared here.
-
-    src/app/core/services/user.service.ts:48:4:
-[37m      48 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
-
-
-Watch mode enabled. Watching for file changes...
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.115 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:334:34:
-[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
-
-  'user_level' is declared here.
-
-    src/app/core/services/user.service.ts:49:4:
-[37m      49 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-list/user-list.component.ts:57:27:
-[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
-         ╵                            [32m~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.116 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:334:34:
-[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
-
-  'user_level' is declared here.
-
-    src/app/core/services/user.service.ts:49:4:
-[37m      49 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-list/user-list.component.ts:57:27:
-[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
-         ╵                            [32m~~~~~~~~~~[0m
-
-
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Application bundle generation failed. [5.059 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:334:34:
-[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
-
-  'user_level' is declared here.
-
-    src/app/core/services/user.service.ts:49:4:
-[37m      49 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-list/user-list.component.ts:57:27:
-[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
-         ╵                            [32m~~~~~~~~~~[0m
-
-
-Watch mode enabled. Watching for file changes...
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Application bundle generation failed. [5.021 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' is not assignable to parameter of type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.
-  Property 'user_level' is missing in type '{ name: any; email: any; username: any; phone: any; level_id: number; password: any; }' but required in type '{ name: string; email: string; username: string; phone: string; user_level: string; password: string; }'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-form/user-form.component.ts:334:34:
-[37m      334 │       this.userService.createUser([32muserData[37m).subscribe({
-          ╵                                   [32m~~~~~~~~[0m
-
-  'user_level' is declared here.
-
-    src/app/core/services/user.service.ts:49:4:
-[37m      49 │     [32muser_level[37m: string;
-         ╵     [32m~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-list/user-list.component.ts:57:27:
-[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
-         ╵                            [32m~~~~~~~~~~[0m
-
-
-Watch mode enabled. Watching for file changes...
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.130 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-list/user-list.component.ts:57:27:
-[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
-         ╵                            [32m~~~~~~~~~~[0m
-
-
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Application bundle generation failed. [5.067 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user_level' does not exist on type 'User'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/users/user-list/user-list.component.ts:57:27:
-[37m      57 │                 <td>{{user.[32muser_level[37m}}</td>
-         ╵                            [32m~~~~~~~~~~[0m
-
-
-Watch mode enabled. Watching for file changes...
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
 Initial chunk files | Names         |  Raw size
+main.js             | main          | 230.85 kB | 
 polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  76.01 kB | 
 styles.css          | styles        |  96 bytes | 
 
-                    | Initial total | 166.30 kB
+                    | Initial total | 321.15 kB
 
-Application bundle generation complete. [1.581 seconds]
-
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Initial chunk files | Names         |  Raw size
-polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  76.01 kB | 
-styles.css          | styles        |  96 bytes | 
-
-                    | Initial total | 166.30 kB
-
-Application bundle generation complete. [5.029 seconds]
+Application bundle generation complete. [8.187 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -845,9 +592,9 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Initial chunk files | Names |  Raw size
-main.js             | main  | 104.29 kB | 
+main.js             | main  | 230.85 kB | 
 
-Application bundle generation complete. [2.311 seconds]
+Application bundle generation complete. [3.309 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
@@ -855,239 +602,389 @@ Page reload sent to client(s).
 
 No output file changes.
 
-Application bundle generation complete. [1.111 seconds]
+Application bundle generation complete. [0.452 seconds]
 
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [1.327 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'subjectForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:385:2:
-[37m      385 │   [32msubjectForm[37m: FormGroup;
-          ╵   [32m~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
-  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:528:6:
-[37m      528 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
-          ╵       [32m~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.943 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'subjectForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:385:2:
-[37m      385 │   [32msubjectForm[37m: FormGroup;
-          ╵   [32m~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
-  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:528:6:
-[37m      528 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
-          ╵       [32m~~~~~~[0m
-
-
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Application bundle generation failed. [6.617 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'subjectForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:385:2:
-[37m      385 │   [32msubjectForm[37m: FormGroup;
-          ╵   [32m~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
-  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:528:6:
-[37m      528 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
-          ╵       [32m~~~~~~[0m
-
-
-Watch mode enabled. Watching for file changes...
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [2.495 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2729: Property 'fb' is used before its initialization.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:385:32:
-[37m      385 │   subjectForm: FormGroup = this.[32mfb[37m.group({
-          ╵                                 [32m~~[0m
-
-  'fb' is declared here.
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:405:4:
-[37m      405 │     [32mprivate fb: FormBuilder[37m,
-          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
-  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:522:6:
-[37m      522 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
-          ╵       [32m~~~~~~[0m
-
-
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Application bundle generation failed. [6.187 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2729: Property 'fb' is used before its initialization.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:385:32:
-[37m      385 │   subjectForm: FormGroup = this.[32mfb[37m.group({
-          ╵                                 [32m~~[0m
-
-  'fb' is declared here.
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:405:4:
-[37m      405 │     [32mprivate fb: FormBuilder[37m,
-          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
-  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:522:6:
-[37m      522 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
-          ╵       [32m~~~~~~[0m
-
-
-Watch mode enabled. Watching for file changes...
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [2.480 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
-  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:529:6:
-[37m      529 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
-          ╵       [32m~~~~~~[0m
-
-
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Application bundle generation failed. [5.921 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'boolean | undefined' is not assignable to type 'boolean'.
-  Type 'undefined' is not assignable to type 'boolean'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/features/subjects/subject-form/subject-form.component.ts:529:6:
-[37m      529 │       [32mreturn[37m this.subjectForm.get('name')?.valid && this.subjectF...
-          ╵       [32m~~~~~~[0m
-
-
-Watch mode enabled. Watching for file changes...
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names         |  Raw size
-main.js             | main          | 144.01 kB | 
-polyfills.js        | polyfills     |  90.20 kB | 
-styles.css          | styles        |  96 bytes | 
-
-                    | Initial total | 234.31 kB
-
-Application bundle generation complete. [2.660 seconds]
-
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
-
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
-
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
-Initial chunk files | Names         |  Raw size
-main.js             | main          | 144.01 kB | 
-polyfills.js        | polyfills     |  90.20 kB | 
-styles.css          | styles        |  96 bytes | 
-
-                    | Initial total | 234.31 kB
-
-Application bundle generation complete. [6.168 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Initial chunk files | Names |  Raw size
-main.js             | main  | 193.84 kB | 
+main.js             | main  | 230.85 kB | 
 
-Application bundle generation complete. [3.416 seconds]
+Application bundle generation complete. [0.419 seconds]
 
 Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.811 seconds]
 
-Warning: This is a simple server for use in testing or debugging Angular applications
-locally. It hasn't been reviewed for security issues.
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'displayText' does not exist on type 'Schedule'.[0m [1m[35m[plugin angular-compiler][0m
 
-Binding this server to an open connection can result in compromising your application or
-computer. Using a different host than the one passed to the "--host" flag might result in
-websocket connection issues. You might need to use "--disable-host-check" if that's the
-case.
-    
-❯ Building...
-✔ Building...
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:66:18:
+[37m      66 │         {{ schedule.[32mdisplayText[37m }}
+         ╵                     [32m~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
 Initial chunk files | Names         |  Raw size
-main.js             | main          | 193.84 kB | 
+main.js             | main          | 230.79 kB | 
 polyfills.js        | polyfills     |  90.20 kB | 
 styles.css          | styles        |  96 bytes | 
 
-                    | Initial total | 284.13 kB
+                    | Initial total | 321.08 kB
 
-Application bundle generation complete. [6.952 seconds]
+Application bundle generation complete. [1.430 seconds]
 
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:4200/
-  ➜  Network: http://192.168.15.104:4200/
-  ➜  Network: http://172.18.0.1:4200/
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.473 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.796 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG2: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:62:42:
+[37m      62 │                 <td>{{ allocation.teacher.[32mname[37m }}</td>
+         ╵                                           [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG2: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:42:
+[37m      63 │                 <td>{{ allocation.subject.[32mname[37m }}</td>
+         ╵                                           [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG2: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:64:40:
+[37m      64 │                 <td>{{ allocation.class.[32mname[37m }}</td>
+         ╵                                         [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.973 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG2: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:63:42:
+[37m      63 │                 <td>{{ allocation.subject.[32mname[37m }}</td>
+         ╵                                           [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG2: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:64:40:
+[37m      64 │                 <td>{{ allocation.class.[32mname[37m }}</td>
+         ╵                                         [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.864 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG2: Object is possibly 'undefined'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:64:40:
+[37m      64 │                 <td>{{ allocation.class.[32mname[37m }}</td>
+         ╵                                         [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 231.47 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 321.77 kB
+
+Application bundle generation complete. [0.717 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.830 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:72:62:
+[37m      72 │ ...tton class="edit-button" (click)="editAllocation([32mallocation?.id[37m)">
+         ╵                                                     [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:76:66:
+[37m      76 │ ... class="delete-button" (click)="deleteAllocation([32mallocation?.id[37m)">
+         ╵                                                     [32m~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.034 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'openEditModal' does not exist on type 'TeacherAllocationListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:72:55:
+[37m      72 │ ...        <button class="edit-button" (click)="[32mopenEditModal[37m(user)">
+         ╵                                                 [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user' does not exist on type 'TeacherAllocationListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:72:69:
+[37m      72 │ ...        <button class="edit-button" (click)="openEditModal([32muser[37m)">
+         ╵                                                               [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'deleteUser' does not exist on type 'TeacherAllocationListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:77:57:
+[37m      77 │ ...         <button class="delete-button" (click)="[32mdeleteUser[37m(user)">
+         ╵                                                    [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user' does not exist on type 'TeacherAllocationListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:77:68:
+[37m      77 │ ...         <button class="delete-button" (click)="deleteUser([32muser[37m)">
+         ╵                                                               [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:84:62:
+[37m      84 │ ...tton class="edit-button" (click)="editAllocation([32mallocation?.id[37m)">
+         ╵                                                     [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:88:66:
+[37m      88 │ ... class="delete-button" (click)="deleteAllocation([32mallocation?.id[37m)">
+         ╵                                                     [32m~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.751 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Parser Error: Missing expected ) at the end of the expression [editAllocation(allocation?.id] in /home/humberto/openacad/openacad-front/src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts@71:55[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:72:55:
+[37m      72 │ ...utton class="edit-button" (click)="[32meditAllocation(allocation?.id[37m">
+         ╵                                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:72:70:
+[37m      72 │ ...utton class="edit-button" (click)="editAllocation([32mallocation?.id[37m">
+         ╵                                                      [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Parser Error: Missing expected ) at the end of the expression [deleteAllocation(allocation?.id] in /home/humberto/openacad/openacad-front/src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts@76:57[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:77:57:
+[37m      77 │ ...n class="delete-button" (click)="[32mdeleteAllocation(allocation?.id[37m">
+         ╵                                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Parser Error: Missing expected ) at the end of the expression [editAllocation(allocation?.id] in /home/humberto/openacad/openacad-front/src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts@71:55[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:77:57:
+[37m      77 │ ...n class="delete-button" (click)="[32mdeleteAllocation(allocation?.id[37m">
+         ╵                                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:77:74:
+[37m      77 │ ...n class="delete-button" (click)="deleteAllocation([32mallocation?.id[37m">
+         ╵                                                      [32m~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.768 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:72:70:
+[37m      72 │ ...tton class="edit-button" (click)="editAllocation([32mallocation?.id[37m)">
+         ╵                                                     [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:77:74:
+[37m      77 │ ... class="delete-button" (click)="deleteAllocation([32mallocation?.id[37m)">
+         ╵                                                     [32m~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.931 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'TeacherAllocation' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:72:70:
+[37m      72 │ ... <button class="edit-button" (click)="editAllocation([32mallocation[37m)">
+         ╵                                                         [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'TeacherAllocation' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:77:74:
+[37m      77 │ ...tton class="delete-button" (click)="deleteAllocation([32mallocation[37m)">
+         ╵                                                         [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.824 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'TeacherAllocation' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:72:70:
+[37m      72 │ ... <button class="edit-button" (click)="editAllocation([32mallocation[37m)">
+         ╵                                                         [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG5: Argument of type 'TeacherAllocation' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component.ts:77:74:
+[37m      77 │ ...tton class="delete-button" (click)="deleteAllocation([32mallocation[37m)">
+         ╵                                                         [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 232.01 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 322.31 kB
+
+Application bundle generation complete. [0.662 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 232.14 kB | 
+
+Application bundle generation complete. [0.534 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 231.64 kB | 
+
+Application bundle generation complete. [0.666 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 232.05 kB | 
+
+Application bundle generation complete. [0.972 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [1.387 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.07 kB | 
+
+Application bundle generation complete. [0.643 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.17 kB | 
+
+Application bundle generation complete. [1.435 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.24 kB | 
+
+Application bundle generation complete. [0.912 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.30 kB | 
+
+Application bundle generation complete. [1.016 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.30 kB | 
+
+Application bundle generation complete. [0.900 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.13 kB | 
+
+Application bundle generation complete. [1.273 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.27 kB | 
+
+Application bundle generation complete. [1.155 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.61 kB | 
+
+Application bundle generation complete. [1.302 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.61 kB | 
+
+Application bundle generation complete. [0.847 seconds]
+
+Page reload sent to client(s).

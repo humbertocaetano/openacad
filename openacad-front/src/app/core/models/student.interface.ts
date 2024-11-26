@@ -19,7 +19,6 @@ export interface Student {
 }
 
 export interface CreateStudentDTO {
-    registration: string;
     name: string;          // Para criação do usuário
     email: string;         // Para criação do usuário
     phone?: string;        // Para criação do usuário
@@ -35,7 +34,9 @@ export interface CreateStudentDTO {
 }
 
 export interface UpdateStudentDTO {
-    registration?: string;
+    name?: string;
+    email?: string;
+    phone?: string;
     class_id?: number;
     birth_date?: string;
     guardian_name?: string;
@@ -45,9 +46,4 @@ export interface UpdateStudentDTO {
     health_info?: string;
     notes?: string;
     active?: boolean;
-    user_data?: {
-        name?: string;
-        email?: string;
-        phone?: string;
-    };
 }

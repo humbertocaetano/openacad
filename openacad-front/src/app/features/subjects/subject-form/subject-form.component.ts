@@ -100,7 +100,22 @@ import { SchoolYear } from '../../../core/models/class.interface';
                 </select>
               </div>
 
-              <div class="form-group checkbox-group">
+  <div class="form-group">
+    <label for="hours_per_year">Carga Horária Anual:</label>
+    <input 
+      id="hours_per_year" 
+      type="number" 
+      formControlName="hours_per_year"
+      min="0"
+      [class.invalid]="subjectForm.get('hours_per_year')?.invalid && subjectForm.get('hours_per_year')?.touched"
+    >
+    <div class="error-message" *ngIf="subjectForm.get('hours_per_year')?.invalid && subjectForm.get('hours_per_year')?.touched">
+      <span *ngIf="subjectForm.get('hours_per_year')?.errors?.['required']">Carga horária é obrigatória</span>
+      <span *ngIf="subjectForm.get('hours_per_year')?.errors?.['min']">Carga horária deve ser maior que 0</span>
+    </div>
+  </div>
+
+	      <div class="form-group checkbox-group">
                 <label>
                   <input type="checkbox" formControlName="active">
                   Disciplina ativa
@@ -407,6 +422,7 @@ export class SubjectFormComponent implements OnInit {
       name: ['', [Validators.required]],
       year_id: ['', [Validators.required]],
       knowledge_area_id: [''],
+      hours_per_year: ['', [Validators.required, Validators.min(0)]],
       objective: [''],
       syllabus: [''],
       basic_bibliography: [''],
@@ -485,9 +501,10 @@ export class SubjectFormComponent implements OnInit {
         ...this.subjectForm.value,
         year_id: Number(this.subjectForm.value.year_id),
         knowledge_area_id: this.subjectForm.value.knowledge_area_id ? 
-          Number(this.subjectForm.value.knowledge_area_id) : null
+          Number(this.subjectForm.value.knowledge_area_id) : null,
+	hours_per_year: Number(this.subjectForm.value.hours_per_year)
       };
-
+      console.log('Dados do formulário:', formData);
       const request = this.isEditMode ?
         this.subjectService.updateSubject(this.route.snapshot.params['id'], formData) :
         this.subjectService.createSubject(formData);

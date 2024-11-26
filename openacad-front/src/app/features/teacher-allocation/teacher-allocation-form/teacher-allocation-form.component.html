@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <h2>{{ isEditing ? 'Editar' : 'Nova' }} Alocação</h2>
+
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+
+  <form [formGroup]="allocationForm" (ngSubmit)="onSubmit()">
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label class="form-label">Professor</label>
+        <select class="form-select" formControlName="teacherId">
+          <option value="">Selecione um professor</option>
+          <option *ngFor="let teacher of teachers" [value]="teacher.id">
+            {{ teacher.name }}
+          </option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Disciplina</label>
+        <select class="form-select" formControlName="subjectId">
+          <option value="">Selecione uma disciplina</option>
+          <option *ngFor="let subject of subjects" [value]="subject.id">
+            {{ subject.name }}
+          </option>
+        </select>
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label">Ano</label>
+        <select class="form-select" formControlName="year">
+          <option [value]="currentYear" *ngFor="let currentYear of [2024, 2025, 2026]">
+            {{ currentYear }}
+          </option>
+        </select>
+      </div>
+    </div>
+
+    <div formArrayName="schedules">
+      <h4>Horários</h4>
+      <div *ngFor="let schedule of schedules.controls; let i=index" [formGroupName]="i" class="row mb-3">
+        <div class="col-md-3">
+          <select class="form-select" formControlName="weekday">
+            <option value="">Selecione o dia</option>
+            <option *ngFor="let day of weekdays" [value]="day.id">
+              {{ day.name }}
+            </option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <input type="time" class="form-control" formControlName="startTime">
+        </div>
+
+        <div class="col-md-3">
+          <input type="time" class="form-control" formControlName="endTime">
+        </div>
+
+        <div class="col-md-3">
+          <button type="button" class="btn btn-danger" (click)="removeSchedule(i)">
+            Remover
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-secondary mb-3" (click)="addSchedule()">
+      Adicionar Horário
+    </button>
+
+    <div class="d-flex gap-2">
+      <button type="submit" class="btn btn-primary" [disabled]="!allocationForm.valid || loading">
+        {{ loading ? 'Salvando...' : 'Salvar' }}
+      </button>
+      <button type="button" class="btn btn-secondary" (click)="cancel()">
+        Cancelar
+      </button>
+    </div>
+  </form>
+</div>

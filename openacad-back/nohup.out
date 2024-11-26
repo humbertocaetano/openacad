@@ -2961,3 +2961,3512 @@ Query Params: {}
 Body: {}
 Rota não encontrada: AQUI /api/students/check-registration/01010101
 [0mGET /api/students/check-registration/01010101 [33m404[0m 6.190 ms - 179[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:19:16.569Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+Query Params: {}
+Body: {}
+GET /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:19:16.575Z
+Método: GET
+URL: /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+Query Params: { active: '' }
+Body: {}
+Nova conexão estabelecida com o banco de dados
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [36m304[0m 36.927 ms - -[0m
+[0mGET /api/students?active= [36m304[0m 31.653 ms - -[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bf-KS7PceThpN6wIxGv2xHYmzszjsI"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:19:20.415Z
+Método: GET
+URL: /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bf-KS7PceThpN6wIxGv2xHYmzszjsI"'
+}
+Query Params: {}
+Body: {}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 6.858 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:19:21.851Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 4.712 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:19:24.858Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 4.875 ms - -[0m
+GET /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:19:24.867Z
+Método: GET
+URL: /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+Query Params: { active: '' }
+Body: {}
+[0mGET /api/students?active= [36m304[0m 3.661 ms - -[0m
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"549-itJTvRCE1AhNNUavlxlRvYns1K8"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:19:31.595Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"549-itJTvRCE1AhNNUavlxlRvYns1K8"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/subjects [32m200[0m 4.993 ms - 2[0m
+Cliente removido do pool
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:01.154Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 4.741 ms - -[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bf-KS7PceThpN6wIxGv2xHYmzszjsI"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:05.483Z
+Método: GET
+URL: /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bf-KS7PceThpN6wIxGv2xHYmzszjsI"'
+}
+Query Params: {}
+Body: {}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 3
+[0mGET /api/users [36m304[0m 5.646 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:08.121Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+Query Params: {}
+Body: {}
+GET /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:08.124Z
+Método: GET
+URL: /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+Query Params: { active: '' }
+Body: {}
+[0mGET /api/classes [36m304[0m 7.951 ms - -[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/students?active= [36m304[0m 15.575 ms - -[0m
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:11.403Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/subjects [36m304[0m 3.986 ms - -[0m
+GET /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"253-KlJfl/kBmKpsS6FWymC07vpmnxw"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:13.764Z
+Método: GET
+URL: /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"253-KlJfl/kBmKpsS6FWymC07vpmnxw"'
+}
+Query Params: {}
+Body: {}
+GET /api/subjects/knowledge-areas
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"173-SCYrmNMmOIFwDOp8gQ8/luXB140"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:13.768Z
+Método: GET
+URL: /api/subjects/knowledge-areas
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"173-SCYrmNMmOIFwDOp8gQ8/luXB140"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes/years [36m304[0m 9.741 ms - -[0m
+[0mGET /api/subjects/knowledge-areas [36m304[0m 6.381 ms - -[0m
+POST /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '155',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Matemática',
+  year_id: 2,
+  knowledge_area_id: 2,
+  objective: '',
+  syllabus: '',
+  basic_bibliography: '',
+  complementary_bibliography: '',
+  active: true
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:29.288Z
+Método: POST
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '155',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Matemática',
+  year_id: 2,
+  knowledge_area_id: 2,
+  objective: '',
+  syllabus: '',
+  basic_bibliography: '',
+  complementary_bibliography: '',
+  active: true
+}
+[0mPOST /api/subjects [32m201[0m 24.446 ms - 242[0m
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:20:29.325Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/subjects [32m200[0m 5.838 ms - 222[0m
+Cliente removido do pool
+Cliente removido do pool
+GET /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"253-KlJfl/kBmKpsS6FWymC07vpmnxw"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:27.777Z
+Método: GET
+URL: /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"253-KlJfl/kBmKpsS6FWymC07vpmnxw"'
+}
+Query Params: {}
+Body: {}
+GET /api/subjects/knowledge-areas
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"173-SCYrmNMmOIFwDOp8gQ8/luXB140"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:27.782Z
+Método: GET
+URL: /api/subjects/knowledge-areas
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"173-SCYrmNMmOIFwDOp8gQ8/luXB140"'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes/years [36m304[0m 26.213 ms - -[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/subjects/knowledge-areas [36m304[0m 22.740 ms - -[0m
+POST /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '155',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Matemática',
+  year_id: 1,
+  knowledge_area_id: 2,
+  objective: '',
+  syllabus: '',
+  basic_bibliography: '',
+  complementary_bibliography: '',
+  active: true
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:37.038Z
+Método: POST
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '155',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Matemática',
+  year_id: 1,
+  knowledge_area_id: 2,
+  objective: '',
+  syllabus: '',
+  basic_bibliography: '',
+  complementary_bibliography: '',
+  active: true
+}
+[0mPOST /api/subjects [32m201[0m 12.532 ms - 242[0m
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:37.080Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/subjects [32m200[0m 4.136 ms - 443[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:42.057Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"bb-XhyxbnNY6Q+p7eBQvtmNv3UtbJU"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 5.398 ms - -[0m
+GET /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"253-KlJfl/kBmKpsS6FWymC07vpmnxw"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:44.876Z
+Método: GET
+URL: /api/classes/years
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"253-KlJfl/kBmKpsS6FWymC07vpmnxw"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes/years [36m304[0m 4.949 ms - -[0m
+GET /api/classes/divisions
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:44.882Z
+Método: GET
+URL: /api/classes/divisions
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes/divisions [32m200[0m 4.162 ms - 301[0m
+POST /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '43',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: { year_id: 2, division_id: 1, active: true }
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:48.402Z
+Método: POST
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '43',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: { year_id: 2, division_id: 1, active: true }
+[0mPOST /api/classes [32m201[0m 8.174 ms - 90[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:21:48.440Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [32m200[0m 4.254 ms - 280[0m
+Cliente removido do pool
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T14:24:47.208Z
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:24:53.274Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+GET /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:24:53.281Z
+Método: GET
+URL: /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"'
+}
+Query Params: { active: '' }
+Body: {}
+[0mGET /api/classes [36m304[0m 15.909 ms - -[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/students?active= [32m200[0m 21.605 ms - 443[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:24:57.932Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 6.156 ms - -[0m
+GET /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:25:14.097Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+Rota não encontrada: AQUI /api/students/check-registration/01010101
+[0mGET /api/students/check-registration/01010101 [33m404[0m 5.661 ms - 179[0m
+Cliente removido do pool
+Cliente removido do pool
+GET /api/students/test
+Headers: { host: 'localhost:3000', 'user-agent': 'curl/7.88.1', accept: '*/*' }
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:25:29.243Z
+Método: GET
+URL: /api/students/test
+Headers: { host: 'localhost:3000', 'user-agent': 'curl/7.88.1', accept: '*/*' }
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+Cliente removido do pool
+Erro ao buscar disciplina: error: invalid input syntax for type integer: "test"
+    at /home/humberto/openacad/openacad-back/node_modules/pg-pool/index.js:45:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/subjects.routes.js:49:20 {
+  length: 142,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: "unnamed portal parameter $1 = '...'",
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'numutils.c',
+  line: '232',
+  routine: 'pg_strtoint32'
+}
+[0mGET /api/students/test [31m500[0m 20.427 ms - 39[0m
+GET /api/students/check-registration/01010101
+Headers: { host: 'localhost:3000', 'user-agent': 'curl/7.88.1', accept: '*/*' }
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:25:39.651Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: { host: 'localhost:3000', 'user-agent': 'curl/7.88.1', accept: '*/*' }
+Query Params: {}
+Body: {}
+Rota não encontrada: AQUI /api/students/check-registration/01010101
+[0mGET /api/students/check-registration/01010101 [33m404[0m 3.183 ms - 179[0m
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+/home/humberto/openacad/openacad-back/src/index.js:65
+app.use('/api/students', sstudentsRouter);
+                         ^
+
+ReferenceError: sstudentsRouter is not defined
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/index.js:65:26)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:128:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v18.19.0
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T14:29:08.187Z
+GET /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:29:14.116Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+Verificando matrícula: 01010101
+[0mGET /api/students/check-registration/01010101 [32m200[0m 11.378 ms - 16[0m
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:29:14.160Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+Erro ao criar aluno: error: column "user_level" of relation "users" does not exist
+    at /home/humberto/openacad/openacad-back/node_modules/pg/lib/client.js:535:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/students.routes.js:100:24 {
+  length: 128,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: undefined,
+  position: '62',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_target.c',
+  line: '1075',
+  routine: 'checkInsertTargets'
+}
+[0mPOST /api/students [31m500[0m 26.534 ms - 33[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T14:48:16.224Z
+GET /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:48:23.258Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+Query Params: {}
+Body: {}
+Verificando matrícula: 01010101
+[0mGET /api/students/check-registration/01010101 [36m304[0m 10.861 ms - -[0m
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:48:23.299Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+Erro ao criar aluno: error: invalid input syntax for type integer: "Aluno"
+    at /home/humberto/openacad/openacad-back/node_modules/pg/lib/client.js:535:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/students.routes.js:100:24 {
+  length: 111,
+  severity: 'ERROR',
+  code: '22P02',
+  detail: undefined,
+  hint: undefined,
+  position: '102',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'numutils.c',
+  line: '232',
+  routine: 'pg_strtoint32'
+}
+[0mPOST /api/students [31m500[0m 26.121 ms - 33[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T14:52:19.523Z
+GET /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:52:24.494Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+Query Params: {}
+Body: {}
+Verificando matrícula: 01010101
+[0mGET /api/students/check-registration/01010101 [36m304[0m 10.075 ms - -[0m
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:52:24.529Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+Erro ao criar aluno: error: bind message supplies 4 parameters, but prepared statement "" requires 5
+    at /home/humberto/openacad/openacad-back/node_modules/pg/lib/client.js:535:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/students.routes.js:112:24 {
+  length: 137,
+  severity: 'ERROR',
+  code: '08P01',
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'postgres.c',
+  line: '1697',
+  routine: 'exec_bind_message'
+}
+[0mPOST /api/students [31m500[0m 25.146 ms - 119[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T14:53:29.870Z
+GET /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:53:34.037Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+Query Params: {}
+Body: {}
+Verificando matrícula: 01010101
+[0mGET /api/students/check-registration/01010101 [36m304[0m 11.519 ms - -[0m
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:53:34.076Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+Erro ao criar aluno: error: syntax error at or near "$"
+    at /home/humberto/openacad/openacad-back/node_modules/pg/lib/client.js:535:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/students.routes.js:112:24 {
+  length: 91,
+  severity: 'ERROR',
+  code: '42601',
+  detail: undefined,
+  hint: undefined,
+  position: '102',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'scan.l',
+  line: '1188',
+  routine: 'scanner_yyerror'
+}
+[0mPOST /api/students [31m500[0m 27.447 ms - 74[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T14:58:13.167Z
+GET /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:58:17.834Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+Query Params: {}
+Body: {}
+Verificando matrícula: 01010101
+[0mGET /api/students/check-registration/01010101 [36m304[0m 11.176 ms - -[0m
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:58:17.871Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+Erro ao criar aluno: ReferenceError: levelID is not defined
+    at /home/humberto/openacad/openacad-back/src/routes/students.routes.js:116:51
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[0mPOST /api/students [31m500[0m 25.459 ms - 67[0m
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T14:58:47.466Z
+GET /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:58:50.697Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+Query Params: {}
+Body: {}
+Verificando matrícula: 01010101
+[0mGET /api/students/check-registration/01010101 [36m304[0m 11.512 ms - -[0m
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T14:58:50.735Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+Erro ao criar aluno: error: null value in column "username" of relation "users" violates not-null constraint
+    at /home/humberto/openacad/openacad-back/node_modules/pg/lib/client.js:535:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/students.routes.js:112:24 {
+  length: 321,
+  severity: 'ERROR',
+  code: '23502',
+  detail: 'Failing row contains (7, Fillipe de Menezes Cardoso da Silva, null, fillipedmcds@gmail.com, 8132222222, 01010101, 2024-11-25 11:58:50.738845, null, 4).',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: 'username',
+  dataType: undefined,
+  constraint: undefined,
+  file: 'execMain.c',
+  line: '1968',
+  routine: 'ExecConstraints'
+}
+[0mPOST /api/students [31m500[0m 27.388 ms - 129[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T15:08:19.055Z
+GET /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:08:23.575Z
+Método: GET
+URL: /api/students/check-registration/01010101
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"10-ZaoHlihRI2zOKvUkBBrOC+vk/us"'
+}
+Query Params: {}
+Body: {}
+Verificando matrícula: 01010101
+[0mGET /api/students/check-registration/01010101 [36m304[0m 11.095 ms - -[0m
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:08:23.611Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '281',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Fillipe de Menezes Cardoso da Silva',
+  email: 'fillipedmcds@gmail.com',
+  registration: '01010101',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1993-09-17',
+  active: true,
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: ''
+}
+Username gerado: fillipe.silva.3732
+[0mPOST /api/students [32m201[0m 27.221 ms - 305[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:08:23.661Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+GET /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:08:23.667Z
+Método: GET
+URL: /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+Query Params: { active: '' }
+Body: {}
+[0mGET /api/classes [36m304[0m 10.575 ms - -[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/students?active= [32m200[0m 17.457 ms - 449[0m
+Cliente removido do pool
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-25T15:21:20.267Z
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:21:24.133Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 9.259 ms - -[0m
+Cliente removido do pool
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:27:34.935Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [36m304[0m 19.629 ms - -[0m
+Cliente removido do pool
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:38:17.053Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [36m304[0m 26.949 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:38:22.087Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+GET /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1c1-VKgAm5aEllfqzhaiAxStlzyOy6I"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:38:22.091Z
+Método: GET
+URL: /api/students?active=
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1c1-VKgAm5aEllfqzhaiAxStlzyOy6I"'
+}
+Query Params: { active: '' }
+Body: {}
+[0mGET /api/classes [36m304[0m 10.842 ms - -[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/students?active= [36m304[0m 20.233 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:38:26.153Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 4.310 ms - -[0m
+Cliente removido do pool
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '250',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Camilla de Menezes Cardoso da Silva',
+  email: 'camilla@gmail.com',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '2008-01-22',
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: '',
+  active: true
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:38:52.386Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '250',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Camilla de Menezes Cardoso da Silva',
+  email: 'camilla@gmail.com',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '2008-01-22',
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: '',
+  active: true
+}
+Matrícula gerada: {
+  ano: 2024,
+  nivel: '01',
+  serie: '01',
+  sequencia: '8783',
+  matriculaCompleta: '202401018783'
+}
+Username gerado: camilla.silva.1395
+Erro ao criar aluno: error: duplicate key value violates unique constraint "users_email_key"
+    at /home/humberto/openacad/openacad-back/node_modules/pg/lib/client.js:535:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/students.routes.js:265:24 {
+  length: 209,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(camilla@gmail.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '664',
+  routine: '_bt_check_unique'
+}
+[0mPOST /api/students [33m400[0m 32.020 ms - 42[0m
+Cliente removido do pool
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:43:39.205Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [36m304[0m 19.433 ms - -[0m
+Cliente removido do pool
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:45:26.397Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [36m304[0m 16.402 ms - -[0m
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '250',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Camilla de Menezes Cardoso da Silva',
+  email: 'camilla@gmail.com',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '2008-01-22',
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: '',
+  active: true
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:45:53.748Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '250',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Camilla de Menezes Cardoso da Silva',
+  email: 'camilla@gmail.com',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '2008-01-22',
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: '',
+  active: true
+}
+Matrícula gerada: {
+  ano: 2024,
+  nivel: '01',
+  serie: '01',
+  sequencia: '7241',
+  matriculaCompleta: '202401017241'
+}
+Username gerado: camilla.silva.8727
+Erro ao criar aluno: error: duplicate key value violates unique constraint "users_email_key"
+    at /home/humberto/openacad/openacad-back/node_modules/pg/lib/client.js:535:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/humberto/openacad/openacad-back/src/routes/students.routes.js:265:24 {
+  length: 209,
+  severity: 'ERROR',
+  code: '23505',
+  detail: 'Key (email)=(camilla@gmail.com) already exists.',
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: 'public',
+  table: 'users',
+  column: undefined,
+  dataType: undefined,
+  constraint: 'users_email_key',
+  file: 'nbtinsert.c',
+  line: '664',
+  routine: '_bt_check_unique'
+}
+[0mPOST /api/students [33m400[0m 18.171 ms - 42[0m
+Cliente removido do pool
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:46:26.887Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+GET /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:46:26.891Z
+Método: GET
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [36m304[0m 26.806 ms - -[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/students [32m200[0m 26.917 ms - 449[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bf-KS7PceThpN6wIxGv2xHYmzszjsI"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:46:30.540Z
+Método: GET
+URL: /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bf-KS7PceThpN6wIxGv2xHYmzszjsI"'
+}
+Query Params: {}
+Body: {}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 4
+[0mGET /api/users [32m200[0m 5.484 ms - 621[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:46:42.763Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+GET /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1c1-VKgAm5aEllfqzhaiAxStlzyOy6I"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:46:42.767Z
+Método: GET
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1c1-VKgAm5aEllfqzhaiAxStlzyOy6I"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 9.580 ms - -[0m
+[0mGET /api/students [36m304[0m 7.614 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:46:44.727Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 3.743 ms - -[0m
+Cliente removido do pool
+Cliente removido do pool
+POST /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '250',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Body: {
+  name: 'Taciana de Menezes Cardoso da Silva',
+  email: 'taciana@gmail.com',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1974-10-10',
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: '',
+  active: true
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:47:15.856Z
+Método: POST
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  'content-length': '250',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  'content-type': 'application/json',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {
+  name: 'Taciana de Menezes Cardoso da Silva',
+  email: 'taciana@gmail.com',
+  phone: '8132222222',
+  class_id: '1',
+  birth_date: '1974-10-10',
+  guardian_name: '',
+  guardian_phone: '',
+  guardian_email: '',
+  address: '',
+  health_info: '',
+  notes: '',
+  active: true
+}
+Nova conexão estabelecida com o banco de dados
+Matrícula gerada: {
+  ano: 2024,
+  nivel: '01',
+  serie: '01',
+  sequencia: '4902',
+  matriculaCompleta: '202401014902'
+}
+Username gerado: taciana.silva.7273
+[0mPOST /api/students [32m201[0m 27.570 ms - 310[0m
+GET /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:47:15.919Z
+Método: GET
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:47:15.925Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/students [32m200[0m 11.315 ms - 897[0m
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/classes [36m304[0m 18.993 ms - -[0m
+Cliente removido do pool
+Cliente removido do pool
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T15:48:09.649Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/subjects [36m304[0m 16.523 ms - -[0m
+Cliente removido do pool
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T16:04:35.378Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/subjects [36m304[0m 15.607 ms - -[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"26d-6P7OoJtuoMcDr4aivcJOfFeB5Ow"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T16:07:57.214Z
+Método: GET
+URL: /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"26d-6P7OoJtuoMcDr4aivcJOfFeB5Ow"'
+}
+Query Params: {}
+Body: {}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 5
+[0mGET /api/users [32m200[0m 14.658 ms - 791[0m
+Cliente removido do pool
+GET /api/user-levels
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T16:08:40.648Z
+Método: GET
+URL: /api/user-levels
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+Nova conexão estabelecida com o banco de dados
+[0mGET /api/user-levels [32m200[0m 14.536 ms - 307[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"317-1Zslbd+Phg2xWv48SjHlr9f42QM"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T16:10:22.154Z
+Método: GET
+URL: /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"317-1Zslbd+Phg2xWv48SjHlr9f42QM"'
+}
+Query Params: {}
+Body: {}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 5
+[0mGET /api/users [36m304[0m 17.031 ms - -[0m
+Cliente removido do pool
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"317-1Zslbd+Phg2xWv48SjHlr9f42QM"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T20:33:36.728Z
+Método: GET
+URL: /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"317-1Zslbd+Phg2xWv48SjHlr9f42QM"'
+}
+Query Params: {}
+Body: {}
+Token recebido: Presente
+Requisição GET /users recebida
+Nova conexão estabelecida com o banco de dados
+Usuários encontrados: 5
+[0mGET /api/users [36m304[0m 12.547 ms - -[0m
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T20:33:45.109Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/subjects [36m304[0m 2.146 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T20:33:47.455Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 1.991 ms - -[0m
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"317-1Zslbd+Phg2xWv48SjHlr9f42QM"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T20:33:49.436Z
+Método: GET
+URL: /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"317-1Zslbd+Phg2xWv48SjHlr9f42QM"'
+}
+Query Params: {}
+Body: {}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 5
+[0mGET /api/users [36m304[0m 2.904 ms - -[0m
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-25T20:34:00.415Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/subjects [36m304[0m 2.409 ms - -[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+node:internal/modules/cjs/loader:1137
+  throw err;
+  ^
+
+Error: Cannot find module './teacherAllocation.routes'
+Require stack:
+- /home/humberto/openacad/openacad-back/src/routes/index.js
+- /home/humberto/openacad/openacad-back/src/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)
+    at Module._load (node:internal/modules/cjs/loader:975:27)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/routes/index.js:4:33)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/humberto/openacad/openacad-back/src/routes/index.js',
+    '/home/humberto/openacad/openacad-back/src/index.js'
+  ]
+}
+
+Node.js v18.19.0
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+/home/humberto/openacad/openacad-back/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/humberto/openacad/openacad-back/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as get] (/home/humberto/openacad/openacad-back/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/routes/teacherAllocation.routes.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/routes/index.js:4:33)
+
+Node.js v18.19.0
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-26T01:30:49.878Z
+GET /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"317-1Zslbd+Phg2xWv48SjHlr9f42QM"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-26T01:30:58.626Z
+Método: GET
+URL: /api/users
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"317-1Zslbd+Phg2xWv48SjHlr9f42QM"'
+}
+Query Params: {}
+Body: {}
+Token recebido: Presente
+Requisição GET /users recebida
+Usuários encontrados: 5
+[0mGET /api/users [36m304[0m 14.990 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-26T01:31:01.293Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 6.915 ms - -[0m
+GET /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-26T01:31:04.581Z
+Método: GET
+URL: /api/classes
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"118-WC2qk2liP8lFJvz3yB3cHqIn2g4"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/classes [36m304[0m 5.167 ms - -[0m
+GET /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-26T01:31:04.599Z
+Método: GET
+URL: /api/students
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/students [32m200[0m 8.383 ms - 897[0m
+GET /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-26T01:31:07.662Z
+Método: GET
+URL: /api/subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+  'if-none-match': 'W/"1bb-/1EjyqS8yawPEF0F/CDGz6H8e+g"'
+}
+Query Params: {}
+Body: {}
+[0mGET /api/subjects [36m304[0m 6.793 ms - -[0m
+GET /api/api/allocations?year=2024
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-26T01:31:10.208Z
+Método: GET
+URL: /api/api/allocations?year=2024
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: { year: '2024' }
+Body: {}
+Rota não encontrada: AQUI /api/api/allocations?year=2024
+[0mGET /api/api/allocations?year=2024 [33m404[0m 8.493 ms - 158[0m
+Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+/home/humberto/openacad/openacad-back/src/routes/index.js:6
+router.use('/', teacherAllocationRoutes);
+^
+
+ReferenceError: router is not defined
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/routes/index.js:6:1)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/index.js:9:36)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+
+Node.js v18.19.0
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+
+=== Rotas Registradas ===
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-26T01:37:54.893Z
+GET /api/api/allocations?year=2024
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-26T01:38:06.610Z
+Método: GET
+URL: /api/api/allocations?year=2024
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: { year: '2024' }
+Body: {}
+Rota não encontrada: AQUI /api/api/allocations?year=2024
+[0mGET /api/api/allocations?year=2024 [33m404[0m 11.022 ms - 158[0m
+Cliente removido do pool

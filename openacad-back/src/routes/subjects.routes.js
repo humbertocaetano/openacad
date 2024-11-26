@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const { pool } = require('../config/database');
+const { getSubjects } = require('../controllers/subjects.controller');
+
+router.get('/', getSubjects);
 
 // Listar áreas de conhecimento
 router.get('/knowledge-areas', async (req, res) => {
@@ -26,6 +29,7 @@ router.get('/', async (req, res) => {
         s.syllabus,
         s.basic_bibliography,
         s.complementary_bibliography,
+	s.hours_per_year,
         s.active,
         sy.name as year_name,
         ka.name as knowledge_area_name
@@ -91,11 +95,12 @@ router.post('/', async (req, res) => {
         syllabus,
         basic_bibliography,
         complementary_bibliography,
+	hours_per_year,
         active
       )
-      VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
       RETURNING *`,
-      [name, year_id, knowledge_area_id, objective, syllabus, basic_bibliography, complementary_bibliography, active !== false]
+      [name, year_id, knowledge_area_id, objective, syllabus, basic_bibliography, complementary_bibliography, hours_per_year, active !== false]
     );
 
     res.status(201).json(result.rows[0]);
@@ -120,6 +125,7 @@ router.put('/:id', async (req, res) => {
     syllabus,
     basic_bibliography,
     complementary_bibliography,
+    hours_per_year,
     active
   } = req.body;
 
@@ -133,11 +139,12 @@ router.put('/:id', async (req, res) => {
           syllabus = $5,
           basic_bibliography = $6,
           complementary_bibliography = $7,
-          active = $8,
+	  hours_per_year = $8,
+          active = $9,
           updated_at = CURRENT_TIMESTAMP
-      WHERE id = $9
+      WHERE id = $10
       RETURNING *`,
-      [name, year_id, knowledge_area_id, objective, syllabus, basic_bibliography, complementary_bibliography, active, id]
+      [name, year_id, knowledge_area_id, objective, syllabus, basic_bibliography, complementary_bibliography, hours_per_year, active, id]
     );
 
     if (result.rows.length === 0) {

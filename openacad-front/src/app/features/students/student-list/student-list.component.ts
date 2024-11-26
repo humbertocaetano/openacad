@@ -337,15 +337,11 @@ export class StudentListComponent implements OnInit {
   }
 
   loadStudents() {
+
     this.loading = true;
     this.error = null;
 
-    const filters = {
-      class_id: this.filterForm.get('class_id')?.value,
-      active: this.filterForm.get('active')?.value
-    };
-
-    this.studentService.getStudents(filters).subscribe({
+    this.studentService.getStudents().subscribe({
       next: (students) => {
         this.students = students;
         this.loading = false;
@@ -356,6 +352,8 @@ export class StudentListComponent implements OnInit {
         this.loading = false;
       }
     });
+	  
+
   }
 
   applyFilters() {

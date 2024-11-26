@@ -1,19 +1,26 @@
 // src/index.js
 const express = require('express');
 const cors = require('cors');
-const usersRouter = require('./routes/users.routes');
 const helmet = require('helmet');
 const compression = require('compression');
 const morgan = require('morgan');
 const { config } = require('dotenv');
-const { authRouter, userRouter } = require('./routes');
 const errorHandler = require('./middleware/errorHandler');
 const { setupDatabase } = require('./config/database');
 
+// Importar todas as rotas do arquivo index
+const { 
+  authRouter, 
+  userRouter, 
+  teacherAllocationRouter 
+} = require('./routes');
+
+// Importar outras rotas diretamente
 const userLevelsRouter = require('./routes/user-levels.routes');
 const classesRouter = require('./routes/classes.routes');
 const subjectsRouter = require('./routes/subjects.routes');
 const studentsRouter = require('./routes/students.routes');
+const teachersRouter = require('./routes/teachers.routes');
 
 // Load environment variables
 config();
@@ -30,21 +37,15 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-
 // Middleware
 app.use(helmet());
-app.use(cors());
 app.use(compression());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Logging middleware
 app.use((req, res, next) => {
-  console.log(`${req.method} ${req.url}`);
-  console.log('Headers:', req.headers);
-  if (req.method === 'POST') {
-    console.log('Body:', req.body);
-  }
   console.log('\n--- Nova Requisição ---');
   console.log(`Data/Hora: ${new Date().toISOString()}`);
   console.log(`Método: ${req.method}`);
@@ -57,20 +58,30 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/api/auth', authRouter);
-app.use('/api/users', userRouter);
-
+app.use('/api/users', userRouter); // Removido usersRouter duplicado
 app.use('/api/user-levels', userLevelsRouter);
 app.use('/api/classes', classesRouter);
 app.use('/api/subjects', subjectsRouter);
-app.use('/api/students', subjectsRouter);
+app.use('/api/students', studentsRouter);
+app.use('/api/allocations', teacherAllocationRouter);
+app.use('/api/teachers', teachersRouter);
 
-console.log('\n=== Rotas Registradas ===');
-app.use('*', (req, res, next) => {
-  console.log('Rota não encontrada: AQUI', req.originalUrl);
+app.use((req, res, next) => {
+  console.log('\nURL completa:', req.originalUrl);
+  console.log('Base URL:', req.baseUrl);
+  console.log('Path:', req.path);
+  console.log('Route Stack:', app._router.stack.map(r => r.route?.path || r.name).filter(Boolean));
   next();
 });
 
-// Rota de teste
+
+// 404 Handler
+app.use('*', (req, res, next) => {
+  console.log('Rota não encontrada:', req.originalUrl);
+  res.status(404).json({ message: 'Rota não encontrada' });
+});
+
+// Test route
 app.get('/api/test', (req, res) => {
   res.json({ message: 'API está funcionando!' });
 });
@@ -88,5 +99,3 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
-
-

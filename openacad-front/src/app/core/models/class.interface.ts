@@ -10,9 +10,10 @@ export interface ClassDivision {
 
 export interface Class {
     id: number;
+    name?: string;
     year_id: number;
-    division_id: number;
     year_name?: string;
+    division_id: number;
     division_name?: string;
     active: boolean;
 }
