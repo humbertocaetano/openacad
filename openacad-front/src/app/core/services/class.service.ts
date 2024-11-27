@@ -36,6 +36,10 @@ export class ClassService {
     return this.http.get<ClassDivision[]>(`${this.apiUrl}/divisions`, { headers });
   }
 
+  getClassDivisionsByYear(yearId: number): Observable<ClassDivision[]> {
+    return this.http.get<ClassDivision[]>(`${this.apiUrl}/divisions/${yearId}`);
+  }
+
   createClass(classData: CreateClassDTO): Observable<Class> {
     const token = localStorage.getItem('token');
     const headers = new HttpHeaders({

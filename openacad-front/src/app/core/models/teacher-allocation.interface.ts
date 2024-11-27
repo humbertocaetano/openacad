@@ -1,5 +1,5 @@
 import { Teacher } from './teacher.interface';
-import { Subject } from './subject.interface';
+import { SchoolSubject } from './subject.interface';
 import { Schedule } from './schedule.interface';
 import { Class } from './class.interface';
 
@@ -22,4 +22,5 @@ export interface TeacherAllocation {
     name: string;
   };
   active?: boolean;
+  subjects: SchoolSubject[];
 }

@@ -988,3 +988,2709 @@ main.js             | main  | 234.61 kB |
 Application bundle generation complete. [0.847 seconds]
 
 Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 234.87 kB | 
+
+Application bundle generation complete. [1.839 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.178 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user_phone' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/students/student-form/student-form.component.ts:499:18:
+[37m      499 │     phone: student.[32muser_phone[37m,
+          ╵                    [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 234.94 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 325.24 kB
+
+Application bundle generation complete. [0.350 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.016 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'user_data' does not exist in type 'CreateStudentDTO'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/students/student-form/student-form.component.ts:573:6:
+[37m      573 │       [32muser_data[37m: {  // adicionado objeto user_data
+          ╵       [32m~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 235.11 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 325.41 kB
+
+Application bundle generation complete. [0.638 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 235.21 kB | 
+
+Application bundle generation complete. [0.320 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.905 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.386 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.021 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.609 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"./subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:2:9:
+[37m      2 │ import { [32mSubject[37m } from './subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:5:9:
+[37m      5 │ import { [32mSubject[37m, CreateSubjectDTO, KnowledgeArea } from '../models...
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:7:24:
+[37m      7 │ import { KnowledgeArea, [32mSubject[37m } from '../../../core/models/subjec...
+        ╵                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:5:9:
+[37m      5 │ import { [32mSubject[37m } from '../../../core/models/subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:9:9:
+[37m      9 │ import { [32mSubject[37m } from '../../../core/models/subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.761 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"./subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:2:9:
+[37m      2 │ import { [32mSubject[37m } from './subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:5:9:
+[37m      5 │ import { [32mSubject[37m, CreateSubjectDTO, KnowledgeArea } from '../models...
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:7:24:
+[37m      7 │ import { KnowledgeArea, [32mSubject[37m } from '../../../core/models/subjec...
+        ╵                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:5:9:
+[37m      5 │ import { [32mSubject[37m } from '../../../core/models/subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:289:12:
+[37m      289 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.023 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"./subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:2:9:
+[37m      2 │ import { [32mSubject[37m } from './subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:5:9:
+[37m      5 │ import { [32mSubject[37m, CreateSubjectDTO, KnowledgeArea } from '../models...
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:7:24:
+[37m      7 │ import { KnowledgeArea, [32mSubject[37m } from '../../../core/models/subjec...
+        ╵                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:5:9:
+[37m      5 │ import { [32mSubject[37m } from '../../../core/models/subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [8.005 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"./subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:2:9:
+[37m      2 │ import { [32mSubject[37m } from './subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:5:9:
+[37m      5 │ import { [32mSubject[37m, CreateSubjectDTO, KnowledgeArea } from '../models...
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:7:24:
+[37m      7 │ import { KnowledgeArea, [32mSubject[37m } from '../../../core/models/subjec...
+        ╵                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:5:9:
+[37m      5 │ import { [32mSubject[37m } from '../../../core/models/subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [3.039 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:25:12:
+[37m      25 │   subjects: [32mSubject[37m[];
+         ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:5:9:
+[37m      5 │ import { [32mSubject[37m, CreateSubjectDTO, KnowledgeArea } from '../models...
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:7:24:
+[37m      7 │ import { KnowledgeArea, [32mSubject[37m } from '../../../core/models/subjec...
+        ╵                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:5:9:
+[37m      5 │ import { [32mSubject[37m } from '../../../core/models/subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.431 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:25:12:
+[37m      25 │   subjects: [32mSubject[37m[];
+         ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:30:41:
+[37m      30 │   getSubjectsForAllocation(): Observable<[32mSubject[37m[]> {
+         ╵                                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:51:27:
+[37m      51 │     return this.http.patch<[32mSubject[37m>(
+         ╵                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:7:24:
+[37m      7 │ import { KnowledgeArea, [32mSubject[37m } from '../../../core/models/subjec...
+        ╵                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:5:9:
+[37m      5 │ import { [32mSubject[37m } from '../../../core/models/subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.938 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:25:12:
+[37m      25 │   subjects: [32mSubject[37m[];
+         ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:30:41:
+[37m      30 │   getSubjectsForAllocation(): Observable<[32mSubject[37m[]> {
+         ╵                                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:51:27:
+[37m      51 │     return this.http.patch<[32mSubject[37m>(
+         ╵                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../../../core/models/subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:5:9:
+[37m      5 │ import { [32mSubject[37m } from '../../../core/models/subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.442 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:25:12:
+[37m      25 │   subjects: [32mSubject[37m[];
+         ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:30:41:
+[37m      30 │   getSubjectsForAllocation(): Observable<[32mSubject[37m[]> {
+         ╵                                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:51:27:
+[37m      51 │     return this.http.patch<[32mSubject[37m>(
+         ╵                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:271:25:
+[37m      271 │   deleteSubject(subject: [32mSubject[37m) {
+          ╵                          [32m~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [8.265 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-allocation.interface.ts:25:12:
+[37m      25 │   subjects: [32mSubject[37m[];
+         ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:30:41:
+[37m      30 │   getSubjectsForAllocation(): Observable<[32mSubject[37m[]> {
+         ╵                                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:51:27:
+[37m      51 │     return this.http.patch<[32mSubject[37m>(
+         ╵                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:271:25:
+[37m      271 │   deleteSubject(subject: [32mSubject[37m) {
+          ╵                          [32m~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [2.896 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:30:41:
+[37m      30 │   getSubjectsForAllocation(): Observable<[32mSubject[37m[]> {
+         ╵                                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:51:27:
+[37m      51 │     return this.http.patch<[32mSubject[37m>(
+         ╵                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:271:25:
+[37m      271 │   deleteSubject(subject: [32mSubject[37m) {
+          ╵                          [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.432 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:30:41:
+[37m      30 │   getSubjectsForAllocation(): Observable<[32mSubject[37m[]> {
+         ╵                                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:51:27:
+[37m      51 │     return this.http.patch<[32mSubject[37m>(
+         ╵                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.337 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:30:41:
+[37m      30 │   getSubjectsForAllocation(): Observable<[32mSubject[37m[]> {
+         ╵                                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.405 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [8.196 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:22:28:
+[37m      22 │   getSubjects(): Observable<[32mSubject[37m[]> {
+         ╵                             [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:23:25:
+[37m      23 │     return this.http.get<[32mSubject[37m[]>(this.apiUrl, { headers: this.g...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:27:25:
+[37m      27 │     return this.http.get<[32mSubject[37m>(`${this.apiUrl}/${id}`, { header...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:31:25:
+[37m      31 │     return this.http.get<[32mSubject[37m[]>(`${this.apiUrl}/for-allocation`);
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:38:59:
+[37m      38 │   createSubject(subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:39:26:
+[37m      39 │     return this.http.post<[32mSubject[37m>(this.apiUrl, subjectData, { hea...
+         ╵                           [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:42:71:
+[37m      42 │ ...(id: number, subjectData: CreateSubjectDTO): Observable<[32mSubject[37m> {
+         ╵                                                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:43:25:
+[37m      43 │     return this.http.put<[32mSubject[37m>(`${this.apiUrl}/${id}`, subjectD...
+         ╵                          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:50:56:
+[37m      50 │   toggleStatus(id: number, active: boolean): Observable<[32mSubject[37m> {
+         ╵                                                         [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [2.955 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/subject.service.ts:26:37:
+[37m      26 │   getSubject(id: number): Observable<[32mSubject[37m> {
+         ╵                                      [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.448 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-list/subject-list.component.ts:244:12:
+[37m      244 │   subjects: [32mSubject[37m[] = [];
+          ╵             [32m~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.728 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subjects' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:488:13:
+[37m      488 │         this.[32msubjects[37m = subjects;
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:492:13:
+[37m      492 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.171 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2300: Duplicate identifier 'SchoolSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:7:24:
+[37m      7 │ import { KnowledgeArea, [32mSchoolSubject[37m } from '../../../core/models/...
+        ╵                         [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2300: Duplicate identifier 'SchoolSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:9:9:
+[37m      9 │ import { [32mSchoolSubject[37m } from '../../../core/models/subject.interfa...
+        ╵          [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:494:13:
+[37m      494 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.944 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SubjectFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/subjects/subject-form/subject-form.component.ts:493:13:
+[37m      493 │         this.[32merror[37m = 'Erro ao carregar disciplinas';
+          ╵              [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 235.57 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 325.86 kB
+
+Application bundle generation complete. [1.438 seconds]
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 235.58 kB | 
+
+Application bundle generation complete. [0.592 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.426 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "subjectService" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:13:4:
+[37m      13 │     [32msubjectService[37m;
+         ╵     [32m~~~~~~~~~~~~~~[0m
+
+  The original member "subjectService" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:12:4:
+[37m      12 │     [32msubjectService[37m;
+         ╵     [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1m"subjectService" cannot be bound multiple times in the same parameter list[0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:30:93:
+[37m      30 │ ...e, teacherService, subjectService, [32msubjectService[37m, classService) {
+         ╵                                       [32m~~~~~~~~~~~~~~[0m
+
+  The name "subjectService" was originally bound here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:30:77:
+[37m      30 │ ...Service, teacherService, [32msubjectService[37m, subjectService, classS...
+         ╵                             [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'allocationForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:287:2:
+[37m      287 │   [32mallocationForm[37m: FormGroup;
+          ╵   [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'SchoolYear'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:290:15:
+[37m      290 │   schoolYears: [32mSchoolYear[37m[] = [];
+          ╵                [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassDivision'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:291:18:
+[37m      291 │   classDivisions: [32mClassDivision[37m[] = [];
+          ╵                   [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2300: Duplicate identifier 'subjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:309:12:
+[37m      309 │     private [32msubjectService[37m: SubjectService,
+          ╵             [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2300: Duplicate identifier 'subjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:310:12:
+[37m      310 │     private [32msubjectService[37m: SubjectService,
+          ╵             [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2300: Duplicate identifier 'subjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:310:12:
+[37m      310 │     private [32msubjectService[37m: SubjectService,
+          ╵             [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'classService' of class 'TeacherAllocationFormComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:311:12:
+[37m      311 │     private [32mclassService[37m: ClassService
+          ╵             [32m~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:311:26:
+[37m      311 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:311:26:
+[37m      311 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'loadClassDivisions' does not exist on type 'TeacherAllocationFormComponent'. Did you mean 'classDivisions'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:328:11:
+[37m      328 │       this.[32mloadClassDivisions[37m(yearId);
+          ╵            [32m~~~~~~~~~~~~~~~~~~[0m
+
+  'classDivisions' is declared here.
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:291:2:
+[37m      291 │   [32mclassDivisions[37m: ClassDivision[] = [];
+          ╵   [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2554: Expected 0 arguments, but got 2.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:335:26:
+[37m      335 │         this.loadSubjects([32myearId, divisionId[37m);
+          ╵                           [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.666 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "subjectService" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:13:4:
+[37m      13 │     [32msubjectService[37m;
+         ╵     [32m~~~~~~~~~~~~~~[0m
+
+  The original member "subjectService" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:12:4:
+[37m      12 │     [32msubjectService[37m;
+         ╵     [32m~~~~~~~~~~~~~~[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:132:4:
+[37m      132 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:110:4:
+[37m      110 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1m"subjectService" cannot be bound multiple times in the same parameter list[0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:30:93:
+[37m      30 │ ...e, teacherService, subjectService, [32msubjectService[37m, classService) {
+         ╵                                       [32m~~~~~~~~~~~~~~[0m
+
+  The name "subjectService" was originally bound here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:30:77:
+[37m      30 │ ...Service, teacherService, [32msubjectService[37m, subjectService, classS...
+         ╵                             [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'allocationForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:287:2:
+[37m      287 │   [32mallocationForm[37m: FormGroup;
+          ╵   [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'SchoolYear'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:290:15:
+[37m      290 │   schoolYears: [32mSchoolYear[37m[] = [];
+          ╵                [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassDivision'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:291:18:
+[37m      291 │   classDivisions: [32mClassDivision[37m[] = [];
+          ╵                   [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2300: Duplicate identifier 'subjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:309:12:
+[37m      309 │     private [32msubjectService[37m: SubjectService,
+          ╵             [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2300: Duplicate identifier 'subjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:310:12:
+[37m      310 │     private [32msubjectService[37m: SubjectService,
+          ╵             [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2300: Duplicate identifier 'subjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:310:12:
+[37m      310 │     private [32msubjectService[37m: SubjectService,
+          ╵             [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'classService' of class 'TeacherAllocationFormComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:311:12:
+[37m      311 │     private [32mclassService[37m: ClassService
+          ╵             [32m~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:311:26:
+[37m      311 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:311:26:
+[37m      311 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'years' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:373:13:
+[37m      373 │       next: ([32myears[37m) => this.schoolYears = years,
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:374:14:
+[37m      374 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'divisions' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:388:13:
+[37m      388 │       next: ([32mdivisions[37m) => this.classDivisions = divisions,
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:389:14:
+[37m      389 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:396:2:
+[37m      396 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:402:24:
+[37m      402 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:403:13:
+[37m      403 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:404:14:
+[37m      404 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:421:2:
+[37m      421 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.705 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:130:4:
+[37m      130 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:108:4:
+[37m      108 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'allocationForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:287:2:
+[37m      287 │   [32mallocationForm[37m: FormGroup;
+          ╵   [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'SchoolYear'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:290:15:
+[37m      290 │   schoolYears: [32mSchoolYear[37m[] = [];
+          ╵                [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassDivision'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:291:18:
+[37m      291 │   classDivisions: [32mClassDivision[37m[] = [];
+          ╵                   [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'classService' of class 'TeacherAllocationFormComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:310:12:
+[37m      310 │     private [32mclassService[37m: ClassService
+          ╵             [32m~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:310:26:
+[37m      310 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:310:26:
+[37m      310 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'years' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:372:13:
+[37m      372 │       next: ([32myears[37m) => this.schoolYears = years,
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:373:14:
+[37m      373 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'divisions' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:387:13:
+[37m      387 │       next: ([32mdivisions[37m) => this.classDivisions = divisions,
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:388:14:
+[37m      388 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:395:2:
+[37m      395 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:401:24:
+[37m      401 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:402:13:
+[37m      402 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:403:14:
+[37m      403 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:420:2:
+[37m      420 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.410 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:130:4:
+[37m      130 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:108:4:
+[37m      108 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2564: Property 'allocationForm' has no initializer and is not definitely assigned in the constructor.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:302:2:
+[37m      302 │   [32mallocationForm[37m: FormGroup;
+          ╵   [32m~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'SchoolYear'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:305:15:
+[37m      305 │   schoolYears: [32mSchoolYear[37m[] = [];
+          ╵                [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassDivision'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:306:18:
+[37m      306 │   classDivisions: [32mClassDivision[37m[] = [];
+          ╵                   [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'classService' of class 'TeacherAllocationFormComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:325:12:
+[37m      325 │     private [32mclassService[37m: ClassService
+          ╵             [32m~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:325:26:
+[37m      325 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:325:26:
+[37m      325 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'years' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:387:13:
+[37m      387 │       next: ([32myears[37m) => this.schoolYears = years,
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:388:14:
+[37m      388 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'divisions' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:402:13:
+[37m      402 │       next: ([32mdivisions[37m) => this.classDivisions = divisions,
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:403:14:
+[37m      403 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:410:2:
+[37m      410 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:416:24:
+[37m      416 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:417:13:
+[37m      417 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:418:14:
+[37m      418 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:435:2:
+[37m      435 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.599 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:130:4:
+[37m      130 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:108:4:
+[37m      108 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'SchoolYear'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:305:15:
+[37m      305 │   schoolYears: [32mSchoolYear[37m[] = [];
+          ╵                [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassDivision'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:306:18:
+[37m      306 │   classDivisions: [32mClassDivision[37m[] = [];
+          ╵                   [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'classService' of class 'TeacherAllocationFormComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:325:12:
+[37m      325 │     private [32mclassService[37m: ClassService
+          ╵             [32m~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:325:26:
+[37m      325 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:325:26:
+[37m      325 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'years' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:387:13:
+[37m      387 │       next: ([32myears[37m) => this.schoolYears = years,
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:388:14:
+[37m      388 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'divisions' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:402:13:
+[37m      402 │       next: ([32mdivisions[37m) => this.classDivisions = divisions,
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:403:14:
+[37m      403 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:410:2:
+[37m      410 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:416:24:
+[37m      416 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:417:13:
+[37m      417 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:418:14:
+[37m      418 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:435:2:
+[37m      435 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.177 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:130:4:
+[37m      130 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:108:4:
+[37m      108 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'classService' of class 'TeacherAllocationFormComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:327:12:
+[37m      327 │     private [32mclassService[37m: ClassService
+          ╵             [32m~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:327:26:
+[37m      327 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'ClassService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:327:26:
+[37m      327 │     private classService: [32mClassService[37m
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'years' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:389:13:
+[37m      389 │       next: ([32myears[37m) => this.schoolYears = years,
+          ╵              [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:390:14:
+[37m      390 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'divisions' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:404:13:
+[37m      404 │       next: ([32mdivisions[37m) => this.classDivisions = divisions,
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:405:14:
+[37m      405 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:412:2:
+[37m      412 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:418:24:
+[37m      418 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:419:13:
+[37m      419 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:420:14:
+[37m      420 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:437:2:
+[37m      437 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.264 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:236:4:
+[37m      236 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:214:4:
+[37m      214 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'getClassDivisionsByYear' does not exist on type 'ClassService'. Did you mean 'getClassDivisions'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:404:22:
+[37m      404 │     this.classService.[32mgetClassDivisionsByYear[37m(yearId).subscribe({
+          ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  'getClassDivisions' is declared here.
+
+    src/app/core/services/class.service.ts:31:2:
+[37m      31 │   [32mgetClassDivisions[37m(): Observable<ClassDivision[]> {
+         ╵   [32m~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'divisions' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:405:13:
+[37m      405 │       next: ([32mdivisions[37m) => this.classDivisions = divisions,
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:406:14:
+[37m      406 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:413:2:
+[37m      413 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:419:24:
+[37m      419 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:420:13:
+[37m      420 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:421:14:
+[37m      421 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:438:2:
+[37m      438 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.391 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:236:4:
+[37m      236 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:214:4:
+[37m      214 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:413:2:
+[37m      413 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:419:24:
+[37m      419 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:420:13:
+[37m      420 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:421:14:
+[37m      421 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:438:2:
+[37m      438 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.648 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:255:4:
+[37m      255 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:233:4:
+[37m      233 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:436:2:
+[37m      436 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:442:24:
+[37m      442 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:443:13:
+[37m      443 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:444:14:
+[37m      444 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:461:2:
+[37m      461 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [7.980 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:255:4:
+[37m      255 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:233:4:
+[37m      233 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:436:2:
+[37m      436 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:442:24:
+[37m      442 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:443:13:
+[37m      443 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:444:14:
+[37m      444 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:461:2:
+[37m      461 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [3.533 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:255:4:
+[37m      255 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:233:4:
+[37m      233 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:436:2:
+[37m      436 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:442:24:
+[37m      442 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:443:13:
+[37m      443 │       next: ([32msubjects[37m) => this.subjects = subjects,
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:444:14:
+[37m      444 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:461:2:
+[37m      461 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.064 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:256:4:
+[37m      256 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:234:4:
+[37m      234 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:436:2:
+[37m      436 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:442:24:
+[37m      442 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:444:14:
+[37m      444 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:461:2:
+[37m      461 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [7.802 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mDuplicate member "loadSubjects" in class body[0m [duplicate-class-member]
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:256:4:
+[37m      256 │     [32mloadSubjects[37m() {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+  The original member "loadSubjects" is here:
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:234:4:
+[37m      234 │     [32mloadSubjects[37m(yearId, divisionId) {
+          ╵     [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:436:2:
+[37m      436 │   [32mloadSubjects[37m(yearId: number, divisionId: number): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:442:24:
+[37m      442 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:444:14:
+[37m      444 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2393: Duplicate function implementation.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:461:2:
+[37m      461 │   [32mloadSubjects[37m(): void {
+          ╵   [32m~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [3.859 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getSubjectsByYearAndDivision' does not exist on type 'SubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:442:24:
+[37m      442 │ ...s.subjectService.[32mgetSubjectsByYearAndDivision[37m(yearId, division...
+          ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component.ts:444:14:
+[37m      444 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 239.21 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 329.51 kB
+
+Application bundle generation complete. [0.455 seconds]
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 240.04 kB | 
+
+Application bundle generation complete. [0.601 seconds]
+
+Page reload sent to client(s).

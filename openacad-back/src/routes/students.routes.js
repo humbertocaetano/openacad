@@ -193,9 +193,13 @@ router.get('/:id([0-9]+)', async (req, res) => {
       SELECT 
         s.*,
         u.name as user_name,
-        u.email as user_email
+        u.email as user_email,
+        u.phone as user_phone,
+        c.id as class_id,
+        c.year_id as year_id
       FROM students s
       JOIN users u ON s.user_id = u.id
+      LEFT JOIN classes c ON s.class_id = c.id
       WHERE s.id = $1
     `, [id]);
 
@@ -203,7 +207,15 @@ router.get('/:id([0-9]+)', async (req, res) => {
       return res.status(404).json({ message: 'Aluno não encontrado' });
     }
 
-    res.json(result.rows[0]);
+    const student = result.rows[0];
+    // Formatar a data de nascimento para YYYY-MM-DD se existir
+    if (student.birth_date) {
+      student.birth_date = new Date(student.birth_date).toISOString().split('T')[0];
+    }
+
+    res.json(student);
+
+
   } catch (error) {
     console.error('Erro ao buscar aluno:', error);
     res.status(500).json({ message: 'Erro ao buscar aluno' });

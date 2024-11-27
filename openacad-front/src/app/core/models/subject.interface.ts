@@ -3,7 +3,7 @@ export interface KnowledgeArea {
     name: string;
 }
 
-export interface Subject {
+export interface SchoolSubject {
     id: number;
     name: string;
     year_id?: number;

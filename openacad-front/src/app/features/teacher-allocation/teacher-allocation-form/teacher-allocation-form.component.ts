@@ -6,7 +6,10 @@ import { TeacherAllocationService } from '../../../core/services/teacher-allocat
 import { TeacherService } from '../../../core/services/teacher.service';
 import { SubjectService } from '../../../core/services/subject.service';
 import { Teacher } from '../../../core/models/teacher.interface';
-import { Subject } from '../../../core/models/subject.interface';
+import { SchoolSubject } from '../../../core/models/subject.interface';
+import { SchoolYear } from '../../../core/models/school-year.interface'; 
+import { ClassDivision } from '../../../core/models/class-division.interface';
+import { ClassService } from '../../../core/services/class.service';
 
 @Component({
   selector: 'app-teacher-allocation-form',
@@ -33,41 +36,56 @@ import { Subject } from '../../../core/models/subject.interface';
           </div>
 
           <form [formGroup]="allocationForm" (ngSubmit)="onSubmit()">
-            <div class="form-group">
-              <label for="teacher">Professor</label>
-              <select id="teacher" formControlName="teacherId" [class.invalid]="allocationForm.get('teacherId')?.invalid && allocationForm.get('teacherId')?.touched">
-                <option value="">Selecione um professor</option>
-                <option *ngFor="let teacher of teachers" [value]="teacher.id">
-                  {{ teacher.name }}
-                </option>
-              </select>
-              <div class="error-message" *ngIf="allocationForm.get('teacherId')?.invalid && allocationForm.get('teacherId')?.touched">
-                Professor é obrigatório
-              </div>
-            </div>
 
-            <div class="form-group">
-              <label for="subject">Disciplina</label>
-              <select id="subject" formControlName="subjectId" [class.invalid]="allocationForm.get('subjectId')?.invalid && allocationForm.get('subjectId')?.touched">
-                <option value="">Selecione uma disciplina</option>
-                <option *ngFor="let subject of subjects" [value]="subject.id">
-                  {{ subject.name }}
-                </option>
-              </select>
-              <div class="error-message" *ngIf="allocationForm.get('subjectId')?.invalid && allocationForm.get('subjectId')?.touched">
-                Disciplina é obrigatória
-              </div>
-            </div>
+<div class="form-group">
+  <label for="teacher">Professor</label>
+  <select id="teacher" formControlName="teacherId">
+    <option value="">Selecione um professor</option>
+    <option *ngFor="let teacher of teachers" [value]="teacher.id">
+      {{ teacher.name }}
+    </option>
+  </select>
+</div>
 
-            <div class="form-group">
-              <label for="year">Ano</label>
-              <select id="year" formControlName="year" [class.invalid]="allocationForm.get('year')?.invalid && allocationForm.get('year')?.touched">
-                <option [value]="currentYear" *ngFor="let currentYear of [2024, 2025, 2026]">
-                  {{ currentYear }}
-                </option>
-              </select>
-            </div>
+<div class="form-group">
+  <label for="year">Ano</label>
+  <select id="year" formControlName="yearId">
+    <option value="">Selecione o ano</option>
+    <option *ngFor="let year of schoolYears" [value]="year.id">
+      {{ year.name }}
+    </option>
+  </select>
+</div>
 
+<div class="form-group">
+  <label for="division">Turma</label>
+  <select id="division" formControlName="divisionId" [disabled]="!allocationForm.get('yearId')?.value">
+    <option value="">Selecione a turma</option>
+    <option *ngFor="let division of classDivisions" [value]="division.id">
+      {{ division.name }}
+    </option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="subject">Disciplina</label>
+  <select id="subject" formControlName="subjectId" 
+          [disabled]="!allocationForm.get('divisionId')?.value || !allocationForm.get('yearId')?.value">
+    <option value="">Selecione uma disciplina</option>
+    <option *ngFor="let subject of subjects" [value]="subject.id">
+      {{ subject.name }}
+    </option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="schoolYear">Ano Letivo</label>
+  <select id="schoolYear" formControlName="year">
+    <option [value]="currentYear" *ngFor="let currentYear of [2024, 2025, 2026]">
+      {{ currentYear }}
+    </option>
+  </select>
+</div>
             <div class="schedules-container">
               <h3>Horários</h3>
               <div formArrayName="schedules">
@@ -284,9 +302,11 @@ import { Subject } from '../../../core/models/subject.interface';
 
 
 export class TeacherAllocationFormComponent implements OnInit {
-  allocationForm: FormGroup;
+  allocationForm!: FormGroup;
   teachers: Teacher[] = [];
-  subjects: Subject[] = [];
+  subjects: SchoolSubject[] = [];
+  schoolYears: SchoolYear[] = [];
+  classDivisions: ClassDivision[] = [];
   isEditing: boolean = false;
   loading: boolean = false;
   error: string = '';
@@ -304,19 +324,62 @@ export class TeacherAllocationFormComponent implements OnInit {
     private router: Router,
     private teacherAllocationService: TeacherAllocationService,
     private teacherService: TeacherService,
-    private subjectService: SubjectService
+    private subjectService: SubjectService,
+    private classService: ClassService    
+
   ) {
     this.allocationForm = this.fb.group({
       teacherId: ['', Validators.required],
+      yearId: ['', Validators.required],
+      divisionId: ['', Validators.required],
       subjectId: ['', Validators.required],
       year: [new Date().getFullYear(), Validators.required],
       schedules: this.fb.array([])
     });
-  }
+
+    // Adicionar listeners para os campos dependentes
+    this.allocationForm.get('yearId')?.valueChanges.subscribe(yearId => {
+      this.loadClassDivisions(yearId);
+      this.allocationForm.patchValue({ divisionId: '', subjectId: '' });
+    });
+
+    this.allocationForm.get('divisionId')?.valueChanges.subscribe(divisionId => {
+      const yearId = this.allocationForm.get('yearId')?.value;
+      if (yearId && divisionId) {
+        this.loadSubjects(yearId, divisionId);
+      }
+      this.allocationForm.patchValue({ subjectId: '' });
+    });
+  }    
+
+
+//  private initializeForm(): void {
+//    this.allocationForm = this.fb.group({
+//      teacherId: ['', Validators.required],
+//      yearId: ['', Validators.required],
+//      divisionId: ['', Validators.required],
+//      subjectId: ['', Validators.required],
+//      year: [new Date().getFullYear(), Validators.required],
+//      schedules: this.fb.array([])
+//    });
+//
+//    this.allocationForm.get('yearId')?.valueChanges.subscribe(yearId => {
+//      this.loadClassDivisions(yearId);
+//      this.allocationForm.patchValue({ divisionId: '', subjectId: '' });
+//    });
+
+//    this.allocationForm.get('divisionId')?.valueChanges.subscribe(divisionId => {
+//      const yearId = this.allocationForm.get('yearId')?.value;
+//      if (yearId && divisionId) {
+//        this.loadSubjects(yearId, divisionId);
+//      }
+//      this.allocationForm.patchValue({ subjectId: '' });
+//    });
+//  }
 
   ngOnInit(): void {
     this.loadTeachers();
-    this.loadSubjects();
+    this.loadSchoolYears();
 
     const id = this.route.snapshot.params['id'];
     if (id) {
@@ -345,6 +408,46 @@ export class TeacherAllocationFormComponent implements OnInit {
     this.schedules.removeAt(index);
   }
 
+  loadSchoolYears(): void {
+    this.classService.getSchoolYears().subscribe({
+      next: (years) => this.schoolYears = years,
+      error: (error) => {
+        console.error('Erro ao carregar anos:', error);
+        this.error = 'Erro ao carregar anos escolares';
+      }
+    });
+  }
+
+  loadClassDivisions(yearId: number): void {
+    if (!yearId) {
+      this.classDivisions = [];
+      return;
+    }
+
+    this.classService.getClassDivisionsByYear(yearId).subscribe({
+      next: (divisions) => this.classDivisions = divisions,
+      error: (error) => {
+        console.error('Erro ao carregar turmas:', error);
+        this.error = 'Erro ao carregar turmas';
+      }
+    });
+  }
+
+  loadSubjects(yearId: number, divisionId: number): void {
+    if (!yearId || !divisionId) {
+      this.subjects = [];
+      return;
+    }
+
+    this.subjectService.getSubjectsByYearAndDivision(yearId, divisionId).subscribe({
+      next: (subjects: SchoolSubject[]) => this.subjects = subjects,
+      error: (error) => {
+        console.error('Erro ao carregar disciplinas:', error);
+        this.error = 'Erro ao carregar disciplinas';
+      }
+    });
+  }
+
   loadTeachers(): void {
     this.teacherService.getTeachers().subscribe({
       next: (data) => this.teachers = data,
@@ -355,15 +458,15 @@ export class TeacherAllocationFormComponent implements OnInit {
     });
   }
 
-  loadSubjects(): void {
-    this.subjectService.getSubjects().subscribe({
-      next: (data) => this.subjects = data,
-      error: (error) => {
-        console.error('Erro ao carregar disciplinas:', error);
-        this.error = 'Erro ao carregar disciplinas. Tente novamente mais tarde.';
-      }
-    });
-  }
+//  loadSubjects(): void {
+//    this.subjectService.getSubjectsForAllocation().subscribe({
+//      next: (data) => this.subjects = data,
+//      error: (error) => {
+//        console.error('Erro ao carregar disciplinas:', error);
+//        this.error = 'Erro ao carregar disciplinas. Tente novamente mais tarde.';
+//      }
+//    });
+//  }
 
   loadAllocation(id: number): void {
     this.loading = true;

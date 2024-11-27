@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
-import { Subject, CreateSubjectDTO, KnowledgeArea } from '../models/subject.interface';
+import { SchoolSubject, CreateSubjectDTO, KnowledgeArea } from '../models/subject.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -19,32 +19,45 @@ export class SubjectService {
     });
   }
 
-  getSubjects(): Observable<Subject[]> {
-    return this.http.get<Subject[]>(this.apiUrl, { headers: this.getHeaders() });
+  getSubjects(): Observable<SchoolSubject[]> {
+    return this.http.get<SchoolSubject[]>(this.apiUrl, { headers: this.getHeaders() });
   }
 
-  getSubject(id: number): Observable<Subject> {
-    return this.http.get<Subject>(`${this.apiUrl}/${id}`, { headers: this.getHeaders() });
+  getSubject(id: number): Observable<SchoolSubject> {
+    return this.http.get<SchoolSubject>(`${this.apiUrl}/${id}`, { headers: this.getHeaders() });
   }
+
+  getSubjectsForAllocation(): Observable<SchoolSubject[]> {
+    return this.http.get<SchoolSubject[]>(`${this.apiUrl}/for-allocation`);
+}
 
   getKnowledgeAreas(): Observable<KnowledgeArea[]> {
     return this.http.get<KnowledgeArea[]>(`${this.apiUrl}/knowledge-areas`, { headers: this.getHeaders() });
   }
 
-  createSubject(subjectData: CreateSubjectDTO): Observable<Subject> {
-    return this.http.post<Subject>(this.apiUrl, subjectData, { headers: this.getHeaders() });
+  createSubject(subjectData: CreateSubjectDTO): Observable<SchoolSubject> {
+    return this.http.post<SchoolSubject>(this.apiUrl, subjectData, { headers: this.getHeaders() });
   }
 
-  updateSubject(id: number, subjectData: CreateSubjectDTO): Observable<Subject> {
-    return this.http.put<Subject>(`${this.apiUrl}/${id}`, subjectData, { headers: this.getHeaders() });
+  updateSubject(id: number, subjectData: CreateSubjectDTO): Observable<SchoolSubject> {
+    return this.http.put<SchoolSubject>(`${this.apiUrl}/${id}`, subjectData, { headers: this.getHeaders() });
   }
 
   deleteSubject(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`, { headers: this.getHeaders() });
   }
 
-  toggleStatus(id: number, active: boolean): Observable<Subject> {
-    return this.http.patch<Subject>(
+  getSubjectsByYearAndDivision(yearId: number, divisionId: number): Observable<SchoolSubject[]> {
+    return this.http.get<SchoolSubject[]>(`${this.apiUrl}/by-class`, {
+      params: {
+        yearId: yearId.toString(),
+        divisionId: divisionId.toString()
+      }
+    });
+  }
+
+  toggleStatus(id: number, active: boolean): Observable<SchoolSubject> {
+    return this.http.patch<SchoolSubject>(
       `${this.apiUrl}/${id}/status`,
       { active },
       { headers: this.getHeaders() }

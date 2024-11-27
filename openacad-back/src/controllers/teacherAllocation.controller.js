@@ -1,11 +1,20 @@
-// src/controllers/teacherAllocation.controller.js
 const { pool } = require('../config/database');
 
+const getWeekdayName = (weekday) => {
+  const weekdays = {
+    1: 'Segunda-feira',
+    2: 'Terça-feira',
+    3: 'Quarta-feira',
+    4: 'Quinta-feira',
+    5: 'Sexta-feira'
+  };
+  return weekdays[weekday] || '';
+};
+
 const createAllocation = async (req, res) => {
-  const { teacherId, subjectId, year, schedules } = req.body;
+  const { teacherId, subjectId, divisionId, year, schedules } = req.body;
   
   try {
-    // Verificar se existe registro na tabela teachers para este usuário
     let teacherResult = await pool.query(
       'SELECT id FROM teachers WHERE user_id = $1',
       [teacherId]
@@ -13,7 +22,6 @@ const createAllocation = async (req, res) => {
 
     let teacher;
     if (teacherResult.rows.length === 0) {
-      // Se não existe, cria um novo registro na tabela teachers
       const insertResult = await pool.query(
         'INSERT INTO teachers (user_id) VALUES ($1) RETURNING id',
         [teacherId]
@@ -24,23 +32,24 @@ const createAllocation = async (req, res) => {
     }
 
     const existingAllocation = await pool.query(
-      `SELECT ts.*, s.name as subject_name 
+      `SELECT ts.*, s.name as subject_name, cd.name as division_name
        FROM teacher_subjects ts
        JOIN subjects s ON ts.subject_id = s.id
+       LEFT JOIN class_divisions cd ON ts.division_id = cd.id
        WHERE ts.teacher_id = $1 
        AND ts.subject_id = $2 
-       AND ts.year = $3 
+       AND ts.division_id = $3
+       AND ts.year = $4 
        AND ts.active = true`,
-      [teacher.id, subjectId, year]
+      [teacher.id, subjectId, divisionId, year]
     );
 
     if (existingAllocation.rows.length > 0) {
       return res.status(400).json({
-        error: `O professor já está alocado para a disciplina "${existingAllocation.rows[0].subject_name}" no ano ${year}`
+	error: `O professor já está alocado para a disciplina "${allocation.subject_name}" na turma "${allocation.division_name}" no ano ${year}`
       });
     }
 
-    // Verificar conflitos de horário usando o ID correto do professor
     const conflicts = await checkTimeConflicts(teacher.id, schedules);
     if (conflicts.length > 0) {
       return res.status(400).json({
@@ -49,17 +58,16 @@ const createAllocation = async (req, res) => {
       });
     }
 
-    // Criar alocação usando o pool
     const client = await pool.connect();
     try {
       await client.query('BEGIN');
       
       const teacherSubjectResult = await client.query(
         `INSERT INTO teacher_subjects 
-         (teacher_id, subject_id, year, active) 
-         VALUES ($1, $2, $3, true) 
+         (teacher_id, subject_id, division_id, year, active) 
+         VALUES ($1, $2, $3, $4, true) 
          RETURNING *`,
-        [teacher.id, subjectId, year]  // Usando o ID da tabela teachers
+        [teacher.id, subjectId, divisionId, year]
       );
       
       const teacherSubject = teacherSubjectResult.rows[0];
@@ -103,15 +111,14 @@ const getAllocations = async (req, res) => {
         u.name as teacher_name,
         s.id as subject_id,
         s.name as subject_name,
-        sy.name as school_year_name,
+        sy.name as year_name,
         cd.name as division_name
       FROM teacher_subjects ts
       LEFT JOIN teachers t ON ts.teacher_id = t.id
       LEFT JOIN users u ON t.user_id = u.id
       LEFT JOIN subjects s ON ts.subject_id = s.id
       LEFT JOIN school_years sy ON s.year_id = sy.id
-      LEFT JOIN classes c ON s.year_id = c.year_id
-      LEFT JOIN class_divisions cd ON c.division_id = cd.id
+      LEFT JOIN class_divisions cd ON cd.id = ts.division_id
       WHERE ts.active = true
       ${year ? 'AND ts.year = $1' : ''}
       ORDER BY u.name, s.name`,
@@ -125,30 +132,6 @@ const getAllocations = async (req, res) => {
           [row.id]
         );
 
-        // Formatar os horários
-        const formattedSchedules = schedulesResult.rows.map(schedule => {
-          const weekdays = {
-            1: 'Segunda-feira',
-            2: 'Terça-feira',
-            3: 'Quarta-feira',
-            4: 'Quinta-feira',
-            5: 'Sexta-feira'
-          };
-
-          // Formatar horários (converter de HH:MM:SS para HH:MM)
-          const startTime = schedule.start_time.substring(0, 5);
-          const endTime = schedule.end_time.substring(0, 5);
-
-          return {
-            id: schedule.id,
-            weekday: schedule.weekday,
-            weekdayName: weekdays[schedule.weekday],
-            startTime,
-            endTime,
-            displayText: `${weekdays[schedule.weekday]} - ${startTime} às ${endTime}`
-          };
-        });
-
         return {
           id: row.id,
           teacher: {
@@ -160,10 +143,13 @@ const getAllocations = async (req, res) => {
             name: row.subject_name
           },
           class: {
-            name: `${row.school_year_name || ''} ${row.division_name || ''}`.trim() || 'Não definida'
+            name: row.division_name ? `${row.year_name} ${row.division_name}` : row.year_name
           },
           year: row.year,
-          schedules: formattedSchedules
+          schedules: schedulesResult.rows.map(schedule => ({
+            ...schedule,
+            displayText: `${getWeekdayName(schedule.weekday)} - ${schedule.start_time.slice(0, 5)} às ${schedule.end_time.slice(0, 5)}`
+          }))
         };
       })
     );
@@ -174,7 +160,6 @@ const getAllocations = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
-
 
 const getAllocation = async (req, res) => {
   const { id } = req.params;

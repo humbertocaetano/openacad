@@ -14,6 +14,7 @@ export interface Student {
     // Campos relacionados
     user_name?: string;
     user_email?: string;
+    user_phone: string;
     class_year_name?: string;
     class_division_name?: string;
 }
@@ -31,6 +32,11 @@ export interface CreateStudentDTO {
     health_info?: string;
     notes?: string;
     active?: boolean;
+    user_data?: {  
+      name: string;
+      email: string;
+      phone: string;
+    };    
 }
 
 export interface UpdateStudentDTO {

@@ -90,6 +90,7 @@ import { CreateStudentDTO } from '../../../core/models/student.interface';
                   id="phone" 
                   type="text" 
                   formControlName="phone"
+                  [class.invalid]="studentForm.get('phone')?.invalid && studentForm.get('phone')?.touched"
                 >
               </div>
 
@@ -495,9 +496,10 @@ export class StudentFormComponent implements OnInit {
         this.studentForm.patchValue({
           name: student.user_name,
           email: student.user_email,
+	  phone: student.user_phone,
           registration: student.registration,
           class_id: student.class_id,
-          birth_date: student.birth_date,
+	  birth_date: student.birth_date ? student.birth_date.split('T')[0] : '',
           guardian_name: student.guardian_name,
           guardian_phone: student.guardian_phone,
           guardian_email: student.guardian_email,
@@ -567,7 +569,12 @@ export class StudentFormComponent implements OnInit {
       address: this.studentForm.value.address,
       health_info: this.studentForm.value.health_info,
       notes: this.studentForm.value.notes,
-      active: this.studentForm.value.active
+      active: this.studentForm.value.active,
+      user_data: {  // adicionado objeto user_data
+        name: this.studentForm.value.name,
+        email: this.studentForm.value.email,
+        phone: this.studentForm.value.phone
+     }      
     };
 
     const request = this.isEditMode ?

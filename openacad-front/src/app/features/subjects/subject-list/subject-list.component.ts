@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SubjectService } from '../../../core/services/subject.service';
-import { Subject } from '../../../core/models/subject.interface';
+import { SchoolSubject } from '../../../core/models/subject.interface';
 
 @Component({
   selector: 'app-subject-list',
@@ -44,6 +44,7 @@ import { Subject } from '../../../core/models/subject.interface';
                 <th>Área de Conhecimento</th>
                 <th>Carga Horária</th>
                 <th>Status</th>
+		<th>Alunos</th>
                 <th>Editar</th>
                 <th>Excluir</th>
               </tr>
@@ -51,7 +52,7 @@ import { Subject } from '../../../core/models/subject.interface';
             <tbody>
               <tr *ngFor="let subject of subjects">
                 <td>{{subject.name}}</td>
-                <td>{{subject.year_name}}</td>
+                <td>{{subject.year_name || 'NDI'}}</td>
                 <td>{{subject.knowledge_area_name || 'Não definida'}}</td>
                 <td>{{subject.hours_per_year}}</td>
                 <td>
@@ -59,6 +60,12 @@ import { Subject } from '../../../core/models/subject.interface';
                     {{subject.active ? 'Ativa' : 'Inativa'}}
                   </span>
                 </td>
+                <td>
+                  <button class="students-button" [routerLink]="['/disciplinas', subject.id, 'alunos']">
+                    <span class="icon">👥</span>
+                  </button>
+                </td>
+		
                 <td>
                   <button class="edit-button" [routerLink]="['/disciplinas/editar', subject.id]">
                     <span class="icon">✎</span>
@@ -238,10 +245,25 @@ import { Subject } from '../../../core/models/subject.interface';
       border-radius: 4px;
       margin-bottom: 1rem;
     }
+  .students-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00a86b;
+
+    &:hover {
+      background-color: rgba(0,168,107,0.1);
+    }
+  }
   `]
 })
 export class SubjectListComponent implements OnInit {
-  subjects: Subject[] = [];
+  subjects: SchoolSubject[] = [];
   loading = false;
   error: string | null = null;
 
@@ -268,7 +290,7 @@ export class SubjectListComponent implements OnInit {
     });
   }
 
-  deleteSubject(subject: Subject) {
+  deleteSubject(subject: SchoolSubject) {
     if (confirm(`Tem certeza que deseja excluir a disciplina ${subject.name}?`)) {
       this.subjectService.deleteSubject(subject.id).subscribe({
         next: () => {

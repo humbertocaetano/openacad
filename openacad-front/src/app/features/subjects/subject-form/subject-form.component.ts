@@ -4,7 +4,7 @@ import { RouterModule, ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { SubjectService } from '../../../core/services/subject.service';
 import { ClassService } from '../../../core/services/class.service';
-import { KnowledgeArea, Subject } from '../../../core/models/subject.interface';
+import { KnowledgeArea, SchoolSubject } from '../../../core/models/subject.interface';
 import { SchoolYear } from '../../../core/models/class.interface';
 
 @Component({
@@ -398,10 +398,12 @@ import { SchoolYear } from '../../../core/models/class.interface';
 })
 export class SubjectFormComponent implements OnInit {
 
+  subjects: SchoolSubject[] = [];
   subjectForm!: FormGroup;
   isSubmitting = false;
   loading = false;
   errorMessage = '';
+  error: string = '';
   activeTab: 'basic' | 'content' | 'bibliography' = 'basic';
   isEditMode = false;
   schoolYears: SchoolYear[] = [];
@@ -478,6 +480,18 @@ export class SubjectFormComponent implements OnInit {
         console.error('Erro ao carregar disciplina:', error);
         this.errorMessage = 'Erro ao carregar disciplina';
         this.loading = false;
+      }
+    });
+  }
+
+  loadSubjects() {
+    this.subjectService.getSubjectsForAllocation().subscribe({
+      next: (subjects) => {
+        this.subjects = subjects;
+      },
+      error: (error) => {
+        console.error('Erro ao carregar disciplinas:', error);
+        this.error = 'Erro ao carregar disciplinas';
       }
     });
   }

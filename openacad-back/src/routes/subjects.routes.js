@@ -1,9 +1,41 @@
 const express = require('express');
 const router = express.Router();
 const { pool } = require('../config/database');
-const { getSubjects } = require('../controllers/subjects.controller');
+const { getSubjects, getSubjectsForAllocation } = require('../controllers/subjects.controller');
 
-router.get('/', getSubjects);
+router.get('/for-allocation', getSubjectsForAllocation);
+
+router.get('/by-class', async (req, res) => {
+  try {
+    const yearId = parseInt(req.query.yearId);
+    const divisionId = parseInt(req.query.divisionId);
+
+    if (isNaN(yearId) || isNaN(divisionId)) {
+      return res.status(400).json({ error: 'yearId e divisionId devem ser números válidos' });
+    }
+
+    console.log('Buscando disciplinas com yearId:', yearId, 'e divisionId:', divisionId);
+
+    const result = await pool.query(
+      `SELECT DISTINCT s.id, s.name
+       FROM subjects s
+       JOIN classes c ON s.year_id = c.year_id
+       WHERE c.year_id = $1 
+       AND c.division_id = $2
+       AND s.active = true
+       ORDER BY s.name`,
+      [yearId, divisionId]
+    );
+    
+    console.log('Disciplinas encontradas:', result.rows);
+    
+    res.json(result.rows);
+  } catch (error) {
+    console.error('Erro ao buscar disciplinas:', error);
+    console.error('Detalhes do erro:', error.message);
+    res.status(500).json({ error: 'Erro ao buscar disciplinas', details: error.message });
+  }
+});
 
 // Listar áreas de conhecimento
 router.get('/knowledge-areas', async (req, res) => {
@@ -15,6 +47,8 @@ router.get('/knowledge-areas', async (req, res) => {
     res.status(500).json({ message: 'Erro ao buscar áreas de conhecimento' });
   }
 });
+
+router.get('/', getSubjects);
 
 // Listar todas as disciplinas
 router.get('/', async (req, res) => {
@@ -201,5 +235,6 @@ router.patch('/:id/status', async (req, res) => {
     res.status(500).json({ message: 'Erro ao atualizar status da disciplina' });
   }
 });
+
 
 module.exports = router;

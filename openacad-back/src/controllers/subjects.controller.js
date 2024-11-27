@@ -4,6 +4,7 @@ const { pool } = require('../config/database');
 const getSubjects = async (req, res) => {
   try {
     const result = await pool.query(
+
       `SELECT 
         s.id,
         s.name,
@@ -20,6 +21,7 @@ const getSubjects = async (req, res) => {
       FROM subjects s
       LEFT JOIN school_years sy ON s.year_id = sy.id
       LEFT JOIN knowledge_areas ka ON s.knowledge_area_id = ka.id
+      WHERE s.active = true
       ORDER BY s.name, sy.name`,
     );
 
@@ -35,7 +37,8 @@ const getSubjects = async (req, res) => {
       syllabus: row.syllabus,
       basic_bibliography: row.basic_bibliography,
       complementary_bibliography: row.complementary_bibliography,
-      active: row.active
+      active: row.active	    
+
     }));
 
     res.json(subjects);
@@ -44,6 +47,34 @@ const getSubjects = async (req, res) => {
     res.status(500).json({ error: 'Erro ao buscar disciplinas' });
   }
 };
+
+const getSubjectsForAllocation = async (req, res) => {
+  try {
+    const result = await pool.query(
+      `SELECT DISTINCT 
+        s.id,
+        s.name as subject_name,
+        sy.name as year_name
+      FROM subjects s
+      LEFT JOIN school_years sy ON s.year_id = sy.id
+      WHERE s.active = true
+      ORDER BY s.name, sy.name`
+
+
+    );
+
+    const subjects = result.rows.map(row => ({
+      id: row.id,
+      name: `${row.subject_name} - ${row.year_name}`
+    }));
+
+    res.json(subjects);
+  } catch (error) {
+    console.error('Erro ao buscar disciplinas para alocação:', error);
+    res.status(500).json({ error: 'Erro ao buscar disciplinas' });
+  }
+};
+
 
 const createSubject = async (req, res) => {
   const { 
@@ -121,6 +152,7 @@ const updateSubject = async (req, res) => {
 
 module.exports = {
   getSubjects,
+  getSubjectsForAllocation,
   createSubject,
   updateSubject
 };

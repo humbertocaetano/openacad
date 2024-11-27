@@ -144,4 +144,24 @@ router.patch('/:id/status', async (req, res) => {
   }
 });
 
+router.get('/divisions/:yearId', async (req, res) => {
+  const { yearId } = req.params;
+  
+  try {
+    const result = await pool.query(
+      `SELECT DISTINCT cd.id, cd.name
+       FROM class_divisions cd
+       JOIN classes c ON c.division_id = cd.id
+       WHERE c.year_id = $1
+       ORDER BY cd.name`,
+      [yearId]
+    );
+    
+    res.json(result.rows);
+  } catch (error) {
+    console.error('Erro ao buscar turmas:', error);
+    res.status(500).json({ error: 'Erro ao buscar turmas' });
+  }
+});
+
 module.exports = router;
