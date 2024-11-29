@@ -13,12 +13,17 @@ export class TeacherAllocationService {
 
   constructor(private http: HttpClient) {}
 
+  // Métodos existentes
   getAllocations(year: number): Observable<TeacherAllocation[]> {
     return this.http.get<TeacherAllocation[]>(`${this.apiUrl}?year=${year}`);
   }
 
   getAllocation(id: number): Observable<TeacherAllocation> {
     return this.http.get<TeacherAllocation>(`${this.apiUrl}/${id}`);
+  }
+
+  getTeacherAllocations(teacherId: number): Observable<TeacherAllocation[]> {
+    return this.http.get<TeacherAllocation[]>(`${this.apiUrl}/teacher/${teacherId}`);
   }
 
   createAllocation(allocation: TeacherAllocation): Observable<TeacherAllocation> {

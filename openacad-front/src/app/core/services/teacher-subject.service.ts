@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
+
 import { 
     TeacherSubject,
     StudentSubject,
@@ -23,46 +24,36 @@ export class TeacherSubjectService {
 
     constructor(private http: HttpClient) {}
 
-    private getHeaders(): HttpHeaders {
-        const token = localStorage.getItem('token');
-        return new HttpHeaders({
-            'Authorization': `Bearer ${token}`
-        });
-    }
-
-    // Teacher Subjects
     getTeacherSubjects(teacherId?: number, year?: number): Observable<TeacherSubject[]> {
         let url = this.apiUrl;
         if (teacherId) url += `?teacher_id=${teacherId}`;
         if (year) url += `${teacherId ? '&' : '?'}year=${year}`;
-        return this.http.get<TeacherSubject[]>(url, { headers: this.getHeaders() });
+        return this.http.get<TeacherSubject[]>(url);
     }
 
     createTeacherSubject(data: CreateTeacherSubjectDTO): Observable<TeacherSubject> {
-        return this.http.post<TeacherSubject>(this.apiUrl, data, { headers: this.getHeaders() });
+        return this.http.post<TeacherSubject>(this.apiUrl, data);
     }
 
-    // Student Subjects
     getStudentSubjects(teacherSubjectId: number): Observable<StudentSubject[]> {
         return this.http.get<StudentSubject[]>(
-            `${this.apiUrl}/${teacherSubjectId}/students`,
-            { headers: this.getHeaders() }
-        );
+            `${this.apiUrl}/${teacherSubjectId}/students`);
     }
 
     addStudentToSubject(teacherSubjectId: number, data: CreateStudentSubjectDTO): Observable<StudentSubject> {
         return this.http.post<StudentSubject>(
             `${this.apiUrl}/${teacherSubjectId}/students`,
             data,
-            { headers: this.getHeaders() }
+            { // headers: this.getHeaders() 
+                }
         );
     }
 
-    // Lesson Contents
     getLessonContents(teacherSubjectId: number): Observable<LessonContent[]> {
         return this.http.get<LessonContent[]>(
             `${this.apiUrl}/${teacherSubjectId}/contents`,
-            { headers: this.getHeaders() }
+            { // headers: this.getHeaders() 
+                }
         );
     }
 
@@ -70,15 +61,16 @@ export class TeacherSubjectService {
         return this.http.post<LessonContent>(
             `${this.apiUrl}/${data.teacher_subject_id}/contents`,
             data,
-            { headers: this.getHeaders() }
+            { // headers: this.getHeaders()
+                 }
         );
     }
 
-    // Attendances
     getAttendances(teacherSubjectId: number, date: string): Observable<Attendance[]> {
         return this.http.get<Attendance[]>(
             `${this.apiUrl}/${teacherSubjectId}/attendances?date=${date}`,
-            { headers: this.getHeaders() }
+            { // headers: this.getHeaders() 
+                }
         );
     }
 
@@ -86,15 +78,16 @@ export class TeacherSubjectService {
         return this.http.post<Attendance[]>(
             `${this.apiUrl}/${teacherSubjectId}/attendances`,
             data,
-            { headers: this.getHeaders() }
+            { // headers: this.getHeaders() 
+                }
         );
     }
 
-    // Grades
     getGrades(teacherSubjectId: number): Observable<Grade[]> {
         return this.http.get<Grade[]>(
             `${this.apiUrl}/${teacherSubjectId}/grades`,
-            { headers: this.getHeaders() }
+            { // headers: this.getHeaders() 
+                }
         );
     }
 
@@ -102,7 +95,8 @@ export class TeacherSubjectService {
         return this.http.post<Grade[]>(
             `${this.apiUrl}/${teacherSubjectId}/grades`,
             data,
-            { headers: this.getHeaders() }
+            { // headers: this.getHeaders() 
+                }
         );
     }
 }

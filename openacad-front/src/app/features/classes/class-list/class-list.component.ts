@@ -42,6 +42,7 @@ import { Class } from '../../../core/models/class.interface';
                 <th>Ano</th>
                 <th>Turma</th>
                 <th>Status</th>
+                <th>Alunos</th>
                 <th>Editar</th>
                 <th>Excluir</th>
               </tr>
@@ -55,6 +56,11 @@ import { Class } from '../../../core/models/class.interface';
                     {{class.active ? 'Ativa' : 'Inativa'}}
                   </span>
                 </td>
+                <td>
+                  <button class="students-button" [routerLink]="['/turmas', class.id, 'alunos']">
+                    <span class="icon">👥</span>
+                  </button>
+                </td>		
                 <td>
                   <button class="edit-button" (click)="openEditModal(class)">
                     <span class="icon">✎</span>
@@ -234,6 +240,25 @@ import { Class } from '../../../core/models/class.interface';
       border-radius: 4px;
       margin-bottom: 1rem;
     }
+    .students-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #00a86b;
+
+      .icon {
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        background-color: rgba(0,168,107,0.1);
+      }
+    }    
   `]
 })
 export class ClassListComponent implements OnInit {
@@ -265,7 +290,6 @@ export class ClassListComponent implements OnInit {
   }
 
   openEditModal(classData: Class) {
-    // Implementaremos o modal de edição em seguida
     console.log('Editar turma:', classData);
   }
 

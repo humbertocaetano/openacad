@@ -5,12 +5,16 @@ import { UserListComponent } from './features/users/user-list/user-list.componen
 import { UserFormComponent } from './features/users/user-form/user-form.component';
 import { ClassListComponent } from './features/classes/class-list/class-list.component';
 import { ClassFormComponent } from './features/classes/class-form/class-form.component';
+import { ClassStudentsComponent } from './features/classes/class-students/class-students.component';
 import { SubjectListComponent } from './features/subjects/subject-list/subject-list.component';
 import { SubjectFormComponent } from './features/subjects/subject-form/subject-form.component';
 import { StudentListComponent } from './features/students/student-list/student-list.component';
 import { StudentFormComponent } from './features/students/student-form/student-form.component';
 import { TeacherAllocationListComponent } from './features/teacher-allocation/teacher-allocation-list/teacher-allocation-list.component';
 import { TeacherAllocationFormComponent } from './features/teacher-allocation/teacher-allocation-form/teacher-allocation-form.component';
+import { LessonPlanComponent } from './features/lesson-content/lesson-plan.component';
+import { LessonPlanListComponent } from './features/lesson-content/lesson-plan-list.component';
+import { LessonPlanFormComponent } from './features/lesson-content/lesson-plan-form.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -20,6 +24,7 @@ export const routes: Routes = [
   { path: 'usuarios/novo', component: UserFormComponent },
   { path: 'turmas', component: ClassListComponent },
   { path: 'turmas/novo', component: ClassFormComponent }, 
+  { path: 'turmas/:id/alunos', component: ClassStudentsComponent },  
   { path: 'disciplinas', component: SubjectListComponent },
   { path: 'disciplinas/novo', component: SubjectFormComponent },
   { path: 'disciplinas/editar/:id', component: SubjectFormComponent },
@@ -29,5 +34,8 @@ export const routes: Routes = [
   { path: 'alocacoes', component: TeacherAllocationListComponent },
   { path: 'alocacoes/novo', component: TeacherAllocationFormComponent },
   { path: 'alocacoes/editar/:id', component: TeacherAllocationFormComponent },
+  { path: 'plano-aula', component: LessonPlanListComponent },
+  { path: 'plano-aula/novo', component: LessonPlanFormComponent },
+  { path: 'plano-aula/editar/:id', component: LessonPlanFormComponent },
   { path: '**', redirectTo: 'dashboard' }
 ];

@@ -6470,3 +6470,181 @@ Body: {}
 Rota não encontrada: AQUI /api/api/allocations?year=2024
 [0mGET /api/api/allocations?year=2024 [33m404[0m 11.022 ms - 158[0m
 Cliente removido do pool
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+Server is running on port 3000
+Nova conexão estabelecida com o banco de dados
+Testando conexão com o banco de dados...
+Conexão com o banco de dados estabelecida em: 2024-11-28T15:29:11.113Z
+Cliente removido do pool
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-28T15:34:14.463Z
+Método: GET
+URL: /api/teacher-subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+
+URL completa: /api/teacher-subjects
+Base URL: 
+Path: /api/teacher-subjects
+Route Stack: [
+  'query',          'expressInit',
+  'corsMiddleware', 'helmetMiddleware',
+  'compression',    'logger',
+  'jsonParser',     'urlencodedParser',
+  '<anonymous>',    'router',
+  'router',         'router',
+  'router',         'router',
+  'router',         'router',
+  'router',         '<anonymous>',
+  '<anonymous>',    '/api/test',
+  'errorHandler'
+]
+Rota não encontrada: /api/teacher-subjects
+[0mGET /api/teacher-subjects [33m404[0m 4.917 ms - 34[0m
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-28T15:34:28.658Z
+Método: GET
+URL: /api/teacher-subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+
+URL completa: /api/teacher-subjects
+Base URL: 
+Path: /api/teacher-subjects
+Route Stack: [
+  'query',          'expressInit',
+  'corsMiddleware', 'helmetMiddleware',
+  'compression',    'logger',
+  'jsonParser',     'urlencodedParser',
+  '<anonymous>',    'router',
+  'router',         'router',
+  'router',         'router',
+  'router',         'router',
+  'router',         '<anonymous>',
+  '<anonymous>',    '/api/test',
+  'errorHandler'
+]
+Rota não encontrada: /api/teacher-subjects
+[0mGET /api/teacher-subjects [33m404[0m 2.208 ms - 34[0m
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-28T15:42:13.689Z
+Método: GET
+URL: /api/teacher-subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+
+URL completa: /api/teacher-subjects
+Base URL: 
+Path: /api/teacher-subjects
+Route Stack: [
+  'query',          'expressInit',
+  'corsMiddleware', 'helmetMiddleware',
+  'compression',    'logger',
+  'jsonParser',     'urlencodedParser',
+  '<anonymous>',    'router',
+  'router',         'router',
+  'router',         'router',
+  'router',         'router',
+  'router',         '<anonymous>',
+  '<anonymous>',    '/api/test',
+  'errorHandler'
+]
+Rota não encontrada: /api/teacher-subjects
+[0mGET /api/teacher-subjects [33m404[0m 3.339 ms - 34[0m
+
+--- Nova Requisição ---
+Data/Hora: 2024-11-28T15:42:19.300Z
+Método: GET
+URL: /api/teacher-subjects
+Headers: {
+  host: '192.168.15.104:3000',
+  connection: 'keep-alive',
+  accept: 'application/json, text/plain, */*',
+  authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTczMjQ4ODQwMSwiZXhwIjoxNzMyNTc0ODAxfQ.aI1qbOv7Nxb6HZA2ACqkvFn8KYU5xghIYaYWLSnGyX4',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
+  origin: 'http://192.168.15.104:4200',
+  referer: 'http://192.168.15.104:4200/',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+}
+Query Params: {}
+Body: {}
+
+URL completa: /api/teacher-subjects
+Base URL: 
+Path: /api/teacher-subjects
+Route Stack: [
+  'query',          'expressInit',
+  'corsMiddleware', 'helmetMiddleware',
+  'compression',    'logger',
+  'jsonParser',     'urlencodedParser',
+  '<anonymous>',    'router',
+  'router',         'router',
+  'router',         'router',
+  'router',         'router',
+  'router',         '<anonymous>',
+  '<anonymous>',    '/api/test',
+  'errorHandler'
+]
+Rota não encontrada: /api/teacher-subjects
+[0mGET /api/teacher-subjects [33m404[0m 0.757 ms - 34[0m
+
+> openacad-backend@1.0.0 start
+> node src/index.js
+
+/home/humberto/openacad/openacad-back/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Object]
+    at Route.<computed> [as get] (/home/humberto/openacad/openacad-back/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as get] (/home/humberto/openacad/openacad-back/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/routes/lesson-contents.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/humberto/openacad/openacad-back/src/routes/index.js:4:30)
+
+Node.js v18.19.0

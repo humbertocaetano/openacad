@@ -3694,3 +3694,1448 @@ main.js             | main  | 240.04 kB |
 Application bundle generation complete. [0.601 seconds]
 
 Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 239.53 kB | 
+
+Application bundle generation complete. [0.683 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 240.45 kB | 
+
+Application bundle generation complete. [1.209 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.947 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.248 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:61:30:
+[37m      61 │                 <td>{{student.[32muser[37m?.name}}</td>
+         ╵                               [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'getClass' does not exist on type 'ClassService'. Did you mean 'getClasses'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:274:22:
+[37m      274 │     this.classService.[32mgetClass[37m(this.classId).subscribe({
+          ╵                       [32m~~~~~~~~[0m
+
+  'getClasses' is declared here.
+
+    src/app/core/services/class.service.ts:15:2:
+[37m      15 │   [32mgetClasses[37m(): Observable<Class[]> {
+         ╵   [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'classInfo' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:275:13:
+[37m      275 │       next: ([32mclassInfo[37m) => {
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:278:14:
+[37m      278 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getStudentsByClass' does not exist on type 'StudentService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:290:24:
+[37m      290 │     this.studentService.[32mgetStudentsByClass[37m(this.classId).subscribe({
+          ╵                         [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'students' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:291:13:
+[37m      291 │       next: ([32mstudents[37m) => {
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:295:14:
+[37m      295 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'importStudentsToClass' does not exist on type 'StudentService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:312:24:
+[37m      312 │     this.studentService.[32mimportStudentsToClass[37m(this.classId).subsc...
+          ╵                         [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:316:14:
+[37m      316 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:325:67:
+[37m      325 │ ...a que deseja remover o aluno ${student.[32muser[37m?.name} da turma?`)) {
+          ╵                                           [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'removeStudentFromClass' does not exist on type 'StudentService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:333:24:
+[37m      333 │ ...this.studentService.[32mremoveStudentFromClass[37m(this.classId, stude...
+          ╵                        [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:337:14:
+[37m      337 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.478 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:61:30:
+[37m      61 │                 <td>{{student.[32muser[37m?.name}}</td>
+         ╵                               [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'getClass' does not exist on type 'ClassService'. Did you mean 'getClasses'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:274:22:
+[37m      274 │     this.classService.[32mgetClass[37m(this.classId).subscribe({
+          ╵                       [32m~~~~~~~~[0m
+
+  'getClasses' is declared here.
+
+    src/app/core/services/class.service.ts:15:2:
+[37m      15 │   [32mgetClasses[37m(): Observable<Class[]> {
+         ╵   [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'classInfo' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:275:13:
+[37m      275 │       next: ([32mclassInfo[37m) => {
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:278:14:
+[37m      278 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getStudentsByClass' does not exist on type 'StudentService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:290:24:
+[37m      290 │     this.studentService.[32mgetStudentsByClass[37m(this.classId).subscribe({
+          ╵                         [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'students' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:291:13:
+[37m      291 │       next: ([32mstudents[37m) => {
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:295:14:
+[37m      295 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'importStudentsToClass' does not exist on type 'StudentService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:312:24:
+[37m      312 │     this.studentService.[32mimportStudentsToClass[37m(this.classId).subsc...
+          ╵                         [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:316:14:
+[37m      316 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:325:67:
+[37m      325 │ ...a que deseja remover o aluno ${student.[32muser[37m?.name} da turma?`)) {
+          ╵                                           [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'removeStudentFromClass' does not exist on type 'StudentService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:333:24:
+[37m      333 │ ...this.studentService.[32mremoveStudentFromClass[37m(this.classId, stude...
+          ╵                        [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:337:14:
+[37m      337 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.325 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:61:30:
+[37m      61 │                 <td>{{student.[32muser[37m?.name}}</td>
+         ╵                               [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'getClass' does not exist on type 'ClassService'. Did you mean 'getClasses'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:274:22:
+[37m      274 │     this.classService.[32mgetClass[37m(this.classId).subscribe({
+          ╵                       [32m~~~~~~~~[0m
+
+  'getClasses' is declared here.
+
+    src/app/core/services/class.service.ts:15:2:
+[37m      15 │   [32mgetClasses[37m(): Observable<Class[]> {
+         ╵   [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'classInfo' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:275:13:
+[37m      275 │       next: ([32mclassInfo[37m) => {
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:278:14:
+[37m      278 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:325:67:
+[37m      325 │ ...a que deseja remover o aluno ${student.[32muser[37m?.name} da turma?`)) {
+          ╵                                           [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.602 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:61:30:
+[37m      61 │                 <td>{{student.[32muser[37m?.name}}</td>
+         ╵                               [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'getClass' does not exist on type 'ClassService'. Did you mean 'getClasses'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:274:22:
+[37m      274 │     this.classService.[32mgetClass[37m(this.classId).subscribe({
+          ╵                       [32m~~~~~~~~[0m
+
+  'getClasses' is declared here.
+
+    src/app/core/services/class.service.ts:15:2:
+[37m      15 │   [32mgetClasses[37m(): Observable<Class[]> {
+         ╵   [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'classInfo' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:275:13:
+[37m      275 │       next: ([32mclassInfo[37m) => {
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:278:14:
+[37m      278 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:325:67:
+[37m      325 │ ...a que deseja remover o aluno ${student.[32muser[37m?.name} da turma?`)) {
+          ╵                                           [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.771 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'getClass' does not exist on type 'ClassService'. Did you mean 'getClasses'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:274:22:
+[37m      274 │     this.classService.[32mgetClass[37m(this.classId).subscribe({
+          ╵                       [32m~~~~~~~~[0m
+
+  'getClasses' is declared here.
+
+    src/app/core/services/class.service.ts:15:2:
+[37m      15 │   [32mgetClasses[37m(): Observable<Class[]> {
+         ╵   [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'classInfo' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:275:13:
+[37m      275 │       next: ([32mclassInfo[37m) => {
+          ╵              [32m~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:278:14:
+[37m      278 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:325:67:
+[37m      325 │ ...a que deseja remover o aluno ${student.[32muser[37m?.name} da turma?`)) {
+          ╵                                           [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.289 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'ClassService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/class.service.ts:24:72:
+[37m      24 │ ...et<Class>(`${this.apiUrl}/${id}`, { headers: this.[32mgetHeaders[37m() });
+         ╵                                                      [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:325:67:
+[37m      325 │ ...a que deseja remover o aluno ${student.[32muser[37m?.name} da turma?`)) {
+          ╵                                           [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.183 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'ClassService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/class.service.ts:24:72:
+[37m      24 │ ...et<Class>(`${this.apiUrl}/${id}`, { headers: this.[32mgetHeaders[37m() });
+         ╵                                                      [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:325:67:
+[37m      325 │ ...a que deseja remover o aluno ${student.[32muser[37m?.name} da turma?`)) {
+          ╵                                           [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.527 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'user' does not exist on type 'Student'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/classes/class-students/class-students.component.ts:325:67:
+[37m      325 │ ...a que deseja remover o aluno ${student.[32muser[37m?.name} da turma?`)) {
+          ╵                                           [32m~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 255.69 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 345.99 kB
+
+Application bundle generation complete. [0.459 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 252.11 kB | 
+
+Application bundle generation complete. [0.638 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.420 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/teacher-subject.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:5:38:
+[37m      5 │ ...ectService } from [32m'../../../core/services/teacher-subject.service'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/lesson-content.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:6:37:
+[37m      6 │ ...tentService } from [32m'../../../core/services/lesson-content.service'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'teacherSubjectService' of class 'LessonPlanComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:279:12:
+[37m      279 │     private [32mteacherSubjectService[37m: TeacherSubjectService,
+          ╵             [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/lesson-content/lesson-plan.component.ts:279:35:
+[37m      279 │     private teacherSubjectService: [32mTeacherSubjectService[37m,
+          ╵                                    [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:299:13:
+[37m      299 │       next: ([32msubjects[37m) => {
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:303:14:
+[37m      303 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'lessons' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:322:13:
+[37m      322 │       next: ([32mlessons[37m) => {
+          ╵              [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:326:14:
+[37m      326 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:348:16:
+[37m      348 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:374:16:
+[37m      374 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.538 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/teacher-subject.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:5:38:
+[37m      5 │ ...ectService } from [32m'../../../core/services/teacher-subject.service'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/lesson-content.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:6:37:
+[37m      6 │ ...tentService } from [32m'../../../core/services/lesson-content.service'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/models/lesson-content.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:7:30:
+[37m      7 │ ...ssonContent } from [32m'../../../core/models/lesson-content.interface'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'teacherSubjectService' of class 'LessonPlanComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:280:12:
+[37m      280 │     private [32mteacherSubjectService[37m: TeacherSubjectService,
+          ╵             [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/lesson-content/lesson-plan.component.ts:280:35:
+[37m      280 │     private teacherSubjectService: [32mTeacherSubjectService[37m,
+          ╵                                    [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:300:13:
+[37m      300 │       next: ([32msubjects[37m) => {
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:304:14:
+[37m      304 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'lessons' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:323:13:
+[37m      323 │       next: ([32mlessons[37m) => {
+          ╵              [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:327:14:
+[37m      327 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:349:16:
+[37m      349 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:375:16:
+[37m      375 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.353 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/teacher-subject.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:5:38:
+[37m      5 │ ...ectService } from [32m'../../../core/services/teacher-subject.service'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/lesson-content.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:6:37:
+[37m      6 │ ...tentService } from [32m'../../../core/services/lesson-content.service'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/models/lesson-content.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:7:30:
+[37m      7 │ ...ssonContent } from [32m'../../../core/models/lesson-content.interface'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'teacherSubjectService' of class 'LessonPlanComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:281:12:
+[37m      281 │     private [32mteacherSubjectService[37m: TeacherSubjectService,
+          ╵             [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/lesson-content/lesson-plan.component.ts:281:35:
+[37m      281 │     private teacherSubjectService: [32mTeacherSubjectService[37m,
+          ╵                                    [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:301:13:
+[37m      301 │       next: ([32msubjects[37m) => {
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:305:14:
+[37m      305 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'lessons' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:324:13:
+[37m      324 │       next: ([32mlessons[37m) => {
+          ╵              [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:328:14:
+[37m      328 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:350:16:
+[37m      350 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:376:16:
+[37m      376 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.491 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/teacher-subject.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:5:38:
+[37m      5 │ ...ectService } from [32m'../../../core/services/teacher-subject.service'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/lesson-content.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:6:37:
+[37m      6 │ ...tentService } from [32m'../../../core/services/lesson-content.service'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/models/lesson-content.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:7:30:
+[37m      7 │ ...ssonContent } from [32m'../../../core/models/lesson-content.interface'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'teacherSubjectService' of class 'LessonPlanComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:295:12:
+[37m      295 │     private [32mteacherSubjectService[37m: TeacherSubjectService,
+          ╵             [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/lesson-content/lesson-plan.component.ts:295:35:
+[37m      295 │     private teacherSubjectService: [32mTeacherSubjectService[37m,
+          ╵                                    [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:315:13:
+[37m      315 │       next: ([32msubjects[37m) => {
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:319:14:
+[37m      319 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'lessons' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:338:13:
+[37m      338 │       next: ([32mlessons[37m) => {
+          ╵              [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:342:14:
+[37m      342 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:364:16:
+[37m      364 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:390:16:
+[37m      390 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.405 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/teacher-subject.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:5:38:
+[37m      5 │ ...ectService } from [32m'../../../core/services/teacher-subject.service'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/lesson-content.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:6:37:
+[37m      6 │ ...tentService } from [32m'../../../core/services/lesson-content.service'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/models/teacher-subject.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:7:54:
+[37m      7 │ ...ContentDTO } from [32m'../../../core/models/teacher-subject.interface'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'teacherSubjectService' of class 'LessonPlanComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:295:14:
+[37m      295 │       private [32mteacherSubjectService[37m: TeacherSubjectService,
+          ╵               [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/lesson-content/lesson-plan.component.ts:295:37:
+[37m      295 │       private teacherSubjectService: [32mTeacherSubjectService[37m,
+          ╵                                      [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:315:13:
+[37m      315 │       next: ([32msubjects[37m) => {
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:319:14:
+[37m      319 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'lessons' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:338:13:
+[37m      338 │       next: ([32mlessons[37m) => {
+          ╵              [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:342:14:
+[37m      342 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:364:16:
+[37m      364 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:390:16:
+[37m      390 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [7.957 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/teacher-subject.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:5:38:
+[37m      5 │ ...ectService } from [32m'../../../core/services/teacher-subject.service'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/services/lesson-content.service' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:6:37:
+[37m      6 │ ...tentService } from [32m'../../../core/services/lesson-content.service'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../core/models/teacher-subject.interface' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:7:54:
+[37m      7 │ ...ContentDTO } from [32m'../../../core/models/teacher-subject.interface'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'teacherSubjectService' of class 'LessonPlanComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:295:14:
+[37m      295 │       private [32mteacherSubjectService[37m: TeacherSubjectService,
+          ╵               [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/features/lesson-content/lesson-plan.component.ts:295:37:
+[37m      295 │       private teacherSubjectService: [32mTeacherSubjectService[37m,
+          ╵                                      [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'subjects' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:315:13:
+[37m      315 │       next: ([32msubjects[37m) => {
+          ╵              [32m~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:319:14:
+[37m      319 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'lessons' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:338:13:
+[37m      338 │       next: ([32mlessons[37m) => {
+          ╵              [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:342:14:
+[37m      342 │       error: ([32merror[37m) => {
+          ╵               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:364:16:
+[37m      364 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'error' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:390:16:
+[37m      390 │         error: ([32merror[37m) => {
+          ╵                 [32m~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [4.293 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"./subject.interface"' has no exported member 'Subject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/models/teacher-subject.interface.ts:2:9:
+[37m      2 │ import { [32mSubject[37m } from './subject.interface';
+        ╵          [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2440: Import declaration conflicts with local declaration of 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:7:9:
+[37m      7 │ import { [32mLessonContent[37m, CreateLessonContentDTO } from '../../core/m...
+        ╵          [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherSubject[]' is not assignable to type 'TeacherSubjectView[]'.
+  Type 'TeacherSubject' is missing the following properties from type 'TeacherSubjectView': subject_name, class_year_name, class_division_name[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:316:8:
+[37m      316 │         [32mthis.teacherSubjects[37m = subjects;
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.509 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2440: Import declaration conflicts with local declaration of 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:7:9:
+[37m      7 │ import { [32mLessonContent[37m, CreateLessonContentDTO } from '../../core/m...
+        ╵          [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherSubject[]' is not assignable to type 'TeacherSubjectView[]'.
+  Type 'TeacherSubject' is missing the following properties from type 'TeacherSubjectView': subject_name, class_year_name, class_division_name[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:316:8:
+[37m      316 │         [32mthis.teacherSubjects[37m = subjects;
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.800 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'TeacherSubject[]' is not assignable to type 'TeacherSubjectView[]'.
+  Type 'TeacherSubject' is missing the following properties from type 'TeacherSubjectView': subject_name, class_year_name, class_division_name[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:305:8:
+[37m      305 │         [32mthis.teacherSubjects[37m = subjects;
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent[]' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent[]'.
+  Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:328:8:
+[37m      328 │         [32mthis.lessons[37m = lessons;
+          ╵         [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.117 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<TeacherSubject[]>> | ((value: TeacherSubject[]) => void) | undefined): Subscription', gave the following error.
+    Type '(subjects: TeacherSubject[]) => void' is not assignable to type '(value: TeacherSubject[]) => void'.
+      Types of parameters 'subjects' and 'value' are incompatible.
+        Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").TeacherSubject[]' is not assignable to type 'TeacherSubject[]'.
+          Type 'TeacherSubject' is missing the following properties from type 'TeacherSubject': subject_name, class_year_name, class_division_name
+  Overload 2 of 2, '(next?: ((value: TeacherSubject[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: TeacherSubject[]) => void'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:304:6:
+[37m      304 │       [32mnext[37m: (subjects: TeacherSubject[]) => {
+          ╵       [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subject' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:308:32:
+[37m      308 │           subject_name: subject.[32msubject[37m?.name || '',
+          ╵                                 [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'class' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:309:35:
+[37m      309 │           class_year_name: subject.[32mclass[37m?.name?.split(' ')[0] || '',
+          ╵                                    [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'class' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:310:39:
+[37m      310 │ ...   class_division_name: subject.[32mclass[37m?.name?.split(' ')[1] || '',
+          ╵                                    [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subject' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:311:27:
+[37m      311 │           subject: subject.[32msubject[37m,
+          ╵                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'class' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:312:25:
+[37m      312 │           class: subject.[32mclass[37m
+          ╵                          [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent[]' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent[]'.
+  Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:336:8:
+[37m      336 │         [32mthis.lessons[37m = lessons;
+          ╵         [32m~~~~~~~~~~~~[0m
+
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Application bundle generation failed. [8.115 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2769: No overload matches this call.
+  Overload 1 of 2, '(observerOrNext?: Partial<Observer<TeacherSubject[]>> | ((value: TeacherSubject[]) => void) | undefined): Subscription', gave the following error.
+    Type '(subjects: TeacherSubject[]) => void' is not assignable to type '(value: TeacherSubject[]) => void'.
+      Types of parameters 'subjects' and 'value' are incompatible.
+        Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").TeacherSubject[]' is not assignable to type 'TeacherSubject[]'.
+          Type 'TeacherSubject' is missing the following properties from type 'TeacherSubject': subject_name, class_year_name, class_division_name
+  Overload 2 of 2, '(next?: ((value: TeacherSubject[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription', gave the following error.
+    Object literal may only specify known properties, and 'next' does not exist in type '(value: TeacherSubject[]) => void'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:304:6:
+[37m      304 │       [32mnext[37m: (subjects: TeacherSubject[]) => {
+          ╵       [32m~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subject' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:308:32:
+[37m      308 │           subject_name: subject.[32msubject[37m?.name || '',
+          ╵                                 [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'class' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:309:35:
+[37m      309 │           class_year_name: subject.[32mclass[37m?.name?.split(' ')[0] || '',
+          ╵                                    [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'class' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:310:39:
+[37m      310 │ ...   class_division_name: subject.[32mclass[37m?.name?.split(' ')[1] || '',
+          ╵                                    [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'subject' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:311:27:
+[37m      311 │           subject: subject.[32msubject[37m,
+          ╵                            [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'class' does not exist on type 'TeacherSubject'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:312:25:
+[37m      312 │           class: subject.[32mclass[37m
+          ╵                          [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent[]' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent[]'.
+  Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:336:8:
+[37m      336 │         [32mthis.lessons[37m = lessons;
+          ╵         [32m~~~~~~~~~~~~[0m
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [3.725 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent[]' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent[]'.
+  Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:335:8:
+[37m      335 │         [32mthis.lessons[37m = lessons;
+          ╵         [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.837 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent[]' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent[]'.
+  Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:328:8:
+[37m      328 │         [32mthis.lessons[37m = lessons;
+          ╵         [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.260 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent[]' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent[]'.
+  Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:328:8:
+[37m      328 │         [32mthis.lessons[37m = lessons;
+          ╵         [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.200 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent[]' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent[]'.
+  Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:328:8:
+[37m      328 │         [32mthis.lessons[37m = lessons;
+          ╵         [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.466 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:23:60:
+[37m      23 │ ...BySubject(teacherSubjectId: number): Observable<[32mLessonContent[37m[]> {
+         ╵                                                    [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:24:25:
+[37m      24 │     return this.http.get<[32mLessonContent[37m[]>(
+         ╵                          [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:31:36:
+[37m      31 │   getLesson(id: number): Observable<[32mLessonContent[37m> {
+         ╵                                     [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:32:25:
+[37m      32 │     return this.http.get<[32mLessonContent[37m>(
+         ╵                          [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:39:23:
+[37m      39 │   createLesson(lesson: [32mLessonContent[37m): Observable<LessonContent> {
+         ╵                        [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:39:50:
+[37m      39 │   createLesson(lesson: LessonContent): Observable<[32mLessonContent[37m> {
+         ╵                                                   [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:40:26:
+[37m      40 │     return this.http.post<[32mLessonContent[37m>(
+         ╵                           [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:48:35:
+[37m      48 │ ...sson(id: number, lesson: [32mLessonContent[37m): Observable<LessonConte...
+         ╵                             [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:48:62:
+[37m      48 │ ...on(id: number, lesson: LessonContent): Observable<[32mLessonContent[37m> {
+         ╵                                                      [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:49:25:
+[37m      49 │     return this.http.put<[32mLessonContent[37m>(
+         ╵                          [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:65:98:
+[37m      65 │ ...startDate: string, endDate: string): Observable<[32mLessonContent[37m[]> {
+         ╵                                                    [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'LessonContent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/lesson-content.service.ts:66:25:
+[37m      66 │     return this.http.get<[32mLessonContent[37m[]>(
+         ╵                          [32m~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.101 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2322: Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent[]' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent[]'.
+  Type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/lesson-content.interface").LessonContent' is not assignable to type 'import("/home/humberto/openacad/openacad-front/src/app/core/models/teacher-subject.interface").LessonContent'.
+    Types of property 'id' are incompatible.
+      Type 'number | undefined' is not assignable to type 'number'.
+        Type 'undefined' is not assignable to type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/lesson-content/lesson-plan.component.ts:328:8:
+[37m      328 │         [32mthis.lessons[37m = lessons;
+          ╵         [32m~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 276.04 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 366.33 kB
+
+Application bundle generation complete. [0.459 seconds]
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.318 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.180 seconds]
+
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 278.92 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 369.22 kB
+
+Application bundle generation complete. [7.889 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 278.92 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 369.22 kB
+
+Application bundle generation complete. [7.291 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [2.592 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:39:68:
+[37m      39 │ ...s.http.get<TeacherSubject[]>(url, { headers: this.[32mgetHeaders[37m() });
+         ╵                                                      [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:43:81:
+[37m      43 │ ...eacherSubject>(this.apiUrl, data, { headers: this.[32mgetHeaders[37m() });
+         ╵                                                      [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:50:28:
+[37m      50 │             { headers: this.[32mgetHeaders[37m() }
+         ╵                             [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:58:28:
+[37m      58 │             { headers: this.[32mgetHeaders[37m() }
+         ╵                             [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:66:28:
+[37m      66 │             { headers: this.[32mgetHeaders[37m() }
+         ╵                             [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:74:28:
+[37m      74 │             { headers: this.[32mgetHeaders[37m() }
+         ╵                             [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:82:28:
+[37m      82 │             { headers: this.[32mgetHeaders[37m() }
+         ╵                             [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:90:28:
+[37m      90 │             { headers: this.[32mgetHeaders[37m() }
+         ╵                             [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:98:28:
+[37m      98 │             { headers: this.[32mgetHeaders[37m() }
+         ╵                             [32m~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'getHeaders' does not exist on type 'TeacherSubjectService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/core/services/teacher-subject.service.ts:106:28:
+[37m      106 │             { headers: this.[32mgetHeaders[37m() }
+          ╵                             [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 279.06 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 369.36 kB
+
+Application bundle generation complete. [0.235 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 279.29 kB | 
+
+Application bundle generation complete. [0.184 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 279.26 kB | 
+
+Application bundle generation complete. [0.297 seconds]
+
+Page reload sent to client(s).

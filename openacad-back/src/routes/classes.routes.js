@@ -25,6 +25,31 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const result = await pool.query(`
+      SELECT 
+        c.*,
+        sy.name as year_name,
+        cd.name as division_name
+      FROM classes c
+      JOIN school_years sy ON c.year_id = sy.id
+      JOIN class_divisions cd ON c.division_id = cd.id
+      WHERE c.id = $1
+    `, [id]);
+
+    if (result.rows.length === 0) {
+      return res.status(404).json({ message: 'Turma não encontrada' });
+    }
+
+    res.json(result.rows[0]);
+  } catch (error) {
+    console.error('Erro ao buscar detalhes da turma:', error);
+    res.status(500).json({ message: 'Erro ao buscar detalhes da turma' });
+  }
+});
+
 // Listar anos escolares
 router.get('/years', async (req, res) => {
   try {

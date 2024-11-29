@@ -23,9 +23,10 @@ import { AuthService } from '../core/services/auth.service';
         <div class="menu-grid">
           <button (click)="navigateTo('usuarios')">USUÁRIOS</button>
           <button (click)="navigateTo('turmas')">TURMAS</button>
-          <button (click)="navigateTo('alocacoes')">PROFESSORES</button>
+          <button (click)="navigateTo('alocacoes')">PROF / TURMA</button>
           <button (click)="navigateTo('alunos')">ALUNOS</button>
           <button (click)="navigateTo('disciplinas')">DISCIPLINAS</button>
+          <button (click)="navigateTo('plano-aula')">PLANO DE AULA</button>
         </div>
       </main>
     </div>

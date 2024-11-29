@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { SubjectService } from '../../../core/services/subject.service';
-import { SchoolSubject } from '../../../core/models/subject.interface';
+import { RouterModule, ActivatedRoute } from '@angular/router';
+import { ClassService } from '../../../core/services/class.service';
+import { StudentService } from '../../../core/services/student.service';
+import { Class } from '../../../core/models/class.interface';
+import { Student } from '../../../core/models/student.interface';
 
 @Component({
-  selector: 'app-subject-list',
+  selector: 'app-class-students',
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <div class="subject-list-container">
+    <div class="class-students-container">
       <header>
         <h1>OPENACAD</h1>
         <div class="header-buttons">
@@ -20,15 +22,14 @@ import { SchoolSubject } from '../../../core/models/subject.interface';
 
       <main>
         <div class="content-header">
-          <h2>Gestão de Disciplinas</h2>
+          <h2>Alunos da Turma: {{classInfo?.year_name}} {{classInfo?.division_name}}</h2>
           <div class="action-buttons">
-            <button class="back-button" routerLink="/dashboard">VOLTAR</button>
-            <button class="new-button" routerLink="/disciplinas/novo">CADASTRAR</button>
+            <button class="back-button" routerLink="/turmas">VOLTAR</button>
           </div>
         </div>
 
         <div class="loading-message" *ngIf="loading">
-          Carregando disciplinas...
+          {{loadingMessage}}
         </div>
 
         <div class="error-message" *ngIf="error">
@@ -39,36 +40,28 @@ import { SchoolSubject } from '../../../core/models/subject.interface';
           <table>
             <thead>
               <tr>
+                <th>Matrícula</th>
                 <th>Nome</th>
-                <th>Ano</th>
-                <th>Área de Conhecimento</th>
-                <th>Carga Horária</th>
                 <th>Status</th>
-                <th>Editar</th>
-                <th>Excluir</th>
+                <th>Responsável</th>
+                <th>Telefone</th>
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let subject of subjects">
-                <td>{{subject.name}}</td>
-                <td>{{subject.year_name || 'NDI'}}</td>
-                <td>{{subject.knowledge_area_name || 'Não definida'}}</td>
-                <td>{{subject.hours_per_year}}</td>
+              <tr *ngFor="let student of students">
+                <td>{{student.registration}}</td>
+                <td>{{student.user_name}}</td>
                 <td>
-                  <span class="status-badge" [class.active]="subject.active">
-                    {{subject.active ? 'Ativa' : 'Inativa'}}
+                  <span class="status-badge" [class.active]="student.active">
+                    {{student.active ? 'Ativo' : 'Inativo'}}
                   </span>
                 </td>
-		
-                <td>
-                  <button class="edit-button" [routerLink]="['/disciplinas/editar', subject.id]">
-                    <span class="icon">✎</span>
-                  </button>
-                </td>
-                <td>
-                  <button class="delete-button" (click)="deleteSubject(subject)">
-                    <span class="icon">✕</span>
-                  </button>
+                <td>{{student.guardian_name || '-'}}</td>
+                <td>{{student.guardian_phone || '-'}}</td>
+              </tr>
+              <tr *ngIf="students.length === 0">
+                <td colspan="5" class="empty-message">
+                  Nenhum aluno encontrado nesta turma
                 </td>
               </tr>
             </tbody>
@@ -78,7 +71,7 @@ import { SchoolSubject } from '../../../core/models/subject.interface';
     </div>
   `,
   styles: [`
-    .subject-list-container {
+    .class-students-container {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -142,11 +135,6 @@ import { SchoolSubject } from '../../../core/models/subject.interface';
             background-color: #f0f0f0;
             color: #333;
           }
-          
-          &.new-button {
-            background-color: #00a86b;
-            color: white;
-          }
 
           &:hover {
             opacity: 0.9;
@@ -176,6 +164,11 @@ import { SchoolSubject } from '../../../core/models/subject.interface';
           color: #333;
           background-color: #f8f8f8;
         }
+
+        .empty-message {
+          text-align: center;
+          color: #666;
+        }
       }
     }
 
@@ -196,35 +189,6 @@ import { SchoolSubject } from '../../../core/models/subject.interface';
       }
     }
 
-    .edit-button, .delete-button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .icon {
-        font-size: 1.2rem;
-      }
-    }
-
-    .edit-button {
-      color: #00a86b;
-      &:hover {
-        background-color: rgba(0,168,107,0.1);
-      }
-    }
-
-    .delete-button {
-      color: #ff4444;
-      &:hover {
-        background-color: rgba(255,68,68,0.1);
-      }
-    }
-
     .loading-message {
       text-align: center;
       padding: 2rem;
@@ -239,62 +203,57 @@ import { SchoolSubject } from '../../../core/models/subject.interface';
       border-radius: 4px;
       margin-bottom: 1rem;
     }
-  .students-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #00a86b;
-
-    &:hover {
-      background-color: rgba(0,168,107,0.1);
-    }
-  }
   `]
 })
-export class SubjectListComponent implements OnInit {
-  subjects: SchoolSubject[] = [];
+export class ClassStudentsComponent implements OnInit {
+  classId: number = 0;
+  classInfo: Class | null = null;
+  students: Student[] = [];
   loading = false;
+  loadingMessage = '';
   error: string | null = null;
 
-  constructor(private subjectService: SubjectService) {}
+  constructor(
+    private route: ActivatedRoute,
+    private classService: ClassService,
+    private studentService: StudentService
+  ) {}
 
   ngOnInit() {
-    this.loadSubjects();
+    this.route.params.subscribe(params => {
+      this.classId = +params['id'];
+      this.loadClassDetails();
+      this.loadStudents();
+    });
   }
 
-  loadSubjects() {
-    this.loading = true;
-    this.error = null;
-
-    this.subjectService.getSubjects().subscribe({
-      next: (subjects) => {
-        this.subjects = subjects;
-        this.loading = false;
+  loadClassDetails() {
+    this.classService.getClass(this.classId).subscribe({
+      next: (classInfo) => {
+        this.classInfo = classInfo;
       },
       error: (error) => {
-        console.error('Erro ao carregar disciplinas:', error);
-        this.error = 'Erro ao carregar disciplinas. Por favor, tente novamente.';
-        this.loading = false;
+        console.error('Erro ao carregar detalhes da turma:', error);
+        this.error = 'Erro ao carregar detalhes da turma. Por favor, tente novamente.';
       }
     });
   }
 
-  deleteSubject(subject: SchoolSubject) {
-    if (confirm(`Tem certeza que deseja excluir a disciplina ${subject.name}?`)) {
-      this.subjectService.deleteSubject(subject.id).subscribe({
-        next: () => {
-          this.loadSubjects();
-        },
-        error: (error) => {
-          console.error('Erro ao excluir disciplina:', error);
-          this.error = 'Erro ao excluir disciplina. Por favor, tente novamente.';
-        }
-      });
-    }
+  loadStudents() {
+    this.loading = true;
+    this.loadingMessage = 'Carregando alunos...';
+    this.error = null;
+
+    this.studentService.getStudentsByClass(this.classId).subscribe({
+      next: (students) => {
+        this.students = students;
+        this.loading = false;
+      },
+      error: (error) => {
+        console.error('Erro ao carregar alunos:', error);
+        this.error = 'Erro ao carregar alunos. Por favor, tente novamente.';
+        this.loading = false;
+      }
+    });
   }
 }

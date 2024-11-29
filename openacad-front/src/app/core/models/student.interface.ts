@@ -11,12 +11,12 @@ export interface Student {
     health_info?: string;
     notes?: string;
     active: boolean;
-    // Campos relacionados
     user_name?: string;
     user_email?: string;
     user_phone: string;
     class_year_name?: string;
     class_division_name?: string;
+    imported?: boolean;
 }
 
 export interface CreateStudentDTO {
@@ -52,4 +52,10 @@ export interface UpdateStudentDTO {
     health_info?: string;
     notes?: string;
     active?: boolean;
+}
+
+export interface StudentImportResponse {
+    imported: number;
+    total: number;
+    students: Student[];
 }

@@ -1,4 +1,3 @@
-// src/index.js
 const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
@@ -7,12 +6,14 @@ const morgan = require('morgan');
 const { config } = require('dotenv');
 const errorHandler = require('./middleware/errorHandler');
 const { setupDatabase } = require('./config/database');
+const teacherSubjectsRouter = require('./routes/teacher-subjects.routes');
 
 // Importar todas as rotas do arquivo index
 const { 
   authRouter, 
   userRouter, 
-  teacherAllocationRouter 
+  teacherAllocationRouter,
+  lessonContentsRouter 
 } = require('./routes');
 
 // Importar outras rotas diretamente
@@ -58,13 +59,15 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/api/auth', authRouter);
-app.use('/api/users', userRouter); // Removido usersRouter duplicado
+app.use('/api/users', userRouter); 
 app.use('/api/user-levels', userLevelsRouter);
 app.use('/api/classes', classesRouter);
 app.use('/api/subjects', subjectsRouter);
 app.use('/api/students', studentsRouter);
 app.use('/api/allocations', teacherAllocationRouter);
 app.use('/api/teachers', teachersRouter);
+app.use('/api/lesson-contents', lessonContentsRouter);
+app.use('/api/teacher-subjects', teacherSubjectsRouter);
 
 app.use((req, res, next) => {
   console.log('\nURL completa:', req.originalUrl);

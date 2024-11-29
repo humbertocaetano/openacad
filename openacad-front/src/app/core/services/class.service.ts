@@ -12,63 +12,46 @@ export class ClassService {
 
   constructor(private http: HttpClient) {}
 
-  getClasses(): Observable<Class[]> {
+  private getHeaders(): HttpHeaders {
     const token = localStorage.getItem('token');
-    const headers = new HttpHeaders({
+    return new HttpHeaders({
       'Authorization': `Bearer ${token}`
     });
-    return this.http.get<Class[]>(this.apiUrl, { headers });
+  }
+
+  getClasses(): Observable<Class[]> {
+    return this.http.get<Class[]>(this.apiUrl, { headers: this.getHeaders() });
+  }
+
+  getClass(id: number): Observable<Class> {
+    return this.http.get<Class>(`${this.apiUrl}/${id}`, { headers: this.getHeaders() });
   }
 
   getSchoolYears(): Observable<SchoolYear[]> {
-    const token = localStorage.getItem('token');
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-    return this.http.get<SchoolYear[]>(`${this.apiUrl}/years`, { headers });
+    return this.http.get<SchoolYear[]>(`${this.apiUrl}/years`, { headers: this.getHeaders() });
   }
 
   getClassDivisions(): Observable<ClassDivision[]> {
-    const token = localStorage.getItem('token');
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-    return this.http.get<ClassDivision[]>(`${this.apiUrl}/divisions`, { headers });
+    return this.http.get<ClassDivision[]>(`${this.apiUrl}/divisions`, { headers: this.getHeaders() });
   }
 
   getClassDivisionsByYear(yearId: number): Observable<ClassDivision[]> {
-    return this.http.get<ClassDivision[]>(`${this.apiUrl}/divisions/${yearId}`);
+    return this.http.get<ClassDivision[]>(`${this.apiUrl}/divisions/${yearId}`, { headers: this.getHeaders() });
   }
 
   createClass(classData: CreateClassDTO): Observable<Class> {
-    const token = localStorage.getItem('token');
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-    return this.http.post<Class>(this.apiUrl, classData, { headers });
+    return this.http.post<Class>(this.apiUrl, classData, { headers: this.getHeaders() });
   }
 
   updateClass(id: number, classData: CreateClassDTO): Observable<Class> {
-    const token = localStorage.getItem('token');
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-    return this.http.put<Class>(`${this.apiUrl}/${id}`, classData, { headers });
+    return this.http.put<Class>(`${this.apiUrl}/${id}`, classData, { headers: this.getHeaders() });
   }
 
   deleteClass(id: number): Observable<any> {
-    const token = localStorage.getItem('token');
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-    return this.http.delete(`${this.apiUrl}/${id}`, { headers });
+    return this.http.delete(`${this.apiUrl}/${id}`, { headers: this.getHeaders() });
   }
 
   toggleClassStatus(id: number, active: boolean): Observable<Class> {
-    const token = localStorage.getItem('token');
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    });
-    return this.http.patch<Class>(`${this.apiUrl}/${id}/status`, { active }, { headers });
+    return this.http.patch<Class>(`${this.apiUrl}/${id}/status`, { active }, { headers: this.getHeaders() });
   }
 }

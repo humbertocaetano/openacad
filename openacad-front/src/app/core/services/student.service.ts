@@ -46,4 +46,34 @@ export class StudentService {
       { headers: this.getHeaders() }
     );
   }
+
+  getStudentsByClass(classId: number): Observable<Student[]> {
+    return this.http.get<Student[]>(
+      `${this.apiUrl}/class/${classId}`,
+      { headers: this.getHeaders() }
+    );
+  }
+
+  importStudentsToClass(classId: number): Observable<Student[]> {
+    return this.http.post<Student[]>(
+      `${this.apiUrl}/class/${classId}/import`,
+      {},
+      { headers: this.getHeaders() }
+    );
+  }
+
+  removeStudentFromClass(classId: number, studentId: number): Observable<void> {
+    return this.http.delete<void>(
+      `${this.apiUrl}/class/${classId}/student/${studentId}`,
+      { headers: this.getHeaders() }
+    );
+  }
+
+  getAvailableStudentsForClass(classId: number): Observable<Student[]> {
+    return this.http.get<Student[]>(
+      `${this.apiUrl}/available/class/${classId}`,
+      { headers: this.getHeaders() }
+    );
+  }  
+
 }
