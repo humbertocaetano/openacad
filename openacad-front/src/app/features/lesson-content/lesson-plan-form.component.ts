@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { FormsModule, ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { TeacherService } from '../../core/services/teacher.service';
+import { TeacherAllocationService } from '../../core/services/teacher-allocation.service';
 import { TeacherSubjectService } from '../../core/services/teacher-subject.service';
 import { LessonContentService } from '../../core/services/lesson-content.service';
 
@@ -322,7 +322,7 @@ export class LessonPlanFormComponent implements OnInit {
     private fb: FormBuilder,
     private router: Router,
     private route: ActivatedRoute,
-    private teacherService: TeacherService,
+    private teacherAllocationService: TeacherAllocationService,
     private teacherSubjectService: TeacherSubjectService,
     private lessonContentService: LessonContentService
   ) {
@@ -351,10 +351,30 @@ export class LessonPlanFormComponent implements OnInit {
   }
 
   loadTeachers() {
+    console.log('Iniciando carregamento de professores com alocações');
     this.loading = true;
-    this.teacherService.getTeachers().subscribe({
-      next: (teachers) => {
-        this.teachers = teachers;
+    
+    this.teacherAllocationService.getAllocations(new Date().getFullYear()).subscribe({
+      next: (allocations) => {
+        // Usando Map para garantir professores únicos
+        const teacherMap = new Map();
+        
+        allocations.forEach(allocation => {
+          if (allocation.teacher) {
+            teacherMap.set(allocation.teacher.id, {
+              id: allocation.teacher.id,
+              user_name: allocation.teacher.name
+            });
+          }
+        });
+        
+        // Convertendo o Map para array
+        this.teachers = Array.from(teacherMap.values());
+        
+        // Ordenando por nome
+        this.teachers.sort((a, b) => a.user_name.localeCompare(b.user_name));
+        
+        console.log('Professores com alocações:', this.teachers);
         this.loading = false;
       },
       error: (error) => {

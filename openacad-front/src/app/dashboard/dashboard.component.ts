@@ -27,6 +27,7 @@ import { AuthService } from '../core/services/auth.service';
           <button (click)="navigateTo('alunos')">ALUNOS</button>
           <button (click)="navigateTo('disciplinas')">DISCIPLINAS</button>
           <button (click)="navigateTo('plano-aula')">PLANO DE AULA</button>
+          <button (click)="navigateTo('frequencia')">FREQUÊNCIA</button>
         </div>
       </main>
     </div>

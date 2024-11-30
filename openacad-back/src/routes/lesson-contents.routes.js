@@ -6,7 +6,8 @@ const { pool } = require('../config/database');
 router.get('/', async (req, res) => {
   try {
     const { teacher_id } = req.query;
-    
+    console.log('ID recebido:', teacher_id);
+
     let query = `
       SELECT 
         lc.id,
@@ -32,8 +33,21 @@ router.get('/', async (req, res) => {
 
     const params = [];
     if (teacher_id) {
+// Resolvendo o Caso 1      
+      const teacherResult = await pool.query(
+        'SELECT id FROM teachers WHERE user_id = $1',
+        [teacher_id]
+      );
+  
+      if (teacherResult.rows.length === 0) {
+        return res.status(404).json({ message: 'Professor não encontrado' });
+      }
+  
+      const teacherId_internal = teacherResult.rows[0].id;
+      console.log('ID interno do professor:', teacherId_internal);
+  
       query += ` WHERE ts.teacher_id = $1`;
-      params.push(teacher_id);
+      params.push(teacherId_internal);
     }
 
     query += ` ORDER BY lc.date DESC`;
@@ -43,6 +57,60 @@ router.get('/', async (req, res) => {
   } catch (error) {
     console.error('Erro ao buscar planos de aula:', error);
     res.status(500).json({ message: 'Erro ao buscar planos de aula' });
+  }
+});
+
+router.get('/teacher/:teacherId', async (req, res) => {
+  try {
+    const { teacherId } = req.params;
+
+    // Ajuste erro report 1
+    const teacherResult = await pool.query(
+      'SELECT id FROM teachers WHERE user_id = $1',
+      [teacherId]
+    );    
+
+    if (teacherResult.rows.length === 0) {
+      return res.status(404).json({ message: 'Professor não encontrado' });
+    }
+
+    const teacherId_internal = teacherResult.rows[0].id;  
+    console.log('ID interno do professor:', teacherId_internal);  
+
+    const result = await pool.query(`
+      SELECT 
+        lc.id,
+        lc.date,
+        lc.content,
+        lc.objective,
+        lc.resources,
+        lc.evaluation_method,
+        lc.observations,
+        ts.teacher_id,
+        s.name as subject_name,
+        sy.name as class_year_name,
+        cd.name as class_division_name,
+        EXISTS(
+          SELECT 1 
+          FROM attendances a 
+          WHERE a.lesson_content_id = lc.id
+          LIMIT 1
+        ) as has_attendance
+      FROM lesson_contents lc
+      JOIN teacher_subjects ts ON lc.teacher_subject_id = ts.id
+      JOIN subjects s ON ts.subject_id = s.id
+      JOIN school_years sy ON s.year_id = sy.id
+      LEFT JOIN class_divisions cd ON ts.division_id = cd.id
+      WHERE ts.teacher_id = $1
+        AND ts.active = true
+      ORDER BY lc.date DESC
+    `, [teacherId_internal]);
+
+    console.log(`Aulas encontradas para o professor ${teacherId_internal}:`, result.rows);
+    res.json(result.rows);
+  } catch (error) {
+    console.error('Erro ao buscar aulas do professor:', error);
+    res.status(500).json({ message: 'Erro ao buscar aulas do professor' });
   }
 });
 

@@ -107,7 +107,9 @@ async function generateUniqueUsername(client, fullName) {
 // Controladores
 const getStudents = async (req, res) => {
   try {
-    const result = await pool.query(`
+    const { class_id, active } = req.query;
+    
+    let query = `
       SELECT 
         s.*,
         u.name as user_name,
@@ -116,11 +118,30 @@ const getStudents = async (req, res) => {
         cd.name as class_division_name
       FROM students s
       JOIN users u ON s.user_id = u.id
-      JOIN classes c ON s.class_id = c.id
-      JOIN school_years sy ON c.year_id = sy.id
-      JOIN class_divisions cd ON c.division_id = cd.id
-      ORDER BY u.name
-    `);
+      LEFT JOIN classes c ON s.class_id = c.id
+      LEFT JOIN school_years sy ON c.year_id = sy.id
+      LEFT JOIN class_divisions cd ON c.division_id = cd.id
+      WHERE 1=1
+    `;
+    
+    const params = [];
+    let paramCount = 1;
+
+    if (class_id) {
+      query += ` AND s.class_id = $${paramCount}`;
+      params.push(class_id);
+      paramCount++;
+    }
+
+    if (active !== undefined && active !== '' && active !== null) {
+      query += ` AND s.active = $${paramCount}`;
+      params.push(active === 'true');
+      paramCount++;
+    }
+
+    query += ` ORDER BY u.name`;
+
+    const result = await pool.query(query, params);
     res.json(result.rows);
   } catch (error) {
     console.error('Erro ao buscar alunos:', error);

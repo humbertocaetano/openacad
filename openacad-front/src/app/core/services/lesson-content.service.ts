@@ -45,4 +45,8 @@ export class LessonContentService {
   deleteLesson(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
+  
+  getLessonsByTeacher(teacherId: number): Observable<LessonContent[]> {
+    return this.http.get<LessonContent[]>(`${this.apiUrl}/teacher/${teacherId}`);
+  }
 }

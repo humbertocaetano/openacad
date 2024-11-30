@@ -19,10 +19,26 @@ export class StudentService {
     });
   }
 
-  getStudents(): Observable<Student[]> {
-    return this.http.get<Student[]>(this.apiUrl, { headers: this.getHeaders() });
+  getStudents(filters?: { class_id?: string; active?: boolean }): Observable<Student[]> {
+    let url = this.apiUrl;
+    const params: string[] = [];
+    
+    if (filters) {
+      if (filters.class_id) {
+        params.push(`class_id=${filters.class_id}`);
+      }
+      if (filters.active !== undefined && filters.active !== null) {
+        params.push(`active=${filters.active}`);
+      }
+    }
+  
+    if (params.length > 0) {
+      url += '?' + params.join('&');
+    }
+  
+    return this.http.get<Student[]>(url);
   }
-
+  
   getStudent(id: number): Observable<Student> {
     return this.http.get<Student>(`${this.apiUrl}/${id}`, { headers: this.getHeaders() });
   }

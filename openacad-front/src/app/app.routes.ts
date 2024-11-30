@@ -15,6 +15,8 @@ import { TeacherAllocationFormComponent } from './features/teacher-allocation/te
 import { LessonPlanComponent } from './features/lesson-content/lesson-plan.component';
 import { LessonPlanListComponent } from './features/lesson-content/lesson-plan-list.component';
 import { LessonPlanFormComponent } from './features/lesson-content/lesson-plan-form.component';
+import { AttendanceListComponent } from './features/attendance/attendance-list.component';
+import { AttendanceFormComponent } from './features/attendance/attendance-form.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -37,5 +39,7 @@ export const routes: Routes = [
   { path: 'plano-aula', component: LessonPlanListComponent },
   { path: 'plano-aula/novo', component: LessonPlanFormComponent },
   { path: 'plano-aula/editar/:id', component: LessonPlanFormComponent },
+  { path: 'frequencia', component: AttendanceListComponent },
+  { path: 'frequencia/realizar/:id', component: AttendanceFormComponent },
   { path: '**', redirectTo: 'dashboard' }
 ];

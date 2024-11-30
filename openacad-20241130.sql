@@ -26,11 +26,11 @@ SET default_table_access_method = heap;
 
 CREATE TABLE public.attendances (
     id integer NOT NULL,
-    student_subject_id integer NOT NULL,
-    date date NOT NULL,
     present boolean NOT NULL,
     created_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-    updated_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP
+    updated_at timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
+    lesson_content_id integer,
+    student_id integer NOT NULL
 );
 
 
@@ -863,14 +863,6 @@ ALTER TABLE ONLY public.attendances
 
 
 --
--- Name: attendances attendances_student_subject_id_date_key; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.attendances
-    ADD CONSTRAINT attendances_student_subject_id_date_key UNIQUE (student_subject_id, date);
-
-
---
 -- Name: class_divisions class_divisions_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1119,20 +1111,6 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: idx_attendances_date; Type: INDEX; Schema: public; Owner: postgres
---
-
-CREATE INDEX idx_attendances_date ON public.attendances USING btree (date);
-
-
---
--- Name: idx_attendances_student_subject; Type: INDEX; Schema: public; Owner: postgres
---
-
-CREATE INDEX idx_attendances_student_subject ON public.attendances USING btree (student_subject_id);
-
-
---
 -- Name: idx_class_schedules_teacher_time; Type: INDEX; Schema: public; Owner: postgres
 --
 
@@ -1245,14 +1223,6 @@ CREATE INDEX idx_users_school_id ON public.users USING btree (school_id);
 
 
 --
--- Name: attendances attendances_student_subject_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.attendances
-    ADD CONSTRAINT attendances_student_subject_id_fkey FOREIGN KEY (student_subject_id) REFERENCES public.student_subjects(id);
-
-
---
 -- Name: class_schedules class_schedules_teacher_subject_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1274,6 +1244,22 @@ ALTER TABLE ONLY public.classes
 
 ALTER TABLE ONLY public.classes
     ADD CONSTRAINT classes_year_id_fkey FOREIGN KEY (year_id) REFERENCES public.school_years(id);
+
+
+--
+-- Name: attendances fk_lesson_content; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.attendances
+    ADD CONSTRAINT fk_lesson_content FOREIGN KEY (lesson_content_id) REFERENCES public.lesson_contents(id);
+
+
+--
+-- Name: attendances fk_student; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.attendances
+    ADD CONSTRAINT fk_student FOREIGN KEY (student_id) REFERENCES public.students(id);
 
 
 --

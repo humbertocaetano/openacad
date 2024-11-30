@@ -3,12 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { LessonContentService } from '../../core/services/lesson-content.service';
-import { TeacherService } from '../../core/services/teacher.service';
 import { TeacherAllocationService } from '../../core/services/teacher-allocation.service';
+import { LessonContentService } from '../../core/services/lesson-content.service';
 
 @Component({
-  selector: 'app-lesson-plan-list',
+  selector: 'app-attendance-list',
   standalone: true,
   imports: [CommonModule, RouterModule, FormsModule],
   template: `
@@ -23,17 +22,16 @@ import { TeacherAllocationService } from '../../core/services/teacher-allocation
 
       <main class="main-content">
         <div class="content-header">
-          <h2>Planos de Aula</h2>
+          <h2>Frequência</h2>
           <div class="action-buttons">
             <button class="back-button" (click)="navigateTo('/dashboard')">VOLTAR</button>
-            <button class="new-button" (click)="navigateTo('/plano-aula/novo')">CADASTRAR</button>
           </div>
         </div>
 
         <div class="filter-section">
-          <label>Filtrar por Professor:</label>
+          <label>Professor:</label>
           <select [(ngModel)]="selectedTeacherId" (change)="onTeacherChange()">
-            <option value="">Todos os Professores</option>
+            <option value="">Selecione um professor</option>
             <option *ngFor="let teacher of teachers" [value]="teacher.id">
               {{teacher.user_name}}
             </option>
@@ -48,37 +46,45 @@ import { TeacherAllocationService } from '../../core/services/teacher-allocation
           {{ error }}
         </div>
 
-        <div class="table-container" *ngIf="!loading && !error">
+        <div class="table-container" *ngIf="!loading && !error && classes.length > 0">
           <table>
             <thead>
               <tr>
-                <th>Professor</th>
+                <th>Data</th>
                 <th>Disciplina</th>
                 <th>Turma</th>
-                <th>Data</th>
                 <th>Conteúdo</th>
+                <th>Status</th>
                 <th>Ações</th>
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let lesson of lessonPlans">
-                <td>{{lesson.teacher_name}}</td>
-                <td>{{lesson.subject_name}}</td>
-                <td>{{lesson.class_year_name}} {{lesson.class_division_name}}</td>
-                <td>{{lesson.date | date:'dd/MM/yyyy'}}</td>
-                <td>{{lesson.content}}</td>
+              <tr *ngFor="let class of classes">
+                <td>{{class.date | date:'dd/MM/yyyy'}}</td>
+                <td>{{class.subject_name}}</td>
+                <td>{{class.class_year_name}} {{class.class_division_name}}</td>
+                <td>{{class.content}}</td>
                 <td>
-                  <button class="edit-button" (click)="navigateTo('/plano-aula/editar/' + lesson.id)">✎</button>
-                  <button class="delete-button" (click)="deleteLesson(lesson)">✕</button>
+                  <span [class.status-pending]="!class.has_attendance" 
+                        [class.status-done]="class.has_attendance">
+                    {{class.has_attendance ? 'Realizada' : 'Pendente'}}
+                  </span>
                 </td>
-              </tr>
-              <tr *ngIf="lessonPlans.length === 0">
-                <td colspan="6" class="empty-message">
-                  Nenhum plano de aula encontrado
+                <td>
+                  <button class="action-button" 
+                          [routerLink]="['/frequencia/realizar', class.id]"
+                          [class.edit-button]="class.has_attendance"
+                          [class.new-button]="!class.has_attendance">
+                    {{class.has_attendance ? 'Editar' : 'Realizar'}}
+                  </button>
                 </td>
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div class="empty-state" *ngIf="!loading && !error && classes.length === 0">
+          <p>Nenhuma aula encontrada para este professor.</p>
         </div>
       </main>
     </div>
@@ -255,26 +261,59 @@ import { TeacherAllocationService } from '../../core/services/teacher-allocation
       background-color: #fff5f5;
       border-radius: 4px;
       margin-bottom: 1rem;
+    }    .status-pending {
+      background-color: #fff3cd;
+      color: #856404;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.875rem;
+    }
+
+    .status-done {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.875rem;
+    }
+
+    .action-button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+      &.edit-button {
+        background-color: #17a2b8;
+        color: white;
+      }
+      
+      &.new-button {
+        background-color: #28a745;
+        color: white;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
     }
   `]
 })
-export class LessonPlanListComponent implements OnInit {
+export class AttendanceListComponent implements OnInit {
   loading = false;
   error: string | null = null;
   teachers: any[] = [];
   selectedTeacherId: number | null = null;
-  lessonPlans: any[] = [];
+  classes: any[] = [];
 
   constructor(
     private router: Router,
-    private teacherService: TeacherService,
     private teacherAllocationService: TeacherAllocationService,
     private lessonContentService: LessonContentService
   ) {}
 
   ngOnInit() {
     this.loadTeachers();
-    this.loadLessonPlans();
   }
 
   loadTeachers() {
@@ -312,49 +351,29 @@ export class LessonPlanListComponent implements OnInit {
     });
   }
 
+  onTeacherChange() {
+    if (this.selectedTeacherId !== null) {
+        this.loadClasses();
+      } else {
+        this.classes = [];
+      }
+  }
 
-  loadLessonPlans() {
+  loadClasses() {
+    if (!this.selectedTeacherId) return;
 
-    //if (!this.selectedTeacherId) return;
-
-    console.log('Carregando planos para o professor:', this.selectedTeacherId);
     this.loading = true;
-    const teacherId = this.selectedTeacherId ?? undefined;
-    this.lessonContentService.getLessons(teacherId).subscribe({
-      next: (lessons) => {
-        console.log('Planos recebidos:', lessons);
-        this.lessonPlans = lessons;
+    this.lessonContentService.getLessonsByTeacher(this.selectedTeacherId).subscribe({
+      next: (classes) => {
+        this.classes = classes;
         this.loading = false;
       },
       error: (error) => {
-        console.error('Erro ao carregar planos de aula:', error);
-        this.error = 'Erro ao carregar planos de aula. Por favor, tente novamente.';
+        console.error('Erro ao carregar aulas:', error);
+        this.error = 'Erro ao carregar aulas. Por favor, tente novamente.';
         this.loading = false;
       }
     });
-  }
-
-  onTeacherChange() {
-    console.log('Professor selecionado:', this.selectedTeacherId); 
-    if (this.selectedTeacherId !== null) {
-      this.loadLessonPlans();
-    } else {
-      this.lessonPlans = [];
-    }
-  }
-
-  deleteLesson(lesson: any) {
-    if (confirm('Tem certeza que deseja excluir este plano de aula?')) {
-      this.lessonContentService.deleteLesson(lesson.id).subscribe({
-        next: () => {
-          this.loadLessonPlans();
-        },
-        error: (error) => {
-          console.error('Erro ao excluir plano de aula:', error);
-          this.error = 'Erro ao excluir plano de aula. Por favor, tente novamente.';
-        }
-      });
-    }
   }
 
   navigateTo(route: string) {
