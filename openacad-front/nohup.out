@@ -5139,3 +5139,28 @@ main.js             | main  | 279.26 kB |
 Application bundle generation complete. [0.297 seconds]
 
 Page reload sent to client(s).
+
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues. You might need to use "--disable-host-check" if that's the
+case.
+    
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 329.62 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        |  96 bytes | 
+
+                    | Initial total | 419.92 kB
+
+Application bundle generation complete. [10.291 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+  ➜  Network: http://192.168.15.104:4200/
+  ➜  Network: http://172.18.0.1:4200/

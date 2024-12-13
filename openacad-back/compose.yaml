@@ -1,0 +1,19 @@
+services:
+  server:
+    #    volumes:
+    #      - ~/openacad/openacad-back:/usr/src/app
+    build:
+      context: .
+    ports:
+      - 3000:3000
+        #    extra_hosts:
+        #      - "host.docker.internal:host-gateway"
+    environment:
+      NODE_ENV: production
+      DB_USER: humberto
+      DB_HOST: 192.168.15.104
+      DB_NAME: openacad
+      DB_PASSWORD: "abcd"
+      DB_PORT: 5432
+
+
