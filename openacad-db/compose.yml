@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres:15.8
+    command: -d 3 -c config_file=/etc/postgresql.conf -c hba_file=/etc/pg_hba.conf
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-4WXUms893U6j4GE&Hvk3S*hqcqebFgo!vZi}
+      POSTGRES_DB: openacad
+        #      LANG: pt_BR.UTF8
+        #      LC_ALL: pt_BR.UTF8
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgresql.conf:/etc/postgresql.conf
+      - ./pg_hba.conf:/etc/pg_hba.conf
+      - ./postgres_data:/var/lib/postgresql/data
+      - ./logs:/logs
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
+      - /etc/ssl:/etc/ssl:ro

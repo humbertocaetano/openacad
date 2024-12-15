@@ -1,0 +1,1 @@
+/usr/lib/postgresql/15/bin/postgres "-d" "3" "-c" "config_file=/etc/postgresql.conf" "-c" "hba_file=/etc/pg_hba.conf"
