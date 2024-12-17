@@ -1,10 +1,14 @@
-FROM posgres:15.8-alpine
+FROM posgres:15.8
 
 RUN apt-get update
-RUN apt-get install -y locales locales-all
-ENV LANG pt_BR.utf8
-ENV LC_ALL pt_BR.UTF-8
-ENV LANGUAGE pt_BR.UTF-8
+RUN apt-get install -y locales locales-all curl
 
-COPY *.sh /docker-entrypoint-initdb.d/
+COPY pt_BR /usr/share/i18n/locales/pt_BR
+
+RUN localedef -i pt_BR -f UTF8 pt_BR.UTF8
+ENV LANG="pt_BR.UFT8"
+RUN export LC_ALL="pt_BR"
+RUN echo LC_ALL=pt_BR >> /etc/environment
+
+COPY *.sql /docker-entrypoint-initdb.d/
 RUN chmod a+r /docker-entrypoint-initdb.d/*
