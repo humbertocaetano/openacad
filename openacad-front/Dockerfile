@@ -17,10 +17,12 @@ WORKDIR /usr/src/app
 # Copy the rest of the source files into the image.
 COPY . .
 
+
 RUN npm install
 RUN npm install --save-dev @angular-devkit/build-angular --force -g
 RUN npm install @angular/cli -g
 
+RUN chmod -R 777 /usr/src/app
 # Run the application as a non-root user.
 USER node
 
